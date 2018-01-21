@@ -6,7 +6,7 @@ services:
       environment:
         GIN_MODE: release
         PORT: 80
-        EVENT_BRITE_TOKEN: ${EVENT_BRITE_TOKEN}
+        EVENTBRITE_TOKEN: ${EVENTBRITE_TOKEN}
       networks:
         - proxy
       deploy:
