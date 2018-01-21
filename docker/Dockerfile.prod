@@ -22,7 +22,7 @@ RUN dep ensure
 RUN go build -o main *.go
 
 FROM alpine:latest
-RUN apk update && apk add ca-certificates &&  update-ca-certificates && apk add --update openssl
+RUN apk update && apk add ca-certificates &&  update-ca-certificates && apk add openssl && apk add curl
 COPY --from=0 /gopath/src/github.com/GaruGaru/Tao/main .
 HEALTHCHECK --interval=5s --timeout=5s CMD curl --fail http://localhost/probe || exit 1
 CMD [ "./main" ]
