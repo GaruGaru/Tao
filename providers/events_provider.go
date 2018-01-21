@@ -5,33 +5,33 @@ type EventProvider interface {
 }
 
 type DojoEvent struct {
-	Title        string
-	Description  string
-	Logo         string
-	Icon         string
-	TicketUrl    string
-	StartTime    int64
-	EndTime      int64
-	Capacity     int
-	Participants int
-	Location     DojoLocation
-	Organizer    DojoOrganizer
-	Free         bool
-	Price        float32
+	Title        string        `json:"title"`
+	Description  string        `json:"description"`
+	Logo         string        `json:"logo"`
+	Icon         string        `json:"icon"`
+	TicketUrl    string        `json:"ticketurl"`
+	StartTime    int64         `json:"starttime"`
+	EndTime      int64         `json:"endtime"`
+	Capacity     int           `json:"capacity"`
+	Participants int           `json:"participants"`
+	Location     DojoLocation  `json:"location"`
+	Organizer    DojoOrganizer `json:"organizer"`
+	Free         bool          `json:"free"`
+	Price        float32       `json:"price"`
 }
 
 type DojoLocation struct {
-	Address    string
-	City       string
-	Country    string
-	Name       string
-	PostalCode string
-	Latitude   float64
-	Longitude  float64
+	Address    string  `json:"address"`
+	City       string  `json:"city"`
+	Country    string  `json:"country"`
+	Name       string  `json:"name"`
+	PostalCode string  `json:"postalcode"`
+	Latitude   float64 `json:"latitude"`
+	Longitude  float64 `json:"longitude"`
 }
 
 type DojoOrganizer struct {
-	Id       string
-	Name     string
-	Platform string
+	Id       string `json:"id"`
+	Name     string `json:"name"`
+	Platform string `json:"platform"`
 }
