@@ -1,0 +1,28 @@
+FROM golang:1.9-alpine3.6
+
+MAINTAINER Tommaso Garuglieri <garuglieritommaso@gmail.com>
+
+RUN apk update && \
+    apk add ca-certificates && \
+    update-ca-certificates && \
+    apk add --update openssl && \
+    apk add git && \
+    apk add curl
+
+RUN wget https://github.com/golang/dep/releases/download/v0.3.2/dep-linux-amd64 -O /usr/local/bin/dep && chmod +x /usr/local/bin/dep
+
+WORKDIR /gopath/src/github.com/GaruGaru/Tao
+
+ENV PORT 80
+ENV GOPATH /gopath
+ENV PATH $PATH:/usr/local/go/bin:$GOPATH/bin
+
+COPY . ./
+
+RUN dep ensure
+
+RUN go build -o main *.go
+
+HEALTHCHECK --interval=5s --timeout=5s CMD curl --fail http://localhost/probe || exit 1
+
+CMD ["/gopath/src/github.com/GaruGaru/Tao/main"]

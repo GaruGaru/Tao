@@ -1,0 +1,29 @@
+
+version: "3"
+services:
+
+  backend:
+      image: garugaru/tao
+      ports:
+        - 80:80
+      environment:
+        GIN_MODE: release
+        PORT: 80
+        EVENT_BRITE_TOKEN: ${EVENT_BRITE_TOKEN}
+      networks:
+        - proxy
+      deploy:
+        labels:
+          - traefik.docker.network=proxy
+          - traefik.port=80
+          - traefik.frontend.rule=Host:dojo.garu.pizza
+        mode: replicated
+        replicas: 1
+        restart_policy:
+          condition: on-failure
+
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false

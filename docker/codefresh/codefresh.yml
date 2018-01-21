@@ -1,0 +1,42 @@
+ersion: '1.0'
+steps:
+
+  build_test_image:
+    type: build
+    description: Image build
+    image_name: garugaru/tao-test
+    dockerfile: docker/codefresh/Dockerfile.dev
+    tag: ${{CF_SHORT_REVISION}}
+
+  unit-tests:
+    image: ${{build_test_image}}
+    commands:
+      - go test -v
+
+  build_production_image:
+    title: Building Production Image
+    type: build
+    image_name: garugaru/tao
+    working_directory: ${{main_clone}}
+    dockerfile: docker/codefresh/Dockerfile.prod
+    tag: '${{CF_SHORT_REVISION}}'
+
+  push_image:
+    type: push
+    title: Image push
+    candidate: ${{build_production_image}}
+    tag: ${{CF_SHORT_REVISION}}
+    fail_fast: true
+
+  deploy_to_swarm:
+    image: codefresh/remote-docker:latest
+    working_directory: ${{main_clone}}
+    commands:
+      - rdocker ${{RDOCKER_HOST}} docker stack deploy --compose-file docker-stack.yml ${{STACK_NAME}}
+      - rdocker ${{RDOCKER_HOST}} docker service update --force --image garugaru/tao:${{CF_SHORT_REVISION}} ${{STACK_NAME}}_tao
+    environment:
+      - SSH_KEY=${{SSH_KEY}}
+    when:
+      branch:
+        only:
+          - master

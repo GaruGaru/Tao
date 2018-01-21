@@ -1,0 +1,14 @@
+version: "3"
+services:
+
+  tao:
+      image: garugaru/tao
+      build:
+        context: ../
+        dockerfile: docker/Dockerfile.dev
+      ports:
+        - 8080:8080
+      environment:
+        - PORT=8080
+        - GIN_MODE=debug
+        - EVENTBRITE_TOKEN=TOKEN
