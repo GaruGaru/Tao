@@ -11,7 +11,7 @@ steps:
   unit-tests:
     image: ${{build_test_image}}
     commands:
-      - go test -v
+      - cd /gopath/src/github.com/GaruGaru/Tao && dep ensure && go test -v
 
   build_production_image:
     title: Building Production Image
