@@ -4,8 +4,6 @@ services:
 
   backend:
       image: garugaru/tao
-      ports:
-        - 80:80
       environment:
         GIN_MODE: release
         PORT: 80
