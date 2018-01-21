@@ -1,8 +1,7 @@
-
 version: "3"
 services:
 
-  backend:
+  tao:
       image: garugaru/tao
       environment:
         GIN_MODE: release
