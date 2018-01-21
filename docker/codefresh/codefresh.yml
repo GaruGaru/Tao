@@ -5,7 +5,7 @@ steps:
     type: build
     description: Image build
     image_name: garugaru/tao-test
-    dockerfile: docker/codefresh/Dockerfile.dev
+    dockerfile: docker/Dockerfile.dev
     tag: ${{CF_SHORT_REVISION}}
 
   unit-tests:
@@ -18,7 +18,7 @@ steps:
     type: build
     image_name: garugaru/tao
     working_directory: ${{main_clone}}
-    dockerfile: docker/codefresh/Dockerfile.prod
+    dockerfile: docker/Dockerfile.prod
     tag: '${{CF_SHORT_REVISION}}'
 
   push_image:
