@@ -2,7 +2,7 @@
 
 ![Logo](https://github.com/GaruGaru/Tao/blob/master/res/Tao.png)
 
-### Fast, parallel, container ready aggregator for coderdojo events
+### Fast, scalable, container ready aggregator for coderdojo events
 
 ## Supported platforms 
 
