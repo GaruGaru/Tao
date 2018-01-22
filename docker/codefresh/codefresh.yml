@@ -12,7 +12,7 @@ steps:
     image: ${{build_test_image}}
     working_directory: ${{main_clone}}
     commands:
-      - cd /gopath/src/github.com/GaruGaru/Tao && dep ensure && go test -v
+      - dep ensure && go test -v
 
   build_production_image:
     title: Building Production Image
