@@ -1,7 +1,7 @@
 package providers
 
 type EventProvider interface {
-	Events(lat float64, lon float64, rng int, sorting string) []DojoEvent
+	Events(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, error)
 }
 
 type DojoEvent struct {

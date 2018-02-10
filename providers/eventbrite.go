@@ -9,6 +9,7 @@ import (
 	"encoding/json"
 	"sync"
 	"fmt"
+	"os"
 )
 
 type Address struct {
@@ -118,6 +119,10 @@ type EventbriteResponse struct {
 		Within    string `json:"within"`
 		Longitude string `json:"longitude"`
 	} `json:"location"`
+}
+
+func NewEventBriteProvider() EventBrite {
+	return EventBrite{ApiKey: os.Getenv("EVENTBRITE_TOKEN")}
 }
 
 type EventBrite struct {
