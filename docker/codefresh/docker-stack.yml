@@ -11,6 +11,7 @@ services:
         REDIS_HOST: "tao-redis:6379"
       networks:
         - proxy
+        - internal
       deploy:
         labels:
           - traefik.docker.network=proxy
@@ -24,6 +25,8 @@ services:
 
   tao-redis:
     image: redis:3.2.11-alpine
+    networks:
+      - internal
     deploy:
       mode: replicated
       replicas: 1
