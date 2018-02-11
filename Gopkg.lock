@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  name = "github.com/cactus/go-statsd-client"
+  packages = ["statsd"]
+  revision = "138b925ccdf617776955904ba7759fce64406cec"
+  version = "v3.1.1"
+
+[[projects]]
   branch = "master"
   name = "github.com/gin-contrib/sse"
   packages = ["."]
@@ -76,6 +82,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "301de9007cb59da23556dfbbec3c71b6ca026f6b041c81a4a109c99440f2c310"
+  inputs-digest = "bf4379c09342e92c830db9fc0c6793d1e877d7fc725a38978b61bfee617bee06"
   solver-name = "gps-cdcl"
   solver-version = 1

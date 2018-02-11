@@ -4,12 +4,12 @@ import (
 	"github.com/GaruGaru/Tao/providers"
 	"github.com/gin-gonic/gin"
 	"strconv"
-	statsd2 "github.com/smira/go-statsd"
+	"github.com/cactus/go-statsd-client/statsd"
 )
 
 type EventsApi struct {
 	Provider providers.EventProvider
-	Statsd   statsd2.Client
+	Statsd   statsd.Statter
 }
 
 func (api EventsApi) Run() {
@@ -58,10 +58,10 @@ func (api EventsApi) eventsV1(c *gin.Context) {
 	events, err := api.Provider.Events(lat, lon, rng, sorting)
 
 	if err == nil {
-		api.Statsd.Incr("request.eventsv1.ok", 1)
+		api.Statsd.Inc("request.eventsv1.ok", 1, 1)
 		c.JSON(200, events)
 	} else {
-		api.Statsd.Incr("request.eventsv1.fail", 1)
+		api.Statsd.Inc("request.eventsv1.fail", 1, 1)
 		c.Error(err)
 	}
 

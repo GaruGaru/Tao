@@ -12,6 +12,7 @@ services:
       networks:
         - proxy
         - internal
+        - statsd
       deploy:
         labels:
           - traefik.docker.network=proxy
@@ -39,3 +40,5 @@ networks:
     external: true
   internal:
     external: false
+  statsd:
+    external: true

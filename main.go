@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/GaruGaru/Tao/providers"
 	"github.com/GaruGaru/Tao/api"
-	"github.com/smira/go-statsd"
+	"github.com/cactus/go-statsd-client/statsd"
 	"os"
 	"github.com/go-redis/redis"
 	"time"
@@ -11,7 +11,11 @@ import (
 
 func main() {
 
-	statsdClient := statsd.NewClient(getEnv("STATSD_HOST", "localhost:8125"))
+	statsdClient, err := statsd.NewClient(getEnv("STATSD_HOST", "localhost:8125"), "tao")
+
+	if err != nil {
+		panic(err)
+	}
 
 	redisClient := redis.NewClient(&redis.Options{
 		Addr:     getEnv("REDIS_HOST", "localhost:6379"),
@@ -25,7 +29,7 @@ func main() {
 		Providers: []providers.EventProvider{
 			providers.NewEventBriteProvider(),
 		},
-	}, *redisClient, cacheDuration, *statsdClient)
+	}, *redisClient, cacheDuration, statsdClient)
 
 	taoApi := api.EventsApi{Provider: provider}
 
