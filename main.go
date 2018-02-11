@@ -11,11 +11,11 @@ import (
 
 func main() {
 
-	statsdClient, err := statsd.NewClient(getEnv("STATSD_HOST", "localhost:8125"), "tao")
+	statsdClient, _ := statsd.NewClient(getEnv("STATSD_HOST", "localhost:8125"), "tao")
 
-	if err != nil {
-		panic(err)
-	}
+	//if err != nil {
+	//	panic(err)
+	//}
 
 	redisClient := redis.NewClient(&redis.Options{
 		Addr:     getEnv("REDIS_HOST", "localhost:6379"),
