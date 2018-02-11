@@ -31,7 +31,7 @@ func main() {
 		},
 	}, *redisClient, cacheDuration, statsdClient)
 
-	taoApi := api.EventsApi{Provider: provider}
+	taoApi := api.EventsApi{Provider: provider, Statsd: statsdClient}
 
 	taoApi.Run()
 
