@@ -138,7 +138,7 @@ func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([
 	}
 
 	eventsCount := len(events.Events)
-	fmt.Printf("Got %d events from eventbrite", eventsCount)
+	fmt.Printf("Got %d events from eventbrite\n", eventsCount)
 	eventsChannel := make(chan DojoEvent, eventsCount)
 	var wg sync.WaitGroup
 	wg.Add(eventsCount)

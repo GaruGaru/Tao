@@ -8,6 +8,7 @@ services:
         PORT: 80
         EVENTBRITE_TOKEN: ${EVENTBRITE_TOKEN}
         STATSD_HOST: ${STATSD_HOST}
+        REDIS_HOST: "tao-redis"
       networks:
         - proxy
       deploy:
@@ -19,6 +20,16 @@ services:
         replicas: 1
         restart_policy:
           condition: on-failure
+
+
+  tao-redis:
+    image: redis:3.2.11-alpine
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
 
 networks:
   proxy:

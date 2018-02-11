@@ -2,12 +2,6 @@
 
 
 [[projects]]
-  name = "github.com/etsy/statsd"
-  packages = ["examples/go"]
-  revision = "5d729d95847db0189e2c5571014b54c63d661f31"
-  version = "v0.8.0"
-
-[[projects]]
   branch = "master"
   name = "github.com/gin-contrib/sse"
   packages = ["."]
@@ -20,6 +14,12 @@
   version = "v1.2"
 
 [[projects]]
+  name = "github.com/go-redis/redis"
+  packages = [".","internal","internal/consistenthash","internal/hashtag","internal/pool","internal/proto"]
+  revision = "8b4fa6d443e35ca8b1c37be877285252430b06a3"
+  version = "v6.8.3"
+
+[[projects]]
   branch = "master"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
@@ -30,6 +30,12 @@
   packages = ["."]
   revision = "0360b2af4f38e8d38c7fce2a9f4e702702d73a39"
   version = "v0.0.3"
+
+[[projects]]
+  name = "github.com/sirupsen/logrus"
+  packages = ["."]
+  revision = "d682213848ed68c0a260ca37d6dd5ace8423f5ba"
+  version = "v1.0.4"
 
 [[projects]]
   branch = "master"
@@ -45,8 +51,14 @@
 
 [[projects]]
   branch = "master"
+  name = "golang.org/x/crypto"
+  packages = ["ssh/terminal"]
+  revision = "5119cf507ed5294cc409c092980c7497ee5d6fd2"
+
+[[projects]]
+  branch = "master"
   name = "golang.org/x/sys"
-  packages = ["unix"]
+  packages = ["unix","windows"]
   revision = "2c42eef0765b9837fbdab12011af7830f55f88f0"
 
 [[projects]]
@@ -64,6 +76,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "87ac2c6a25dcad4de90948128797ab71346c0c89aab956650721df8ac427024f"
+  inputs-digest = "301de9007cb59da23556dfbbec3c71b6ca026f6b041c81a4a109c99440f2c310"
   solver-name = "gps-cdcl"
   solver-version = 1
