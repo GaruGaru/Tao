@@ -31,17 +31,17 @@ func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting 
 
 	key := requestKey(lat, lon, rng, sorting)
 
-	start := time.Now()
+	cacheStart := time.Now()
 	cache, err := p.redis.Get(key).Result()
-	p.statsd.TimingDuration("cache.latency", time.Since(start), 1)
+	p.statsd.TimingDuration("cache.latency", time.Since(cacheStart), 1)
 
 	if err == redis.Nil || err != nil { // redis.Nil->Key does not exists
 		log.Info("Cache miss for key %s", key)
 		p.statsd.Inc("cache.miss", 1, 1)
 
-		start := time.Now()
+		apiStart := time.Now()
 		events, err := p.Provider.Events(lat, lon, rng, sorting)
-		p.statsd.TimingDuration("api.latency", time.Since(start), 1)
+		p.statsd.TimingDuration("api.latency", time.Since(apiStart), 1)
 
 		if err != nil {
 			return nil, err
