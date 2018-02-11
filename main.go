@@ -23,7 +23,7 @@ func main() {
 		DB:       0,
 	})
 
-	cacheDuration := 10 * time.Minute
+	cacheDuration := 30 * time.Minute
 
 	provider := providers.NewCachedEventsProvider(providers.ProvidersManager{
 		Providers: []providers.EventProvider{
