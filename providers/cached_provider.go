@@ -31,17 +31,17 @@ func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting 
 
 	key := requestKey(lat, lon, rng, sorting)
 
-	start := time.Now()
+	//start := time.Now()
 	cache, err := p.redis.Get(key).Result()
-	p.statsd.TimingDuration("cache.latency", time.Since(start), 1)
+	//p.statsd.TimingDuration("cache.latency", time.Since(start), 1)
 
 	if err == redis.Nil || err != nil { // redis.Nil->Key does not exists
 		log.Info("Cache miss for key %s", key)
-		p.statsd.Inc("cache.miss", 1, 1)
+		//p.statsd.Inc("cache.miss", 1, 1)
 
-		start := time.Now()
+		//start := time.Now()
 		events, err := p.Provider.Events(lat, lon, rng, sorting)
-		p.statsd.TimingDuration("api.latency", time.Since(start), 1)
+		//p.statsd.TimingDuration("api.latency", time.Since(start), 1)
 
 		if err != nil {
 			return nil, err
@@ -53,7 +53,7 @@ func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting 
 
 	} else {
 		log.Info("Cache hit for key %s", key)
-		p.statsd.Inc("cache.hit", 1, 1)
+		//p.statsd.Inc("cache.hit", 1, 1)
 		var events []DojoEvent
 		json.Unmarshal([]byte(cache), &events)
 		return events, nil
@@ -69,7 +69,7 @@ func (p CachedEventsProvider) updateCache(events []DojoEvent, key string) {
 			log.Warn("Unable to Set cache for %d events with key %s error: %s\n", len(events), key, res.Err().Error())
 		} else {
 			log.Info("Cache update for key %s", key)
-			p.statsd.Inc("cache.update", 1, 1)
+			//p.statsd.Inc("cache.update", 1, 1)
 		}
 
 	} else {

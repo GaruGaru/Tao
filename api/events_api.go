@@ -58,10 +58,10 @@ func (api EventsApi) eventsV1(c *gin.Context) {
 	events, err := api.Provider.Events(lat, lon, rng, sorting)
 
 	if err == nil {
-		api.Statsd.Inc("request.eventsv1.ok", 1, 1)
+		//api.Statsd.Inc("request.eventsv1.ok", 1, 1)
 		c.JSON(200, events)
 	} else {
-		api.Statsd.Inc("request.eventsv1.fail", 1, 1)
+		//api.Statsd.Inc("request.eventsv1.fail", 1, 1)
 		c.Error(err)
 	}
 
