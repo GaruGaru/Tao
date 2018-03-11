@@ -8,6 +8,18 @@
   version = "v3.1.1"
 
 [[projects]]
+  name = "github.com/cespare/xxhash"
+  packages = ["."]
+  revision = "5c37fe3735342a2e0d01c87a907579987c8936cc"
+  version = "v1.0.0"
+
+[[projects]]
+  name = "github.com/coocood/freecache"
+  packages = ["."]
+  revision = "f3233c8095b26cd0dea0b136b931708c05defa08"
+  version = "v1.0.1"
+
+[[projects]]
   branch = "master"
   name = "github.com/gin-contrib/sse"
   packages = ["."]
@@ -45,15 +57,15 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/smira/go-statsd"
-  packages = ["."]
-  revision = "d92014c192b9e4c8ffa3e8954a50950c9649646c"
-
-[[projects]]
-  branch = "master"
   name = "github.com/ugorji/go"
   packages = ["codec"]
   revision = "9831f2c3ac1068a78f50999a30db84270f647af6"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/wunderlist/ttlcache"
+  packages = ["."]
+  revision = "fa8f18d5e019f6bdf076153e60dccf2c6fc7ccf5"
 
 [[projects]]
   branch = "master"
@@ -82,6 +94,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "bf4379c09342e92c830db9fc0c6793d1e877d7fc725a38978b61bfee617bee06"
+  inputs-digest = "c33253a5d07f2a0debe7cccc83e64bb134f78c2932176c54b40e308bfb30b9cd"
   solver-name = "gps-cdcl"
   solver-version = 1
