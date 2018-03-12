@@ -101,6 +101,7 @@ func (rc LocalEventCache) Get(lat float64, lon float64, rng int, sorting string)
 	if exists {
 		events, err := eventsFromJson(cache)
 		if err != nil {
+			println(err.Error())
 			return nil, false, err
 		}
 		return events, true, nil

@@ -14,7 +14,8 @@ type EventsApi struct {
 
 func (api EventsApi) Run() {
 
-	r := gin.Default()
+	r := gin.New()
+	r.Use(gin.Recovery())
 
 	r.GET("/probe", probe)
 
