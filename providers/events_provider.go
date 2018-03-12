@@ -28,6 +28,7 @@ type DojoLocation struct {
 	PostalCode string  `json:"postalcode"`
 	Latitude   float64 `json:"latitude"`
 	Longitude  float64 `json:"longitude"`
+	Distance   float64 `json:"distance"`
 }
 
 type DojoOrganizer struct {

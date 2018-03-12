@@ -144,7 +144,7 @@ func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([
 	wg.Add(eventsCount)
 
 	for _, event := range events.Events {
-		go e.processEvent(event, eventsChannel, &wg)
+		go e.processEvent(lat, lon, event, eventsChannel, &wg)
 	}
 
 	wg.Wait()
@@ -183,7 +183,7 @@ func (e EventBrite) eventsList(lat float64, lon float64, rng int, sorting string
 	return events, nil
 }
 
-func (e EventBrite) processEvent(event Event, events chan DojoEvent, group *sync.WaitGroup) {
+func (e EventBrite) processEvent(hLat float64, hLon float64, event Event, events chan DojoEvent, group *sync.WaitGroup) {
 
 	defer group.Done()
 
@@ -193,6 +193,9 @@ func (e EventBrite) processEvent(event Event, events chan DojoEvent, group *sync
 
 		lat, _ := strconv.ParseFloat(venue.Address.Latitude, 64)
 		lon, _ := strconv.ParseFloat(venue.Address.Longitude, 64)
+
+
+		distance := Distance(hLat, hLon, lat, lon) / 1000
 
 		events <- DojoEvent{
 			Title:       event.Name.Text,
@@ -208,6 +211,7 @@ func (e EventBrite) processEvent(event Event, events chan DojoEvent, group *sync
 				PostalCode: venue.Address.PostalCode,
 				Latitude:   lat,
 				Longitude:  lon,
+				Distance:   distance,
 			},
 			Organizer: DojoOrganizer{Id: event.OrganizerID},
 			Free:      event.IsFree,

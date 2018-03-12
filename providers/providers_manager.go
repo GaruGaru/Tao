@@ -2,6 +2,7 @@ package providers
 
 import (
 	"sync"
+	"sort"
 )
 
 type ProvidersManager struct {
@@ -21,7 +22,6 @@ func (m ProvidersManager) Events(lat float64, lon float64, rng int, sorting stri
 		go fetchEvents(provider, lat, lon, rng, sorting, eventsChannel, &wg)
 	}
 
-
 	wg.Wait()
 
 	close(eventsChannel)
@@ -33,6 +33,8 @@ func (m ProvidersManager) Events(lat float64, lon float64, rng int, sorting stri
 			dojoEvents = append(dojoEvents, event)
 		}
 	}
+
+	sort.Slice(dojoEvents, func(i, j int) bool { return dojoEvents[i].Location.Distance < dojoEvents[j].Location.Distance })
 
 	return dojoEvents, nil
 
