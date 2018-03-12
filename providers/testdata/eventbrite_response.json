@@ -1,0 +1,2060 @@
+{
+  "pagination": {
+    "object_count": 29,
+    "page_number": 1,
+    "page_size": 50,
+    "page_count": 1,
+    "has_more_items": false
+  },
+  "events": [
+    {
+      "name": {
+        "text": "CoderDojo Imola Marzo 2018 in Collaborazione con Imola Programma",
+        "html": "CoderDojo Imola Marzo 2018 in Collaborazione con Imola Programma"
+      },
+      "description": {
+        "text": "Nell'approcciarsi alla programmazione, i pi\u00f9 giovani possono contare su un ampio numero di strumenti; tra questi alcuni sono maggiormente orientati alla comprensione e risoluzione di problemi astratti, altri attengono maggiormente al mondo fisico. Uno strumento da noi molto utilizzato \u00e8 Scratch (https://scratch.mit.edu/), un linguaggio di programmazione che permette,\u00a0grazie ad una rappresentazione visuale delle istruzioni,\u00a0di movimentare nello spazio virtuale degli oggetti, permettendo al giovane programmatore di creare giochi ed immaginare storie.\r\n\u00a0Parallelamente, attraverso la piattaforma hardware Arduino (https://www.arduino.cc/), possiamo avvicinare i ragazzi al mondo dell'elettronica e mostrare loro come l'informatica abbia uno spazio rilevante anche in questo ambito, costruendo passo passo semplici robots piuttosto che sensori intelligenti.\u00a0Per quanto potenti e completi possano essere questi strumenti valutati singolarmente, riteniamo estremamente importante creare un percorso che, piuttosto che disgiungere, unisca questi due mondi - il concreto e l'astratto - contrapposti.A questo scopo proponiamo ai giovani interessati un percorso che, partendo da un problema concreto quale la movimentazione autonoma di un robot nello spazio fisico, li porti ad astrarre il problema ricreando il percorso nello spazio virtuale offerto da Scratch andando poi a trasferire il programma appena scritto nel robot\u00a0originale, verificando la correttezza delle valutazioni fatte in sede virtuale.\r\n\u00a0\r\n\u00a0\r\nRipartiamo!! Be Cool!\r\nTeam CoderDojoImola\r\n\r\nLiberatoria per la pubblicazione di foto:ci piacerebbe pubblicare alcune foto dell'evento sulla nostra pagina facebook (https://www.facebook.com/coderdojoimola/). Ci sarebbe di aiuto se portaste con voi all'evento anche il modulo della liberatori che trovate qui (https://drive.google.com/file/d/1ofGY7QlbutgOtnVWgrdnKRUodeXhD0qk/view?usp=sharing ) compilato e FIRMATO. Se desiderate che le foto con vostro figlio non vengano pubblicate non c'\u00e8 alcun problema, oscureremo il volto, come da gi\u00e0 fatto in passato o sceglieremo le foto in cui non compare. In questo caso vi chiediamo comunque di portare il foglio compilato e NON FIRMATO indicando espressamente che non date il consenso.Questo ci servir\u00e0 per scegliere le foto.Grazie del supporto.\r\n\r\n",
+        "html": "<P><I>Nell'approcciarsi alla programmazione, i pi\u00f9 giovani possono contare su un ampio numero di strumenti; tra questi alcuni sono maggiormente orientati alla comprensione e risoluzione di problemi astratti, altri attengono maggiormente al mondo fisico. Uno strumento da noi molto utilizzato \u00e8 Scratch (<\/I><I><A CLASS=\"m_-1086123091309035936moz-txt-link-freetext\" HREF=\"https://scratch.mit.edu/\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\">https://scratch.mit.edu/<\/A><\/I><I>), un linguaggio di programmazione che permette,\u00a0<\/I><I>grazie ad una rappresentazione visuale delle istruzioni,<\/I><I>\u00a0<\/I><I>di movimentare nello spazio virtuale degli oggetti, permettendo al giovane programmatore di creare giochi ed immaginare storie.<\/I><\/P>\r\n<P><I>\u00a0<\/I><I>Parallelamente, attraverso la piattaforma hardware Arduino (<\/I><I><A CLASS=\"m_-1086123091309035936moz-txt-link-freetext\" HREF=\"https://www.arduino.cc/\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\">https://www.arduino.cc/<\/A><\/I><I>), possiamo avvicinare i ragazzi al mondo dell'elettronica e mostrare loro come l'informatica abbia uno spazio rilevante anche in questo ambito, costruendo passo passo semplici robots piuttosto che sensori intelligenti.\u00a0<\/I><I>Per quanto potenti e completi possano essere questi strumenti valutati singolarmente, riteniamo estremamente importante creare un percorso che, piuttosto che disgiungere, unisca questi due mondi - il concreto e l'astratto - contrapposti.<\/I><I>A questo scopo proponiamo ai giovani interessati un percorso che, partendo da un problema concreto quale la movimentazione autonoma di un robot nello spazio fisico, li porti ad astrarre il problema ricreando il percorso nello spazio virtuale offerto da Scratch andando poi a trasferire il programma appena scritto nel robot<\/I><I>\u00a0originale, verificando la correttezza delle valutazioni fatte in sede virtuale.<\/I><\/P>\r\n<P>\u00a0<\/P>\r\n<P>\u00a0<\/P>\r\n<P>Ripartiamo!! Be Cool!<\/P>\r\n<P>Team CoderDojoImola<\/P>\r\n<P><BR><\/P>\r\n<P><STRONG>Liberatoria per la pubblicazione di foto:<\/STRONG><BR>ci piacerebbe pubblicare alcune foto dell'evento sulla nostra pagina facebook (https://www.facebook.com/coderdojoimola/). <BR>Ci sarebbe di aiuto se portaste con voi all'evento anche il modulo <BR>della liberatori che trovate qui (<A HREF=\"https://drive.google.com/file/d/1ofGY7QlbutgOtnVWgrdnKRUodeXhD0qk/view?usp=sharing\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\">https://drive.google.com/file/d/1ofGY7QlbutgOtnVWgrdnKRUodeXhD0qk/view?usp=sharing<\/A> ) compilato e FIRMATO. <BR>Se desiderate che le foto con vostro figlio non vengano pubblicate non c'\u00e8 alcun problema, oscureremo il volto, come da gi\u00e0 fatto in passato o sceglieremo le foto in cui non compare. In questo caso vi chiediamo comunque di portare il foglio compilato e NON FIRMATO indicando espressamente che non date il consenso.<BR>Questo ci servir\u00e0 per scegliere le foto.<BR>Grazie del supporto.<\/P>\r\n<P><BR><\/P>\r\n<P><BR><\/P>"
+      },
+      "id": "42744766748",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-imola-marzo-2018-in-collaborazione-con-imola-programma-42744766748?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T15:00:00",
+        "utc": "2018-03-17T14:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T18:00:00",
+        "utc": "2018-03-17T17:00:00Z"
+      },
+      "organization_id": "130950877151",
+      "created": "2018-02-01T13:15:39Z",
+      "changed": "2018-03-08T12:11:39Z",
+      "capacity": 16,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "40351010",
+      "organizer_id": "7795185993",
+      "venue_id": "23645621",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/42744766748/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 702,
+          "height": 351
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F40351010%2F130950877151%2F1%2Foriginal.jpg?s=c56b6e965dc3cbc24540d5f2c52da608",
+          "width": 703,
+          "height": 708
+        },
+        "id": "40351010",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F40351010%2F130950877151%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C702%2C351&s=1184115b672d4e3190be3cba7ac7cb6c",
+        "aspect_ratio": "2",
+        "edge_color": "#ffffff",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Ravenna del 17 Marzo 2018",
+        "html": "CoderDojo Ravenna del 17 Marzo 2018"
+      },
+      "description": {
+        "text": "TEMA DI QUESTA SESSIONE: CODECOMBAT IMPARA A PROGRAMMARE GIOCANDO\r\nNESSUN LIMITE DI ETA'!\r\nDurante questo e i successivi eventi impareremo a utilizzare il computer in maniera attiva costruendo i nostri primi programmi e semplici videogiochi.\r\nAi Dojo bambini, bambine ragazzi e ragazze imparano a scrivere programmi e videogiochi, creare siti web, applicazioni e molto altro. Oltre a imparare a programmare i partecipanti incontrano nuovi amici che condividono i loro stessi interessi, si scambiano i progetti svolti, si aiutano e socializzano. I Dojo hanno l\u2019obiettivo di rendere facile, attivo, sociale e divertente l\u2019uso del computer.\r\nSono eventi gratuiti organizzati e gestiti da volontari della tua citt\u00e0. Ai Dojo mettiamo grande enfasi nell\u2019uso di software liberi e open source e siamo tutti collegati (a volte anche dal vivo, nel corso dell\u2019evento) in una grande rete internazionale. Al momento ci sono oltre 400 attivi dojo nel mondo.\r\nCoderDojo ha una sola regola: \u201cAbove All: Be Cool\u201d. Da noi cose come il bullismo, le bugie e il far perdere tempo agli altri sono tutte \u201cuncool\u201d.\r\nOgni evento dura circa 3 ore, dalle 15.00 alle 18.00. Nella prima parte uno dei tutor spiega a tutti l\u2019obiettivo della giornata attraverso un esempio che i bambini riprodurranno sui propri computer, supportati dagli altri tutor. Nella seconda parte, dopo la merenda, i ragazzi saranno liberi di continuare a personalizzare il proprio gioco o crearne un altro sulla base di quello che hanno imparato.\r\nData la capienza dello spazio a nostra disposizione, e trattandosi del primo esperimento, potremo ospitare al massimo 25 persone (genitori esclusi). Ogni partecipante porter\u00e0 con s\u00e9:\r\n\r\nse disponibile, un portatile (Windows, OSX/Mac, Linux)\r\nla merenda\r\n",
+        "html": "<P><STRONG>TEMA DI QUESTA SESSIONE: CODECOMBAT IMPARA A PROGRAMMARE GIOCANDO<\/STRONG><\/P>\r\n<P><STRONG>NESSUN LIMITE DI ETA'!<\/STRONG><\/P>\r\n<P>Durante questo e i successivi eventi impareremo a utilizzare il computer in maniera attiva costruendo i nostri primi programmi e semplici videogiochi.<\/P>\r\n<P>Ai Dojo bambini, bambine ragazzi e ragazze imparano a scrivere programmi e videogiochi, creare siti web, applicazioni e molto altro. Oltre a imparare a programmare i partecipanti incontrano nuovi amici che condividono i loro stessi interessi, si scambiano i progetti svolti, si aiutano e socializzano. I Dojo hanno l\u2019obiettivo di rendere facile, attivo, sociale e divertente l\u2019uso del computer.<\/P>\r\n<P>Sono eventi gratuiti organizzati e gestiti da volontari della tua citt\u00e0. Ai Dojo mettiamo grande enfasi nell\u2019uso di software liberi e open source e siamo tutti collegati (a volte anche dal vivo, nel corso dell\u2019evento) in una grande rete internazionale. Al momento ci sono oltre 400 attivi dojo nel mondo.<\/P>\r\n<P>CoderDojo ha una sola regola: \u201cAbove All: Be Cool\u201d. Da noi cose come il bullismo, le bugie e il far perdere tempo agli altri sono tutte \u201cuncool\u201d.<\/P>\r\n<P>Ogni evento dura circa 3 ore, dalle 15.00 alle 18.00. Nella prima parte uno dei tutor spiega a tutti l\u2019obiettivo della giornata attraverso un esempio che i bambini riprodurranno sui propri computer, supportati dagli altri tutor. Nella seconda parte, dopo la merenda, i ragazzi saranno liberi di continuare a personalizzare il proprio gioco o crearne un altro sulla base di quello che hanno imparato.<\/P>\r\n<P>Data la capienza dello spazio a nostra disposizione, e trattandosi del primo esperimento, potremo ospitare al massimo 25 persone (genitori esclusi). Ogni partecipante porter\u00e0 con s\u00e9:<\/P>\r\n<UL>\r\n<LI><SPAN>se disponibile, un portatile (Windows, OSX/Mac, Linux)<\/SPAN><\/LI>\r\n<LI><SPAN>la merenda<\/SPAN><\/LI>\r\n<\/UL>"
+      },
+      "id": "44093855910",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-ravenna-del-17-marzo-2018-44093855910?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T15:00:00",
+        "utc": "2018-03-17T14:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T18:00:00",
+        "utc": "2018-03-17T17:00:00Z"
+      },
+      "organization_id": "8243371483",
+      "created": "2018-03-12T07:44:40Z",
+      "changed": "2018-03-12T07:50:11Z",
+      "capacity": 25,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "USD",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "42070624",
+      "organizer_id": "5320046455",
+      "venue_id": "8591811",
+      "category_id": null,
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/44093855910/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 1292,
+          "height": 646
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F42070624%2F8243371483%2F1%2Foriginal.jpg?s=398b4357df45dd9692b09b8107327e39",
+          "width": 1293,
+          "height": 801
+        },
+        "id": "42070624",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F42070624%2F8243371483%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C1292%2C646&s=f24013078966dad7a7f618fd4aa92c06",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": ".NET DAY 2018",
+        "html": ".NET DAY 2018"
+      },
+      "description": {
+        "text": "DotNetUmbria in collaborazione con Dipartimento di Ingegneria\u00a0UNI PG, Ordine degli Ingegneri\u00a0della provincia di Perugia e Scuola Secondaria Rosselli Rasetti\u00a0di Castiglione del Lago, organizza il .NET DAY 2018, giornata di approfondimento sullo sviluppo di applicazioni web, mobile ed industria 4.0.\n\nAgenda\n8.30 - Registrazione9.00 - Apertura dell'eventoDipartimento di IngegneriaProf. Eleonora Tesei per IIS Rosselli-RasettiPresidente Dott. Ing. Stefano Mancini per l\u2019Ordine degli Ingegneri della Provincia di Perugia9:15 \u2013 Keynote: .NET: any Developer, any App, any PlatformAndrea Benedetti - Technical Evangelism Director @ Microsoft Italia9:45 \u2013 Informatica da 0 a Industria 4.0Elena Santicchi \u2013 CEO @ MetalProgettiMarco Morello, - Champion @ CoderDojo di PerugiaFabio Tacchi \u2013 CTO @ Tiberina Group10:15 \u2013 Project Prague & RealSense: gestures in a simple way!Massimo Bonanni \u2013 Senior Consultant @ DomusDotNet11:00 \u2013 Pausa caff\u00e811:30 \u2013 ASP.NET Core: Applicazioni web modulari, opensource e cross-platformAndrea Saltarello \u2013 CEO @ Managed Design12:15 \u2013 Public speaking for geeks: runner's editionLorenzo Barbieri - Cloud Solution Architect @ Microsoft13:00 \u2013 Pranzo14:00 \u2013 IoT at scale on Kubernetes : the EnMasse platformPaolo Patierno \u2013 Principal Software Engineer (Messaging/IoT) @ Red HatLorenzo Maiorfi - CTO @ Innovactive Engineering14:45 \u2013 Applicazioni iOS & Android con Xamarin FormsMarco Leoncini - Senior Consultant Engineer @ ALTEN Italia15:30 - Pausa caff\u00e816:00 \u2013 .NET & Linux: la strana coppiaFabrizio Bernabei \u2013 Senior Consultant @ DotNetUmbriaGiuseppe Riolo \u2013 Software Developer @ Innovactive16:45 \u2013 Cloud, Paas, ServerlessRoberto Freato \u2013 Senior Consultant @ DotNetLombardia17:30 \u2013 Chiusura dei lavori\nPer maggiori informazioni:\u00a0www.dotnetumbria.org/dot-net-day-2018",
+        "html": "<P><STRONG>DotNetUmbria<\/STRONG> in collaborazione con <STRONG>Dipartimento di Ingegneria<\/STRONG>\u00a0UNI PG, <STRONG>Ordine degli Ingegneri<\/STRONG>\u00a0della provincia di Perugia e <STRONG>Scuola Secondaria Rosselli Rasetti<\/STRONG>\u00a0di Castiglione del Lago, organizza il <STRONG>.NET DAY 2018<\/STRONG>, giornata di approfondimento sullo sviluppo di applicazioni web, mobile ed industria 4.0.<\/P>\n<P><BR><\/P>\n<H2><STRONG>Agenda<\/STRONG><\/H2>\n<P><STRONG>8.30 - Registrazione<\/STRONG><BR><STRONG>9.00 - Apertura dell'evento<\/STRONG><BR>Dipartimento di Ingegneria<BR>Prof. Eleonora Tesei per IIS Rosselli-Rasetti<BR>Presidente Dott. Ing. Stefano Mancini per l\u2019Ordine degli Ingegneri della Provincia di Perugia<BR><STRONG>9:15 \u2013 Keynote: .NET: any Developer, any App, any Platform<\/STRONG><BR>Andrea Benedetti - Technical Evangelism Director @ Microsoft Italia<BR><STRONG>9:45 \u2013 Informatica da 0 a Industria 4.0<BR><\/STRONG>Elena Santicchi \u2013 CEO @ MetalProgetti<BR>Marco Morello, - Champion @ CoderDojo di Perugia<BR>Fabio Tacchi \u2013 CTO @ Tiberina Group<BR><STRONG>10:15 \u2013 Project Prague &amp; RealSense: gestures in a simple way!<\/STRONG><BR>Massimo Bonanni \u2013 Senior Consultant @ DomusDotNet<BR><STRONG>11:00 \u2013 Pausa caff\u00e8<\/STRONG><BR><STRONG>11:30 \u2013 ASP.NET Core: Applicazioni web modulari, opensource e cross-platform<\/STRONG><BR>Andrea Saltarello \u2013 CEO @ Managed Design<BR><STRONG>12:15 \u2013 Public speaking for geeks: runner's edition<BR><\/STRONG>Lorenzo Barbieri - Cloud Solution Architect @ Microsoft<BR><STRONG>13:00 \u2013 Pranzo<\/STRONG><BR><STRONG>14:00 \u2013 IoT at scale on Kubernetes : the EnMasse platform<BR><\/STRONG>Paolo Patierno \u2013 Principal Software Engineer (Messaging/IoT) @ Red Hat<BR>Lorenzo Maiorfi - CTO @ Innovactive Engineering<BR><STRONG>14:45 \u2013 Applicazioni iOS &amp; Android con Xamarin Forms<\/STRONG><BR>Marco Leoncini - Senior Consultant Engineer @ ALTEN Italia<BR><STRONG>15:30 - Pausa caff\u00e8<\/STRONG><BR><STRONG>16:00 \u2013 .NET &amp; Linux: la strana coppia<\/STRONG><BR>Fabrizio Bernabei \u2013 Senior Consultant @ DotNetUmbria<BR>Giuseppe Riolo \u2013 Software Developer @ Innovactive<BR><STRONG>16:45 \u2013 Cloud, Paas, Serverless<\/STRONG><BR>Roberto Freato \u2013 Senior Consultant @ DotNetLombardia<BR><STRONG>17:30 \u2013 Chiusura dei lavori<\/STRONG><\/P>\n<P><SPAN><BR>Per maggiori informazioni:\u00a0<\/SPAN><A HREF=\"http://www.dotnetumbria.org/dot-net-day-2018/\" TARGET=\"_blank\" TITLE=\"DotNetUmbria\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">www.dotnetumbria.org/dot-net-day-2018<\/A><\/P>"
+      },
+      "id": "43552442528",
+      "url": "https://www.eventbrite.it/e/biglietti-net-day-2018-43552442528?aff=ebapi",
+      "vanity_url": "https://dotnetday2018pg.eventbrite.it",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-16T08:30:00",
+        "utc": "2018-03-16T07:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-16T17:30:00",
+        "utc": "2018-03-16T16:30:00Z"
+      },
+      "organization_id": "139309372902",
+      "created": "2018-02-26T14:57:52Z",
+      "changed": "2018-03-09T16:16:14Z",
+      "capacity": 350,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41989243",
+      "organizer_id": "8053723173",
+      "venue_id": "23501996",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "2",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43552442528/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 2378,
+          "height": 1189
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41989243%2F139309372902%2F1%2Foriginal.jpg?s=af1f8713a34d4fee83cec0e650d86620",
+          "width": 2379,
+          "height": 1190
+        },
+        "id": "41989243",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41989243%2F139309372902%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C2378%2C1189&s=d8e30ca6f4826362cbcd96e9c5bbe2ea",
+        "aspect_ratio": "2",
+        "edge_color": "#ffffff",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "Robotica Educativa @CoderDojo Pianura Veronese",
+        "html": "Robotica Educativa @CoderDojo Pianura Veronese"
+      },
+      "description": {
+        "text": "Siamo lieti di invitarvi al secondo incontro del CoderDojo Pianura Veronese dedicato alla \"Robotica Educativa\".\nGrazie ad alcuni robot, programmabili con Scratch, illustreremo si alcuni aspetti della robotica ma anche faremo divulgazione scientifica. La serie dei primi quattro incontri sar\u00e0 infatti dedicata a simulare un esplorazione robotica del Pianeta Marte con approfondimenti sulle condizioni del pianeta e\u00a0 le condizioni per una colonizzazione umana.\u00a0 L'attivit\u00e0 si ispira alla filosofia STEM (Science, Technology, Engineering and Mathematics), molto diffusa nel mondo, soprattutto anglosassone, che permette di proporre attivit\u00e0 che legano tra di loro molte discipline scientifiche in maniera ludica. La parte prettamente scientifica \u00e8 stata creata in collaborazione con l'Associazione Astrofili Legnago che opera da anni nel territorio della Bassa Veronese.\nINFORMAZIONI PER IL CORSO DI ROBOTICA:-Incontro gratuito.-Possono partecipare i ragazzi che hanno gi\u00e0 seguito almeno due incontri di coding.-Si consiglia di portare un cuscino in quanto l'attivit\u00e0 si svolger\u00e0 sul pavimento.-Ogni ragazzo dovr\u00e0 portare una confezione di pile AA-LR6.-Un telecomando a infrarossi funzionante (Es.quello di una vecchia TV)-Il personal computer dovr\u00e0 essere dotato di sistema operativo Windows 7 o superiore.-Si raccomanda di sensibilizzare il ragazzo sul fatto che i robot sono un bene comune costoso e che pur sembrando dei giocattoli sono strumenti tecnologi avanzati.-I genitore dovr\u00e0 sorvegliare attentamente le attivit\u00e0.-Le attivit\u00e0 si svolgeranno a coppie per favorire lo spirito di collaborazione.-Sono disponibili solo 10 posti.\nNOTA:Chi non fosse in possesso di questi pre-requisiti \u00e8 pregato di non prenotare il biglietto o chiamare per informazioni il 3923457579.",
+        "html": "<P><SPAN>Siamo lieti di invitarvi al secondo incontro del CoderDojo Pianura Veronese dedicato alla \"Robotica Educativa\".<\/SPAN><\/P>\n<P><SPAN>Grazie ad alcuni robot, programmabili con Scratch, illustreremo si alcuni aspetti della robotica ma anche faremo divulgazione scientifica. La serie dei primi quattro incontri sar\u00e0 infatti dedicata a simulare un esplorazione robotica del Pianeta Marte con approfondimenti sulle condizioni del pianeta e\u00a0 le condizioni per una colonizzazione umana.\u00a0 L'attivit\u00e0 si ispira alla filosofia STEM (Science, Technology, Engineering and Mathematics), molto diffusa nel mondo, soprattutto anglosassone, che permette di proporre attivit\u00e0 che legano tra di loro molte discipline scientifiche in maniera ludica. La parte prettamente scientifica \u00e8 stata creata in collaborazione con l'Associazione Astrofili Legnago che opera da anni nel territorio della Bassa Veronese.<BR><\/SPAN><\/P>\n<P><STRONG>INFORMAZIONI PER IL CORSO DI ROBOTICA:<\/STRONG><BR>-Incontro gratuito.<BR>-<STRONG>Possono partecipare i ragazzi che hanno gi\u00e0 seguito almeno due incontri di coding.<\/STRONG><BR>-Si consiglia di portare un cuscino in quanto l'attivit\u00e0 si svolger\u00e0 sul pavimento.<BR>-Ogni ragazzo dovr\u00e0 portare una confezione di pile AA-LR6.<BR>-Un telecomando a infrarossi funzionante (Es.quello di una vecchia TV)<BR>-Il personal computer dovr\u00e0 essere dotato di sistema operativo Windows 7 o superiore.<BR>-Si raccomanda di sensibilizzare il ragazzo sul fatto che i robot sono un bene comune costoso e che pur sembrando dei giocattoli sono strumenti tecnologi avanzati.<BR>-I genitore dovr\u00e0 sorvegliare attentamente le attivit\u00e0.<BR>-Le attivit\u00e0 si svolgeranno a coppie per favorire lo spirito di collaborazione.<BR>-Sono disponibili solo 10 posti.<\/P>\n<P>NOTA:<BR>Chi non fosse in possesso di questi pre-requisiti \u00e8 pregato di non prenotare il biglietto o chiamare per informazioni il 3923457579.<\/P>"
+      },
+      "id": "44020458376",
+      "url": "https://www.eventbrite.it/e/biglietti-robotica-educativa-coderdojo-pianura-veronese-44020458376?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Berlin",
+        "local": "2018-03-17T14:30:00",
+        "utc": "2018-03-17T13:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Berlin",
+        "local": "2018-03-17T16:30:00",
+        "utc": "2018-03-17T15:30:00Z"
+      },
+      "organization_id": "221074285661",
+      "created": "2018-03-09T12:57:52Z",
+      "changed": "2018-03-09T13:47:31Z",
+      "capacity": 10,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41980400",
+      "organizer_id": "14691846026",
+      "venue_id": "23265903",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/44020458376/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 45
+          },
+          "width": 2160,
+          "height": 1080
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41980400%2F221074285661%2F1%2Foriginal.jpg?s=5507d0635d87f18c7890155c8637df3c",
+          "width": 2160,
+          "height": 1305
+        },
+        "id": "41980400",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41980400%2F221074285661%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C45%2C2160%2C1080&s=58ec4ab317417bd2e5d3758c9529884a",
+        "aspect_ratio": "2",
+        "edge_color": "#b26b1f",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "Incontro Coderdojo Pianura Veronese",
+        "html": "Incontro Coderdojo Pianura Veronese"
+      },
+      "description": {
+        "text": "Sesto\u00a0 incontro della neonata associazione CODERDOJO della Pianura Veronese.Durante l'incontro muoveremo i primi passi sulla programmazione informatica utilizzando SCRATCH\nOggi programmare \u00e8 importante come saper leggere e scrivere e, in futuro, lo sar\u00e0 ancora di pi\u00f9. L\u2019associazione\u00a0CoderDojo della Pianura Veronese\u00a0vuole aiutare grandi e piccini ad avvicinarsi in maniera divertente alla programmazione e a vivere da protagonisti il proprio futuro. Non si tratta soltanto di imparare facendo ma di imparare progettando. I ragazzi costruiranno i loro videogiochi, i loro cartoni.\nEcco dei buoni motivi per partecipare agli incontri:\n\n\nImparare a programmare aiuta a formare una mentalit\u00e0 orientata alla risoluzione dei problemi in modo razionale, efficiente e \u201ctrasversale\u201d.\n\n\nViene stimolata la fantasia per non seguire solo sentieri gi\u00e0 tracciati da altri.\n\n\nSi crea un clima di mutuo aiuto tra i ragazzi e si sviluppa la capacit\u00e0 di interagire in gruppi nuovi ed eterogenei.\n\n\nRende consapevoli nell\u2019uso della tecnologia, non semplici consumatori, e capaci di usarla per rispondere ai propri bisogni, non di chi crea e impone i prodotti.\n\n\nLa possibilit\u00e0 di confrontarsi con diversi linguaggi di programmazione apre alla versatilit\u00e0.\n\n\nIn prospettiva rende capaci di applicare nozioni apprese a scuola sperimentandole in modi nuovi e pi\u00f9 stimolanti.\n\n\nLa partecipazione \u00e8 consigliata ad adulti e bambini dagli 8 anni in su.Tutti i tagazzi dovranno essere accompagnati da un genitore ed essere provvisti di personal computer (scosigliato l'uso del tablet).\nPer chi viene la prima volta \u2013 Scratch\nAl momento, gran parte delle attivit\u00e0 si svolgono tramite Scratch (http://scratch.mit.edu), una piattaforma visuale per imparare a programmare.\nSe possibile, ci si pu\u00f2 \u201cbuttare avanti\u201d con i seguenti passi. Altrimenti, non vi preoccupate, lo faremo in aula con l\u2019aiuto dei mentor.\n(1) Installate la versione offline 2.0 di Scratch sulla propria macchina scaricandola da qui:\nhttp://scratch.mit.edu/scratch2download/\nUna guida ben fatta all\u2019installazione la trovate sul sito del Coderdojo Friuli-Venezia Giulia:\nhttp://coderdojofvg.it/prepara-il-tuo-portatile/\n(2) Visitate il sito di Scratch:\nhttp://scratch.mit.edu/\nregistrate un utente per vostro figlio, cliccando su \u201cUnisciti alla comunit\u00e0 di Scratch\u201d (in alto a destra). Testate l\u2019ambiente di sviluppo, cliccando su \u201cCrea\u201d (in alto a sinistra)\nVi aspettiamo.CoderDojo Pianura Veronese.",
+        "html": "<P>Sesto\u00a0 incontro della neonata associazione CODERDOJO della Pianura Veronese.<BR>Durante l'incontro muoveremo i primi passi sulla programmazione informatica utilizzando SCRATCH<BR><\/P>\n<P>Oggi programmare \u00e8 importante come saper leggere e scrivere e, in futuro, lo sar\u00e0 ancora di pi\u00f9. L\u2019associazione\u00a0<EM>CoderDojo della Pianura Veronese<\/EM>\u00a0vuole aiutare grandi e piccini ad avvicinarsi in maniera divertente alla programmazione e a vivere da protagonisti il proprio futuro. Non si tratta soltanto di imparare facendo ma di imparare progettando. I ragazzi costruiranno i loro videogiochi, i loro cartoni.<\/P>\n<P>Ecco dei buoni motivi per partecipare agli incontri:<\/P>\n<UL>\n<LI>\n<P>Imparare a programmare aiuta a formare una mentalit\u00e0 orientata alla risoluzione dei problemi in modo razionale, efficiente e \u201ctrasversale\u201d.<\/P>\n<\/LI>\n<LI>\n<P>Viene stimolata la fantasia per non seguire solo sentieri gi\u00e0 tracciati da altri.<\/P>\n<\/LI>\n<LI>\n<P>Si crea un clima di mutuo aiuto tra i ragazzi e si sviluppa la capacit\u00e0 di interagire in gruppi nuovi ed eterogenei.<\/P>\n<\/LI>\n<LI>\n<P>Rende consapevoli nell\u2019uso della tecnologia, non semplici consumatori, e capaci di usarla per rispondere ai propri bisogni, non di chi crea e impone i prodotti.<\/P>\n<\/LI>\n<LI>\n<P>La possibilit\u00e0 di confrontarsi con diversi linguaggi di programmazione apre alla versatilit\u00e0.<\/P>\n<\/LI>\n<LI>\n<P>In prospettiva rende capaci di applicare nozioni apprese a scuola sperimentandole in modi nuovi e pi\u00f9 stimolanti.<BR><\/P>\n<\/LI>\n<\/UL>\n<P>La partecipazione \u00e8 consigliata ad adulti e bambini dagli 8 anni in su.<BR>Tutti i tagazzi dovranno essere accompagnati da un genitore ed essere provvisti di personal computer (scosigliato l'uso del tablet).<\/P>\n<P><STRONG>Per chi viene la prima volta \u2013 Scratch<\/STRONG><\/P>\n<P>Al momento, gran parte delle attivit\u00e0 si svolgono tramite Scratch (http://scratch.mit.edu), una piattaforma visuale per imparare a programmare.<\/P>\n<P>Se possibile, ci si pu\u00f2 \u201cbuttare avanti\u201d con i seguenti passi. Altrimenti, non vi preoccupate, lo faremo in aula con l\u2019aiuto dei mentor.<\/P>\n<P><EM>(1) Installate la versione offline 2.0 di Scratch sulla propria macchina scaricandola da qui:<\/EM><\/P>\n<P><A HREF=\"http://scratch.mit.edu/scratch2download/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">http://scratch.mit.edu/scratch2download/<\/A><\/P>\n<P>Una guida ben fatta all\u2019installazione la trovate sul sito del Coderdojo Friuli-Venezia Giulia:<\/P>\n<P><A HREF=\"http://coderdojofvg.it/prepara-il-tuo-portatile/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">http://coderdojofvg.it/prepara-il-tuo-portatile/<\/A><\/P>\n<P><EM>(2) Visitate il sito di Scratch:<\/EM><\/P>\n<P><A HREF=\"http://scratch.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">http://scratch.mit.edu/<\/A><\/P>\n<P>registrate un utente per vostro figlio, cliccando su \u201cUnisciti alla comunit\u00e0 di Scratch\u201d (in alto a destra). Testate l\u2019ambiente di sviluppo, cliccando su \u201cCrea\u201d (in alto a sinistra)<\/P>\n<P>Vi aspettiamo.<BR>CoderDojo Pianura Veronese.<\/P>"
+      },
+      "id": "44020668003",
+      "url": "https://www.eventbrite.it/e/biglietti-incontro-coderdojo-pianura-veronese-44020668003?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T14:30:00",
+        "utc": "2018-03-17T13:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T16:30:00",
+        "utc": "2018-03-17T15:30:00Z"
+      },
+      "organization_id": "221074285661",
+      "created": "2018-03-09T13:05:29Z",
+      "changed": "2018-03-10T16:26:58Z",
+      "capacity": 20,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41980588",
+      "organizer_id": "14691846026",
+      "venue_id": "20600477",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/44020668003/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 23
+          },
+          "width": 1828,
+          "height": 914
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41980588%2F221074285661%2F1%2Foriginal.jpg?s=d2c23ce4765c444e882de37262352394",
+          "width": 1828,
+          "height": 960
+        },
+        "id": "41980588",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41980588%2F221074285661%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C23%2C1828%2C914&s=fb168c8992274c434ce3c3a0b2f4f2b0",
+        "aspect_ratio": "2",
+        "edge_color": "#7f7f7c",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "12MarzoXCodiceSette, Laboratorio di robotica (et\u00e0 8\u00f710)",
+        "html": "12MarzoXCodiceSette, Laboratorio di robotica (et\u00e0 8\u00f710)"
+      },
+      "description": {
+        "text": "Laboratorio di robotica (et\u00e0 8\u00f710)A cura Tiziana Maurelli\nAttivit\u00e0 \u2013 A spasso con rane, gorilla e \u2026\nCostruzione di robottini a forma di rane, gorilla ed altri soggetti, programmazione degli stessi e svolgimento di gare di abilit\u00e0 e velocit\u00e0.",
+        "html": "<H2>Laboratorio di robotica (et\u00e0 8\u00f710)<BR>A cura Tiziana Maurelli<\/H2>\n<H3>Attivit\u00e0 \u2013 A spasso con rane, gorilla e \u2026<\/H3>\n<P>Costruzione di robottini a forma di rane, gorilla ed altri soggetti, programmazione degli stessi e svolgimento di gare di abilit\u00e0 e velocit\u00e0.<BR><\/P>"
+      },
+      "id": "43889301081",
+      "url": "https://www.eventbrite.it/e/biglietti-12marzoxcodicesette-laboratorio-di-robotica-eta-810-43889301081?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-12T16:30:00",
+        "utc": "2018-03-12T15:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-12T18:30:00",
+        "utc": "2018-03-12T17:30:00Z"
+      },
+      "organization_id": "3980437376",
+      "created": "2018-03-06T16:20:07Z",
+      "changed": "2018-03-12T15:46:31Z",
+      "capacity": 24,
+      "capacity_is_custom": true,
+      "status": "started",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41802471",
+      "organizer_id": "15998087153",
+      "venue_id": "22495069",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43889301081/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 2160,
+          "height": 1080
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41802471%2F3980437376%2F1%2Foriginal.jpg?s=9028789a5d88841351c78adbd9e19c76",
+          "width": 2160,
+          "height": 1080
+        },
+        "id": "41802471",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41802471%2F3980437376%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C2160%2C1080&s=167b6bdf6308ecce99d04225667ecd80",
+        "aspect_ratio": "2",
+        "edge_color": "#ffffff",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "12MarzoXCodiceSette, Laboratorio di Scratch (et\u00e0 10\u00f713)",
+        "html": "12MarzoXCodiceSette, Laboratorio di Scratch (et\u00e0 10\u00f713)"
+      },
+      "description": {
+        "text": "Laboratorio di scratch (et\u00e0 10\u00f713)A cura di Salvatore Tignino.\nAttivit\u00e0 n\u00b0 1 \u2013 Acchiappa il fantasmino\nCreazione di un videogioco in cui un fantasmino o altro sprite si muove in modo casuale sullo stage apparendo e scomparendo da prendere con un click del mouse. Punteggio che si incrementa ad ogni sprite preso.\nAttivit\u00e0 n\u00b0 2 \u2013 Pong\nCreazione di un videogioco in cui una palla si muove e rimbalza sui bordi dello stage e su una barra che si sposta in direzione orizzontale seguendo il movimento del mouse, senza che tocchi terra. Punteggio che si incrementa ad ogni respinta della palla mediante la barra mobile.",
+        "html": "<H2>Laboratorio di scratch (et\u00e0 10\u00f713)<BR>A cura di Salvatore Tignino.<\/H2>\n<H3>Attivit\u00e0 n\u00b0 1 \u2013 Acchiappa il fantasmino<\/H3>\n<P>Creazione di un videogioco in cui un fantasmino o altro sprite si muove in modo casuale sullo stage apparendo e scomparendo da prendere con un click del mouse. Punteggio che si incrementa ad ogni sprite preso.<\/P>\n<H3>Attivit\u00e0 n\u00b0 2 \u2013 Pong<\/H3>\n<P>Creazione di un videogioco in cui una palla si muove e rimbalza sui bordi dello stage e su una barra che si sposta in direzione orizzontale seguendo il movimento del mouse, senza che tocchi terra. Punteggio che si incrementa ad ogni respinta della palla mediante la barra mobile.<BR><\/P>"
+      },
+      "id": "43888744416",
+      "url": "https://www.eventbrite.it/e/biglietti-12marzoxcodicesette-laboratorio-di-scratch-eta-1013-43888744416?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-12T16:30:00",
+        "utc": "2018-03-12T15:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-12T18:30:00",
+        "utc": "2018-03-12T17:30:00Z"
+      },
+      "organization_id": "3980437376",
+      "created": "2018-03-06T16:09:05Z",
+      "changed": "2018-03-12T15:46:34Z",
+      "capacity": 20,
+      "capacity_is_custom": true,
+      "status": "started",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41801651",
+      "organizer_id": "15998087153",
+      "venue_id": "22495069",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43888744416/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 2160,
+          "height": 1080
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41801651%2F3980437376%2F1%2Foriginal.jpg?s=00ac6a9828433dc59121b205a972f2e5",
+          "width": 2160,
+          "height": 1080
+        },
+        "id": "41801651",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41801651%2F3980437376%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C2160%2C1080&s=f4b4c756a4dd9c116ebca67f79a6b063",
+        "aspect_ratio": "2",
+        "edge_color": "#ffffff",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "12MarzoXCodiceSette, Laboratorio di Scratch junior (et\u00e0 6\u00f78)",
+        "html": "12MarzoXCodiceSette, Laboratorio di Scratch junior (et\u00e0 6\u00f78)"
+      },
+      "description": {
+        "text": "Laboratorio di scratch junior (et\u00e0 6\u00f78)A cura di Nadia Capodimonte\nAttivit\u00e0 \u2013 CodiAMO con Scratch jr\nAttivit\u00e0 di animazione, storie etc. con scratch junior.",
+        "html": "<H2>Laboratorio di scratch junior (et\u00e0 6\u00f78)<BR>A cura di Nadia Capodimonte<\/H2>\n<H3>Attivit\u00e0 \u2013 CodiAMO con Scratch jr<\/H3>\n<P>Attivit\u00e0 di animazione, storie etc. con scratch junior.<\/P>"
+      },
+      "id": "43889660155",
+      "url": "https://www.eventbrite.it/e/biglietti-12marzoxcodicesette-laboratorio-di-scratch-junior-eta-68-43889660155?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-12T16:30:00",
+        "utc": "2018-03-12T15:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-12T18:30:00",
+        "utc": "2018-03-12T17:30:00Z"
+      },
+      "organization_id": "3980437376",
+      "created": "2018-03-06T16:26:39Z",
+      "changed": "2018-03-12T15:46:30Z",
+      "capacity": 20,
+      "capacity_is_custom": true,
+      "status": "started",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41802958",
+      "organizer_id": "15998087153",
+      "venue_id": "22495069",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43889660155/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 2160,
+          "height": 1080
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41802958%2F3980437376%2F1%2Foriginal.jpg?s=0a7b2618e48d1b5a05d7b799173ce40d",
+          "width": 2160,
+          "height": 1080
+        },
+        "id": "41802958",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41802958%2F3980437376%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C2160%2C1080&s=cf9019edd25a94cc23bb611b71ba3bb8",
+        "aspect_ratio": "2",
+        "edge_color": "#ffffff",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "12MarzoXCodiceSette, Lego Mindstorms e la guida automatica (et\u00e0 12\u00f799)",
+        "html": "12MarzoXCodiceSette, Lego Mindstorms e la guida automatica (et\u00e0 12\u00f799)"
+      },
+      "description": {
+        "text": "Lego Mindstorms e la guida automatica (et\u00e0 12\u00f799)\nA cura di Mario Cicconofri e Fabio Raccosta, l'attivit\u00e0 \u00e8 una riproposizione di quella svolta nel primo evento CoderDojo Marted\u00ec 19 dicembre 2017.\nProgrammazione del Lego Mindstorms\nApproccio alla programmazione del sistema Lego Mindstorms, con riflessione sulla guida automatica di autovetture, sul funzionamento di sensori e su alcuni fondamenti della fisica (spazio-tempo). Fascia d'et\u00e0 12-99.",
+        "html": "<H2>Lego Mindstorms e la guida automatica (et\u00e0 12\u00f799)<\/H2>\n<P><BR>A cura di Mario Cicconofri e Fabio Raccosta, l'attivit\u00e0 \u00e8 una riproposizione di quella svolta nel primo evento CoderDojo Marted\u00ec 19 dicembre 2017.<\/P>\n<H3>Programmazione del Lego Mindstorms<\/H3>\n<P>Approccio alla programmazione del sistema Lego Mindstorms, con riflessione sulla guida automatica di autovetture, sul funzionamento di sensori e su alcuni fondamenti della fisica (spazio-tempo). Fascia d'et\u00e0 12-99.<BR><\/P>"
+      },
+      "id": "43889916923",
+      "url": "https://www.eventbrite.it/e/biglietti-12marzoxcodicesette-lego-mindstorms-e-la-guida-automatica-eta-1299-43889916923?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-12T16:30:00",
+        "utc": "2018-03-12T15:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-12T18:30:00",
+        "utc": "2018-03-12T17:30:00Z"
+      },
+      "organization_id": "3980437376",
+      "created": "2018-03-06T16:32:46Z",
+      "changed": "2018-03-12T15:46:29Z",
+      "capacity": 20,
+      "capacity_is_custom": true,
+      "status": "started",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41803473",
+      "organizer_id": "15998087153",
+      "venue_id": "22497186",
+      "category_id": null,
+      "subcategory_id": null,
+      "format_id": null,
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43889916923/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 2160,
+          "height": 1080
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41803473%2F3980437376%2F1%2Foriginal.jpg?s=2ed256d9d99dc1cfd0083e8d0e6ffce9",
+          "width": 2160,
+          "height": 1080
+        },
+        "id": "41803473",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41803473%2F3980437376%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C2160%2C1080&s=a97515f740183ce774ae3ca6a4da1ea2",
+        "aspect_ratio": "2",
+        "edge_color": "#ffffff",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo #iltione.becool.14",
+        "html": "CoderDojo #iltione.becool.14"
+      },
+      "description": {
+        "text": "Le attivit\u00e0 previste per questo evento.\nPer i ragazzi:\n\n\nScratch, per chi inizia e per chi \u00e8 gi\u00e0 esperto;\n\n\nAppinventor 2, per conoscere le basi dello sviluppo delle app per smartphone.\n\n\nPer gli adulti:\nIn collaborazione con il LinuxLudus di Mozzecane-Villafranca terremo un incontro dove parlare di sicurezza informatica, Linux e tanto altro ancora.\nIstruzioni per l'iscrizione\n\n\nLe iscrizioni valgono per un singolo evento;\n\n\nSe dopo aver prenotato siete impossibilitati a venire, siete pregati di comunicarlo al pi\u00f9 presto al fine di liberare il posto e permettere ad altri di partecipare.\n\n\nCos'\u00e8 il Coderdojo?\n\n\nCoder\u00a0in gergo informatico \u00e8 il programmatore;\n\n\nDojo\u00a0in giapponese \u00e8 la palestra.\n\n\nCoderDojo \u00e8 un movimento internazionale\u00a0senza scopo di lucro, che ha lo scopo di offrire ai ragazzi e bambini un lugo dove possono incontrarsi e imparare gratuitamente a scrivere programmi e applicazioni per il computer, a sviluppare siti web, videogiochi e molto altro ancora, sotto lo guida di volontari (mentor)\nCoderdojo il Tione\nSiamo un gruppo di volontari che vuole portare la filosofia del movimento nel terriorio Villafranchese e delle zone limitrofe.\nOrganizziamo incontri ogni due-tre settimane, di sabato pomeriggio o domenica, rivolti a bambini e ragazzi dai 8 ai 17 anni (dalla terza elementare alla terza superiore).\nI bambini e i ragazzi devono essere accompagnati. Questo non significa un genitore per ogni ragazzo, ma un adulto che conosca uno o pi\u00f9 ragazzi e che si prenda la responsabilit\u00e0 di controllare che non escano senza permesso. Un Coderdojo \u00e8 formato da volontari che si concentrano sull'insegnamento e non sulla sorveglianza...\nIl coderdojo fornisce un numero limitato di computer. E' consigliato portare un portatile proprio, in modo particolare per il laboratorio \"Appinventor\". Di nuovo, non \u00e8 necessario che ogni bambino abbia un computer, ma pi\u00f9 o meno che ce ne sia uno ogni due bambini, se portate pi\u00f9 bambini.\nPer avere maggiori informazioni potete contattarci sulla nostra pagina Facebook:\u00a0https://www.facebook.com/coderdojo.iltione/\nPer qualsiasi chiarimento potete contattarci alla casella coderdojo.iltione@gmail.com\nCondividi questo evento su Facebook e Twitter Non mancare!Cordiali saluti,CoderDojo Il Tione",
+        "html": "<P><STRONG>Le attivit\u00e0 previste per questo evento.<\/STRONG><\/P>\n<P><STRONG>Per i ragazzi:<\/STRONG><\/P>\n<UL>\n<LI>\n<P>Scratch, per chi inizia e per chi \u00e8 gi\u00e0 esperto;<\/P>\n<\/LI>\n<LI>\n<P>Appinventor 2, per conoscere le basi dello sviluppo delle app per smartphone.<\/P>\n<\/LI>\n<\/UL>\n<P><STRONG>Per gli adulti:<\/STRONG><\/P>\n<P>In collaborazione con il <EM>LinuxLudus<\/EM> di Mozzecane-Villafranca terremo un incontro dove parlare di sicurezza informatica, Linux e tanto altro ancora.<\/P>\n<P><STRONG>Istruzioni per l'iscrizione<\/STRONG><BR><\/P>\n<UL>\n<LI>\n<P>Le iscrizioni valgono per un singolo evento;<\/P>\n<\/LI>\n<LI>\n<P><EM>Se dopo aver prenotato siete impossibilitati a venire, <STRONG>siete pregati di comunicarlo<\/STRONG> al pi\u00f9 presto al fine di liberare il posto e permettere ad altri di partecipare.<\/EM><\/P>\n<\/LI>\n<\/UL>\n<P><STRONG>Cos'\u00e8 il Coderdojo?<\/STRONG><\/P>\n<UL>\n<LI>\n<P><SPAN>Coder<\/SPAN>\u00a0in gergo informatico \u00e8 il programmatore;<\/P>\n<\/LI>\n<LI>\n<P><SPAN>Dojo<\/SPAN>\u00a0in giapponese \u00e8 la palestra.<\/P>\n<\/LI>\n<\/UL>\n<P>CoderDojo \u00e8 un movimento <SPAN>internazionale\u00a0<\/SPAN>senza scopo di lucro, che ha lo scopo di offrire ai ragazzi e bambini un lugo dove possono incontrarsi e imparare gratuitamente a scrivere programmi e applicazioni per il computer, a sviluppare siti web, videogiochi e molto altro ancora, sotto lo guida di volontari (mentor)<\/P>\n<P><STRONG>Coderdojo il Tione<\/STRONG><\/P>\n<P>Siamo un gruppo di volontari che vuole portare la filosofia del movimento nel terriorio Villafranchese e delle zone limitrofe.<\/P>\n<P><EM>Organizziamo incontri ogni due-tre settimane, di sabato pomeriggio o domenica, rivolti a bambini e ragazzi dai 8 ai 17 anni (dalla terza elementare alla terza superiore).<\/EM><\/P>\n<P><STRONG>I bambini e i ragazzi devono essere accompagnati.<\/STRONG> Questo non significa un genitore per ogni ragazzo, ma un adulto che conosca uno o pi\u00f9 ragazzi e che si prenda la responsabilit\u00e0 di controllare che non escano senza permesso. <STRONG>Un Coderdojo \u00e8 formato da volontari che si concentrano sull'insegnamento e non sulla sorveglianza...<\/STRONG><\/P>\n<P><STRONG>Il coderdojo fornisce un numero limitato di computer. E' consigliato portare un portatile proprio, in modo particolare per il laboratorio \"Appinventor\".<\/STRONG> Di nuovo, non \u00e8 necessario che ogni bambino abbia un computer, ma pi\u00f9 o meno che ce ne sia uno ogni due bambini, se portate pi\u00f9 bambini.<\/P>\n<P><SPAN>Per avere maggiori informazioni potete contattarci sulla nostra pagina Facebook:\u00a0<STRONG>https://www.facebook.com/coderdojo.iltione/<\/STRONG><\/SPAN><\/P>\n<P><SPAN>Per qualsiasi chiarimento potete contattarci alla casella <STRONG>coderdojo.iltione@gmail.com<\/STRONG><\/SPAN><\/P>\n<P>Condividi questo evento su <A HREF=\"http://www.facebook.com/share.php?u=https%3A//www.eventbrite.it/e/biglietti-coderdojo-iltionebecool7-39148733917%3Fref%3Desfb\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Facebook<\/A> e <A HREF=\"http://twitter.com/home?status=https%3A//www.eventbrite.it/e/biglietti-coderdojo-iltionebecool7-39148733917%3Fref%3Destw\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Twitter<\/A><BR><BR> Non mancare!<BR><BR>Cordiali saluti,<BR>CoderDojo Il Tione<\/P>"
+      },
+      "id": "43517374639",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-iltionebecool14-43517374639?aff=ebapi",
+      "vanity_url": "https://biglietti-coderdojo-iltionebecool14.eventbrite.it",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T15:30:00",
+        "utc": "2018-03-17T14:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T17:00:00",
+        "utc": "2018-03-17T16:00:00Z"
+      },
+      "organization_id": "198687899264",
+      "created": "2018-02-25T11:18:43Z",
+      "changed": "2018-02-25T11:21:49Z",
+      "capacity": 58,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41360914",
+      "organizer_id": "12665638165",
+      "venue_id": "21526002",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43517374639/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 34
+          },
+          "width": 686,
+          "height": 343
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41360914%2F198687899264%2F1%2Foriginal.jpg?s=6aef17a5cf494ef1b6ae1768e6913743",
+          "width": 687,
+          "height": 412
+        },
+        "id": "41360914",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41360914%2F198687899264%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C34%2C686%2C343&s=a69b17e6299cbabebec972a2228b51c9",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo presso festival Cinematica",
+        "html": "CoderDojo presso festival Cinematica"
+      },
+      "description": {
+        "text": "CoderDojo presso Cinematica",
+        "html": "<P><SPAN>CoderDojo presso Cinematica<\/SPAN><SPAN><BR><\/SPAN><\/P>"
+      },
+      "id": "43780357227",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-presso-festival-cinematica-43780357227?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-18T10:00:00",
+        "utc": "2018-03-18T09:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-18T13:00:00",
+        "utc": "2018-03-18T12:00:00Z"
+      },
+      "organization_id": "145941801170",
+      "created": "2018-03-03T13:39:02Z",
+      "changed": "2018-03-03T13:55:27Z",
+      "capacity": 35,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41674774",
+      "organizer_id": "8269891835",
+      "venue_id": "23559997",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43780357227/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 170,
+            "y": 0
+          },
+          "width": 972,
+          "height": 486
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41674774%2F145941801170%2F1%2Foriginal.jpg?s=31082cca0b1e5d8f765660e6a85dbeca",
+          "width": 1313,
+          "height": 486
+        },
+        "id": "41674774",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41674774%2F145941801170%2F1%2Foriginal.jpg?h=200&w=450&rect=170%2C0%2C972%2C486&s=b9cae64e3d096331da11075fa3d6542e",
+        "aspect_ratio": "2",
+        "edge_color": "#c3bdb9",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Padova del 17/03/2018",
+        "html": "CoderDojo Padova del 17/03/2018"
+      },
+      "description": {
+        "text": "DOVE SARA' E QUANTO DURA L'EVENTO?\nVi aspettiamo sabato 17 marzo dalle 15.00 alle 18.00 presso il\u00a0Talent Lab che si trova in via Monselice 15a Padova zona Mandria. Per maggiori info potete dare un'occhiata al sito.Presentatevi almeno 20 minuti prima dell'inizio. L'incontro dura circa 3 ore in cui ci sar\u00e0 anche una merenda assieme.IMPORTANTE: l'accompagnatore dovr\u00e0 restare presso il CoderDojo per tutta la durata dell'evento. L'evento \u00e8 completamente gratuito ;)\nISCRIZIONILe iscrizioni apriranno domenica 11 marzo alle ore 20:00.Se si desidera partecipare con due o pi\u00f9 bambini al CoderDojo \u00e8 necessario prendere un biglietto per ogni bambino.La registrazione su Eventbrite \u00e8 necessaria solo ed esclusivamente per i bambini (adulti, uditori, mentor e volontari non devono registrarsi). \nPer questo evento sar\u00e0 possibile scegliere tra i seguenti biglietti.VI CHIEDIAMO DI LEGGERE CON ATTENZIONE LE INDICAZIONI DI OGNI BIGLIETTO PRIMA DI PRENOTARLO.\n\nLEGO MINDSTORMS - 3 incontri - 11-16 anniImpareremo a costruire e programmare in team un robot LEGO Mindstorms EV3.\nTINKERING - 1 incontro autoconclusivo, 6-10 anniRealizziamo opere d'arte grazie a marchingegni elettronici. Non serve il computer, basta la vostra creativit\u00e0.\nSCRATCH INTERMEDIO - 1 incontro autoconclusivo, 8-12 anniIndicato per chi conosce gi\u00e0 Scratch e/o ha gi\u00e0 partecipato a diversi Scratch Base presso il CoderDojo. Serve il portatile con Scratch installato (potete scaricarlo qui)\n\nAl termine della registrazione riceverete via mail la conferma.\nE ricorda \"Above All: Be Cool\"!",
+        "html": "<P><SPAN><STRONG>DOVE SARA' E QUANTO DURA L'EVENTO?<\/STRONG><\/SPAN><\/P>\n<P><SPAN>Vi aspettiamo <STRONG>sabato 17 marzo dalle 15.00 alle 18.00<\/STRONG> presso il\u00a0<STRONG>Talent Lab<\/STRONG> che si trova in <STRONG>via Monselice 15a Padova zona Mandria<\/STRONG>. Per maggiori info potete dare un'occhiata al <A HREF=\"http://www.talent-lab.it/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\"><SPAN>sito<\/SPAN><\/A>.<BR>Presentatevi almeno 20 minuti prima dell'inizio. L'incontro dura circa 3 ore in cui ci sar\u00e0 anche una merenda assieme.<BR><STRONG><EM>IMPORTANTE: l'accompagnatore dovr\u00e0 restare presso il CoderDojo per tutta la durata dell'evento. <\/EM><EM>L'evento \u00e8 completamente gratuito ;)<\/EM><\/STRONG><\/SPAN><\/P>\n<P><SPAN><STRONG>ISCRIZIONI<\/STRONG><BR><STRONG>Le iscrizioni apriranno domenica 11 marzo alle ore 20:00.<\/STRONG><BR CLASS=\"kix-line-break\">Se si desidera <STRONG>partecipare con due o pi\u00f9 bambini<\/STRONG> al CoderDojo \u00e8 necessario prendere <STRONG>un biglietto per ogni bambino<\/STRONG>.<BR CLASS=\"kix-line-break\">La registrazione su Eventbrite \u00e8 necessaria solo ed esclusivamente per i bambini (adulti, uditori, mentor e volontari non devono registrarsi). <\/SPAN><\/P>\n<P><SPAN>Per questo evento sar\u00e0 possibile scegliere tra i seguenti biglietti.<BR><STRONG>VI CHIEDIAMO DI LEGGERE CON ATTENZIONE LE INDICAZIONI DI OGNI BIGLIETTO PRIMA DI PRENOTARLO.<\/STRONG><\/SPAN><\/P>\n<UL>\n<LI><STRONG>LEGO MINDSTORMS - 3 incontri - 11-16 anni<BR>Impareremo a costruire e programmare in team un robot LEGO Mindstorms EV3.<BR><\/STRONG><\/LI>\n<LI><STRONG>TINKERING - 1 incontro autoconclusivo, 6-10 anni<\/STRONG><BR><STRONG>Realizziamo opere d'arte grazie a marchingegni elettronici. Non serve il computer, basta la vostra creativit\u00e0.<\/STRONG><BR><\/LI>\n<LI><STRONG>SCRATCH INTERMEDIO - 1 incontro autoconclusivo, 8-12 anni<BR>Indicato per chi conosce gi\u00e0 Scratch e/o ha gi\u00e0 partecipato a diversi Scratch Base presso il CoderDojo. Serve il portatile con Scratch installato (potete scaricarlo <A HREF=\"https://scratch.mit.edu/download\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">qui<\/A>)<\/STRONG><BR><\/LI>\n<\/UL>\n<P><SPAN>Al termine della registrazione riceverete via mail la conferma.<STRONG><BR><\/STRONG><\/SPAN><\/P>\n<P><SPAN><STRONG>E ricorda \"Above All: Be Cool\"!<\/STRONG><\/SPAN><\/P>"
+      },
+      "id": "43719926477",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-padova-del-17032018-43719926477?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T15:00:00",
+        "utc": "2018-03-17T14:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T18:00:00",
+        "utc": "2018-03-17T17:00:00Z"
+      },
+      "organization_id": "88344918621",
+      "created": "2018-03-01T19:59:40Z",
+      "changed": "2018-03-11T18:05:26Z",
+      "capacity": 34,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41597847",
+      "organizer_id": "6011192849",
+      "venue_id": "11979109",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43719926477/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 688,
+          "height": 344
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41597847%2F88344918621%2F1%2Foriginal.jpg?s=13caf2293fadd69714e4d24de5a5f7ee",
+          "width": null,
+          "height": null
+        },
+        "id": "41597847",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41597847%2F88344918621%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C688%2C344&s=ba6cc68ebd210bb03dd6c1fbf5fcc023",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Recanati",
+        "html": "CoderDojo Recanati"
+      },
+      "description": {
+        "text": "CoderDojo sono incontri il cui obiettivo \u00e8 l\u2019avvio al mondo della programmazione informatica dei pi\u00f9 piccoli. CoderDojo \u00e8 un movimento aperto, libero e totalmente gratuito organizzato in centinaia di club indipendenti sparsi in tutto il mondo. Ogni Dojo organizza le proprie attivit\u00e0 senza scopo di lucro, rispettando le indicazioni della\u00a0Charter internazionale\u00a0stilata dalla Fondazione Internazionale CoderDojo.",
+        "html": "<P><SPAN>CoderDojo sono incontri il cui obiettivo \u00e8 l\u2019avvio al mondo della programmazione informatica dei pi\u00f9 piccoli. CoderDojo \u00e8 un movimento aperto, libero e totalmente gratuito organizzato in centinaia di club indipendenti sparsi in tutto il mondo. Ogni Dojo organizza le proprie attivit\u00e0 senza scopo di lucro, rispettando le indicazioni della\u00a0<\/SPAN><A HREF=\"http://www.coderdojoitalia.org/statuto-dei-coderdojo-della-hello-world-foundation/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Charter internazionale<\/A><SPAN>\u00a0stilata dalla Fondazione Internazionale CoderDojo.<\/SPAN><\/P>"
+      },
+      "id": "38253415997",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-recanati-38253415997?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-16T18:00:00",
+        "utc": "2018-03-16T17:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-16T19:30:00",
+        "utc": "2018-03-16T18:30:00Z"
+      },
+      "organization_id": "138255983433",
+      "created": "2017-09-25T19:49:43Z",
+      "changed": "2018-03-01T18:46:52Z",
+      "capacity": 40,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "35811157",
+      "organizer_id": "8023868644",
+      "venue_id": "16852266",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/38253415997/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 136
+          },
+          "width": 1260,
+          "height": 630
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35811157%2F138255983433%2F1%2Foriginal.jpg?s=d4346f484418ff36ee21f696aeb6815d",
+          "width": 1260,
+          "height": 1200
+        },
+        "id": "35811157",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35811157%2F138255983433%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C136%2C1260%2C630&s=3faac7d406a2c6618a526360a0a49f9c",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Recanati",
+        "html": "CoderDojo Recanati"
+      },
+      "description": {
+        "text": "CoderDojo sono incontri il cui obiettivo \u00e8 l\u2019avvio al mondo della programmazione informatica dei pi\u00f9 piccoli. CoderDojo \u00e8 un movimento aperto, libero e totalmente gratuito organizzato in centinaia di club indipendenti sparsi in tutto il mondo. Ogni Dojo organizza le proprie attivit\u00e0 senza scopo di lucro, rispettando le indicazioni della\u00a0Charter internazionale\u00a0stilata dalla Fondazione Internazionale CoderDojo.",
+        "html": "<P><SPAN>CoderDojo sono incontri il cui obiettivo \u00e8 l\u2019avvio al mondo della programmazione informatica dei pi\u00f9 piccoli. CoderDojo \u00e8 un movimento aperto, libero e totalmente gratuito organizzato in centinaia di club indipendenti sparsi in tutto il mondo. Ogni Dojo organizza le proprie attivit\u00e0 senza scopo di lucro, rispettando le indicazioni della\u00a0<\/SPAN><A HREF=\"http://www.coderdojoitalia.org/statuto-dei-coderdojo-della-hello-world-foundation/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Charter internazionale<\/A><SPAN>\u00a0stilata dalla Fondazione Internazionale CoderDojo.<\/SPAN><\/P>"
+      },
+      "id": "38253481192",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-recanati-38253481192?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-04-13T18:00:00",
+        "utc": "2018-04-13T16:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-04-13T19:30:00",
+        "utc": "2018-04-13T17:30:00Z"
+      },
+      "organization_id": "138255983433",
+      "created": "2017-09-25T19:51:34Z",
+      "changed": "2017-10-27T08:58:22Z",
+      "capacity": 25,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "35811250",
+      "organizer_id": "8023868644",
+      "venue_id": "16852266",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/38253481192/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 118
+          },
+          "width": 1260,
+          "height": 630
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35811250%2F138255983433%2F1%2Foriginal.jpg?s=b12feaeee04552c786a466f534ecfa8d",
+          "width": 1260,
+          "height": 1200
+        },
+        "id": "35811250",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35811250%2F138255983433%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C118%2C1260%2C630&s=031bcb51d4af1de84894e0f1fc7c834c",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "Coderdojo alla DeA - IV ciclo",
+        "html": "Coderdojo alla DeA - IV ciclo"
+      },
+      "description": {
+        "text": "CoderDojo \u00e8 un movimento no-profit internazionale nato in Irlanda nel 2011 con lo scopo di avvicinare le persone all'informatica attraverso la realizzazione di club di programmazione.\nDurante i laboratori impareremo il coding attraverso vari linguaggi di programmazione, uno di quali \u00e8 Scratch, elaborato da Lifelong Kindergarten Group dei Media Lab del MIT di Boston (Massachussetts Institute of Technology). Et\u00e0 minima 7 anni.\u00a0\nI ragazzi dovranno portare il loro PC sul quale installeranno nel corso della prima lezione il programma necessario.Suggeriamo di dare loro anche il cavo di alimentazione del PC e un mouse. Il CoderDojo \u201cGenovaCoding@Ilab\u201d viene gestito in collaborazione con Associazione no profit ILAB\nLe date degli incontri:\n10 e 24 marzo - 14 aprile\norario 15.00 - 16.00\nIscrizioni dal 28 febbraio",
+        "html": "<P>CoderDojo \u00e8 un movimento no-profit internazionale nato in Irlanda nel 2011 con lo scopo <BR>di avvicinare le persone all'informatica attraverso la realizzazione di club di programmazione.<\/P>\n<P>Durante i laboratori impareremo il coding attraverso vari linguaggi di programmazione, uno di quali \u00e8 Scratch, elaborato da Lifelong Kindergarten Group dei Media Lab del MIT di Boston (Massachussetts Institute of Technology). <BR>Et\u00e0 minima 7 anni.\u00a0<\/P>\n<P><BR>I ragazzi dovranno portare il loro PC sul quale installeranno nel corso della prima lezione il programma necessario.<BR>Suggeriamo di dare loro anche il cavo di alimentazione del PC e un mouse. <BR>Il CoderDojo \u201cGenovaCoding@Ilab\u201d viene gestito in collaborazione con Associazione no profit ILAB<\/P>\n<P>Le date degli incontri:<\/P>\n<P>10 e 24 marzo - 14 aprile<\/P>\n<P>orario 15.00 - 16.00<\/P>\n<P>Iscrizioni dal 28 febbraio<\/P>"
+      },
+      "id": "43660223905",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-alla-dea-iv-ciclo-43660223905?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-10T15:00:00",
+        "utc": "2018-03-10T14:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-24T16:00:00",
+        "utc": "2018-03-24T15:00:00Z"
+      },
+      "organization_id": "238667479947",
+      "created": "2018-02-28T15:56:59Z",
+      "changed": "2018-03-10T15:13:54Z",
+      "capacity": 12,
+      "capacity_is_custom": true,
+      "status": "started",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41523567",
+      "organizer_id": "16007774493",
+      "venue_id": "23507671",
+      "category_id": "115",
+      "subcategory_id": null,
+      "format_id": "100",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43660223905/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 215,
+            "y": 6
+          },
+          "width": 482,
+          "height": 241
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41523567%2F238667479947%2F1%2Foriginal.jpg?s=64ad73a53f45512b9c881e888be2f449",
+          "width": 704,
+          "height": 253
+        },
+        "id": "41523567",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41523567%2F238667479947%2F1%2Foriginal.jpg?h=200&w=450&rect=215%2C6%2C482%2C241&s=553640b28514b72d82386f299bc96789",
+        "aspect_ratio": "2",
+        "edge_color": "#ffffff",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Marzo 2018",
+        "html": "CoderDojo Marzo 2018"
+      },
+      "description": {
+        "text": "Talent Garden Genova\u00a0apre le porte ai talenti pi\u00f9 giovani per imparare a creare da soli un videogioco.\u00a0CoderDojo\u00a0\u00e8 un movimento senza scopo di lucro che ha lo scopo di\u00a0organizzare incontri gratuiti per insegnare a bambini e ragazzi a programmare. Grazie ad un approccio all'insegnamento dell'informatica che non prevede manuali e noiose lezioni, anche i pi\u00f9 piccini possono realizzare da s\u00e8 videogiochi, applicazioni e pagine web!\u00a0\nLe iscrizioni sono gratuite ed aperte a\u00a0bambini e ragazzi dai 7 ai 13 anni.\nVi ricordiamo che ogni partecipante dovr\u00e0:\n\nvenire accompagnato da un\u00a0adulto\u00a0(che dovr\u00e0 rimanere a TAG per la durata dell'evento);\nportare con se: un\u00a0computer portatile\u00a0(Windows, MAC o Linux),\u00a0mouse,\u00a0alimentatore;\n\nPer maggiori informazioni scrivi a\u00a0genova@talentgarden.it\u00a0o visita i nostri siti web:\ngenova.talentgarden.it,\u00a0coderdojogenova.it\nFAQ - Da leggere!\n1) Va bene anche un Tablet?\u00a0 No, devi avere un PC portatile!\n2) Non sono riuscito a iscrivermi, organizzate altri eventi?\u00a0Se non sei riuscito a iscriverti inserisci nella waiting list, se si liberer\u00e0 un posto sarai contattato direttamente. Se non ce l'hai fatta, ogni mese organizziamo un nuovo evento!\n3) Non sono riuscito a iscrivermi, posso venire lo stesso?\u00a0Purtroppo lo spazio \u00e8 limitato, per questo motivo ti chiediamo di non venire qualora non fossi riuscito a trovare posto.",
+        "html": "<P><EM>Talent Garden Genova\u00a0apre le porte ai talenti pi\u00f9 giovani per imparare a creare da soli un videogioco.\u00a0<\/EM><EM>CoderDojo\u00a0\u00e8 un movimento senza scopo di lucro che ha lo scopo di\u00a0organizzare incontri gratuiti per insegnare a bambini e ragazzi a programmare. Grazie ad un approccio all'insegnamento dell'informatica che non prevede manuali e noiose lezioni, anche i pi\u00f9 piccini possono realizzare da s\u00e8 videogiochi, applicazioni e pagine web!\u00a0<\/EM><\/P>\n<P><EM>Le iscrizioni sono gratuite ed aperte a\u00a0bambini e ragazzi dai 7 ai 13 anni.<\/EM><\/P>\n<P>Vi ricordiamo che ogni partecipante dovr\u00e0:<\/P>\n<UL>\n<LI>venire accompagnato da un\u00a0adulto\u00a0(che dovr\u00e0 rimanere a TAG per la durata dell'evento);<\/LI>\n<LI>portare con se: un\u00a0computer portatile\u00a0(Windows, MAC o Linux),\u00a0mouse,\u00a0alimentatore;<\/LI>\n<\/UL>\n<P>Per maggiori informazioni scrivi a\u00a0genova@talentgarden.it\u00a0o visita i nostri siti web:<BR><\/P>\n<P><A HREF=\"https://www.eventbrite.com/e/genova.talentgarden.it\" TARGET=\"_blank\" REL=\"noopener noreferrer noopener noreferrer\">genova.talentgarden.it<\/A>,\u00a0<A HREF=\"http://coderdojogenova.it/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">coderdojogenova.it<\/A><\/P>\n<P>FAQ - Da leggere!<\/P>\n<P>1) Va bene anche un Tablet?\u00a0 No, devi avere un PC portatile!<\/P>\n<P>2) Non sono riuscito a iscrivermi, organizzate altri eventi?\u00a0Se non sei riuscito a iscriverti inserisci nella waiting list, se si liberer\u00e0 un posto sarai contattato direttamente. Se non ce l'hai fatta, ogni mese organizziamo un nuovo evento!<\/P>\n<P>3) Non sono riuscito a iscrivermi, posso venire lo stesso?\u00a0Purtroppo lo spazio \u00e8 limitato, per questo motivo ti chiediamo di non venire qualora non fossi riuscito a trovare posto.<\/P>"
+      },
+      "id": "43656518823",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-marzo-2018-43656518823?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T14:30:00",
+        "utc": "2018-03-17T13:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T18:00:00",
+        "utc": "2018-03-17T17:00:00Z"
+      },
+      "organization_id": "130130089577",
+      "created": "2018-02-28T14:21:28Z",
+      "changed": "2018-03-02T16:15:57Z",
+      "capacity": 25,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 600,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41517921",
+      "organizer_id": "7769990853",
+      "venue_id": "23178940",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43656518823/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 49
+          },
+          "width": 1200,
+          "height": 600
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41517921%2F130130089577%2F1%2Foriginal.jpg?s=3ff2e68b6c7c4ad7f59877e42e4d5ee5",
+          "width": 1200,
+          "height": 800
+        },
+        "id": "41517921",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41517921%2F130130089577%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C49%2C1200%2C600&s=e2ad0c86df1e63a0d22cc5066e2e9405",
+        "aspect_ratio": "2",
+        "edge_color": "#c8b397",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "Coderdojo Voghera: tre laboratori all'IC di Varzi (sede Ponte Nizza)",
+        "html": "Coderdojo Voghera: tre laboratori all&#39;IC di Varzi (sede Ponte Nizza)"
+      },
+      "description": {
+        "text": "Giochi a volont\u00e0 in questo triplo laboratorio. Potete scegliere tra tre proposte:\n\n\naula 4-7 ANNI alla scoperta dei robot educativi e della realt\u00e0 aumentata (due turni di un'ora e mezza 9,30-11 e 11-12,30)\n\n\naula 7-11 anni: programmiamo un videogioco con Scratch (\u00e8 necessario portare il proprio notebook dotato di alimentatore e mouse)\n\n\naula 11-13 anni, programmiamo mBot: attivit\u00e0 per esplorare la programmazione di piccoli robot\u00a0(\u00e8 necessario portare il proprio notebook dotato di alimentatore e mouse)\n\n\nPresentatevi circa mezz'ora prima dell'inizio del laboratorio se non avete gi\u00e0 installato il software necessario.\nRicordatevi di portare con voi:\n- un genitore (dovr\u00e0 stare con voi per tutta la durata dell'evento)\n- un notebook con alimentatore e mouse (per il laboratorio 2)\n- una merenda",
+        "html": "<P>Giochi a volont\u00e0 in questo triplo laboratorio. Potete scegliere tra tre proposte:<\/P>\n<OL>\n<LI CLASS=\"MsoNormal\">\n<P><SPAN>aula 4-7 ANNI alla scoperta dei robot educativi e della realt\u00e0 aumentata (due turni di un'ora e mezza 9,30-11 e 11-12,30)<\/SPAN><\/P>\n<\/LI>\n<LI CLASS=\"MsoNormal\">\n<P><SPAN>aula 7-11 anni: programmiamo un videogioco con Scratch (\u00e8 necessario portare il proprio notebook dotato di alimentatore e mouse)<\/SPAN><\/P>\n<\/LI>\n<LI CLASS=\"MsoNormal\">\n<P><SPAN>aula 11-13 anni, programmiamo mBot: attivit\u00e0 per esplorare la programmazione di piccoli robot\u00a0<SPAN>(\u00e8 necessario portare il proprio notebook dotato di alimentatore e mouse)<\/SPAN><\/SPAN><\/P>\n<\/LI>\n<\/OL>\n<P>Presentatevi circa mezz'ora prima dell'inizio del laboratorio se non avete gi\u00e0 installato il software necessario.<BR><\/P>\n<P><SPAN>Ricordatevi di portare con voi:<\/SPAN><\/P>\n<P><SPAN>- un genitore (dovr\u00e0 stare con voi per tutta la durata dell'evento)<\/SPAN><\/P>\n<P><SPAN>- un notebook con alimentatore e mouse (per il laboratorio 2)<\/SPAN><\/P>\n<P><SPAN>- una merenda<\/SPAN><\/P>"
+      },
+      "id": "43717387884",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-voghera-tre-laboratori-allic-di-varzi-sede-ponte-nizza-43717387884?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T09:30:00",
+        "utc": "2018-03-17T08:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T12:30:00",
+        "utc": "2018-03-17T11:30:00Z"
+      },
+      "organization_id": "48879616866",
+      "created": "2018-03-01T18:53:47Z",
+      "changed": "2018-03-05T20:54:11Z",
+      "capacity": 60,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 900,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41670542",
+      "organizer_id": "7851939506",
+      "venue_id": "23536138",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43717387884/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 391
+          },
+          "width": 1564,
+          "height": 782
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41670542%2F48879616866%2F1%2Foriginal.jpg?s=19487bc0088c3647aef48d621c7a1328",
+          "width": 1564,
+          "height": 1564
+        },
+        "id": "41670542",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41670542%2F48879616866%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C391%2C1564%2C782&s=f1b9849ac52446cd858f54ed49593427",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Pavia: impara a programmare, costruisci i tuoi sogni!",
+        "html": "CoderDojo Pavia: impara a programmare, costruisci i tuoi sogni!"
+      },
+      "description": {
+        "text": "Vieni a CoderDojo Pavia,  potrai scegliere UNO dei seguenti laboratori GRATUITI e scoprirai che con l'aiuto di altri ragazzi come te \u00e8 facile: - creare un videogioco con Scratch (7-17 anni) - creare la tua App con App Inventor\u00a0 (9-17 anni) - creare una storia con HTML5 (9-17 anni) -\u00a0programmare Sapientino e Mind Designer senza computer, con l'aiuto di pochi tasti (5-6 anni)  - creare videogiochi 3D con Unity\u00a0(12 - 17 anni ) - creare ed indossare la tecnologia con DressCode (6 - 17 anni )\r\nTutto quello che serve \u00e8:\r\n-\u00a0un computer portatile\u00a0 -\u00a0un tablet/dispositivo Android e un account Google di cui conosci login e password (per App Inventor) -\u00a0una merenda -\u00a0la liberatoria \u00a0ed il regolamento partecipanti\u00a0compilati e firmati dal genitore\u00a0 -\u00a0un genitore che stia con te per tutta la durata dell'evento\r\nAssicurati che il tuo PC sia pronto per l'evento: segui le istruzioni sul nostro sito!\r\n\r\nHappy coding ! ;)\r\nLe iscrizioni aprono marted\u00ec 13 marzo alle ore 20:30.\r\nPer maggiori informazioni visita\r\nhttp://coderdojo.compvter.it\r\noppure scrivi a\r\ncoderdojopv@compvter.it \u00a0",
+        "html": "<P><SPAN><SPAN>Vieni a CoderDojo Pavia, <\/SPAN><\/SPAN> <SPAN><SPAN>potrai scegliere UNO dei seguenti laboratori GRATUITI e scoprirai che con l'aiuto di altri ragazzi come te \u00e8 facile:<\/SPAN><\/SPAN><BR> <SPAN>- creare un videogioco con Scratch (7-17 anni)<\/SPAN><BR> <SPAN>- creare la tua App con App Inventor\u00a0 (9-17 anni)<\/SPAN><BR> <SPAN>- creare una storia con HTML5 (9-17 anni)<\/SPAN><BR> <SPAN>-\u00a0programmare Sapientino e Mind Designer senza computer, con l'aiuto di pochi tasti (5-6 anni)<\/SPAN> <BR> <SPAN>- creare videogiochi 3D con Unity\u00a0<SPAN>(12 - 17 anni )<\/SPAN><\/SPAN><BR> <SPAN>- creare ed indossare la tecnologia con DressCode (6 - 17 anni )<\/SPAN><BR><\/P>\r\n<P><SPAN><SPAN><B>Tutto quello che serve \u00e8:<\/B><\/SPAN><\/SPAN><\/P>\r\n<P><SPAN>-\u00a0un computer portatile\u00a0<\/SPAN><BR> <SPAN>-\u00a0un tablet/dispositivo Android e un account Google di cui conosci login e password (per App Inventor)<\/SPAN><BR> <SPAN>-\u00a0una merenda<\/SPAN><BR> <SPAN>-\u00a0la <A TITLE=\"Liberatoria\" HREF=\"https://drive.google.com/open?id=0Byy5CwmUw66WLUZyZXlDWEdtNDQ\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\">liberatoria <\/A>\u00a0ed il <A TITLE=\"Regolamento Partecipanti\" HREF=\"https://drive.google.com/open?id=15OXI2cpZKQjB5ssMeyehRpFutTtrCmJJfa88mpldNK8\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\">regolamento partecipanti<\/A>\u00a0compilati e firmati dal genitore\u00a0<\/SPAN><BR> <SPAN>-\u00a0un genitore che stia con te per tutta la durata dell'evento<\/SPAN><BR><\/P>\r\n<P>Assicurati che il tuo PC sia pronto per l'evento: <A HREF=\"http://coderdojo.compvter.it/risorse/\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\">segui le istruzioni sul nostro sito<\/A>!<\/P>\r\n<P><A HREF=\"http://coderdojo.compvter.it/codedojohp/risorse/crea-la-tua-app/\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\"><SPAN><BR><\/SPAN><\/A><\/P>\r\n<P><SPAN>Happy coding ! ;)<\/SPAN><\/P>\r\n<P><SPAN><SPAN><SPAN>Le iscrizioni aprono marted\u00ec 13 marzo alle ore 20:30.<\/SPAN><\/SPAN><BR><\/SPAN><\/P>\r\n<P><SPAN>Per maggiori informazioni visita<\/SPAN><\/P>\r\n<P><SPAN>http://coderdojo.compvter.it<\/SPAN><\/P>\r\n<P><SPAN>oppure scrivi a<\/SPAN><\/P>\r\n<P><SPAN>coderdojopv@compvter.it \u00a0<\/SPAN><\/P>"
+      },
+      "id": "43903943878",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-pavia-impara-a-programmare-costruisci-i-tuoi-sogni-43903943878?aff=ebapi",
+      "vanity_url": "https://coderdojopv.eventbrite.it",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T09:30:00",
+        "utc": "2018-03-17T08:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T12:30:00",
+        "utc": "2018-03-17T11:30:00Z"
+      },
+      "organization_id": "68341302673",
+      "created": "2018-03-06T21:04:21Z",
+      "changed": "2018-03-06T21:29:07Z",
+      "capacity": 100,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41822809",
+      "organizer_id": "4445710649",
+      "venue_id": "23612863",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43903943878/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 472,
+          "height": 236
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41822809%2F68341302673%2F1%2Foriginal.jpg?s=0b91da826e50247958f46cf71d07d1be",
+          "width": null,
+          "height": null
+        },
+        "id": "41822809",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41822809%2F68341302673%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C472%2C236&s=edbd1c137e3b918499ffcbfb315af8eb",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "Coderdojo a Riva del Garda",
+        "html": "Coderdojo a Riva del Garda"
+      },
+      "description": {
+        "text": "Coderdojo imparare a programmare con Scratch ed altri software. Per bambini e ragazzi da 7 a 15 anni.",
+        "html": "<P>Coderdojo imparare a programmare con Scratch ed altri software. Per bambini e ragazzi da 7 a 15 anni.<\/P>"
+      },
+      "id": "43877213928",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-a-riva-del-garda-43877213928?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T14:30:00",
+        "utc": "2018-03-17T13:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T16:30:00",
+        "utc": "2018-03-17T15:30:00Z"
+      },
+      "organization_id": "105237585301",
+      "created": "2018-03-06T09:06:59Z",
+      "changed": "2018-03-06T09:09:17Z",
+      "capacity": 100,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41784335",
+      "organizer_id": "16759496972",
+      "venue_id": "23599099",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "10",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43877213928/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 145
+          },
+          "width": 4640,
+          "height": 2320
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41784335%2F105237585301%2F1%2Foriginal.jpg?s=fe167631d83a8c349b9b3668754ee2d9",
+          "width": 4640,
+          "height": 2610
+        },
+        "id": "41784335",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41784335%2F105237585301%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C145%2C4640%2C2320&s=0c66cbcf5c5437eb91acc8f151bd4692",
+        "aspect_ratio": "2",
+        "edge_color": "#96897c",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "Test CoderDojo",
+        "html": "Test CoderDojo"
+      },
+      "description": {
+        "text": "Evento di test",
+        "html": "<P>Evento di test<\/P>"
+      },
+      "id": "44105504752",
+      "url": "https://www.eventbrite.it/e/biglietti-test-coderdojo-44105504752?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-04-21T09:00:00",
+        "utc": "2018-04-21T07:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-04-21T12:00:00",
+        "utc": "2018-04-21T10:00:00Z"
+      },
+      "organization_id": "145918829486",
+      "created": "2018-03-12T14:47:27Z",
+      "changed": "2018-03-12T14:47:39Z",
+      "capacity": 50,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": null,
+      "organizer_id": "17045322845",
+      "venue_id": "23699875",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/44105504752/",
+      "logo": null
+    },
+    {
+      "name": {
+        "text": "CoderDojo Trento - Incontro 17 marzo 2018 per gli ICT Days @ Universit\u00e0 di Trento (Povo - TN)",
+        "html": "CoderDojo Trento - Incontro 17 marzo 2018 per gli ICT Days @ Universit\u00e0 di Trento (Povo - TN)"
+      },
+      "description": {
+        "text": "Sabato 17 marzo ci troviamo al DISI di Povo, per la fascia di et\u00e0 7-17!\r\nIn quest'occasione saremo ospitati dal Dipartimento di Ingegneria e Scienze dell'Informazione di Trento nell'ambito degli ICT Days 2018: trovate tutte le informazioni sugli eventi collegati all'iniziativa sul sito ufficiale. \r\nLe iscrizioni come sempre\u00a0sono gratuite e saranno aperte una settimana prima del laboratorio.\r\nTrovarci \u00e8 semplicissimo: una volta raggiunto il Polo Ferrari di Povo (via Sommarive 5/9), si entra presso la portineria dell'edificio \"Povo 2\" di via Sommarive 9, dove registreremo gli ingressi.\r\nUna volta all'interno della struttura sar\u00e0 sufficiente seguire la segnaletica che ci condurr\u00e0 -attraverso il passaggio sospeso che collega i due edifici- alla sala Ofek che si trova nell'adiacente palazzina di \"Povo 1\" di via Sommarive 5.\r\n\u00a0\r\nIl PC PORTALO TU, AL DIVERTIMENTO CI PENSIAMO NOI :-)\r\nVi aspettiamo !!!\r\nCoderDojo \u00e8 un movimento senza scopo di lucro nato in Irlanda nel 2011 che conta oltre 300 computer club volontari in tutto il mondo. Rivolto ai bambini e agli adolescenti, ha lo scopo di organizzare incontri gratuiti per permettere loro di familiarizzare e imparare a conoscere gli strumenti di tecnologia informatica.\r\nCome Partecipare\r\nLa partecipazione gratuita ai corsi \u00e8 aperta a\u00a0chiunque. E'sufficiente:\r\n\u2022 Avere tra i 7 e i 17 anni\u2022 Iscrivervi qui o via email:\u00a0coderdojo.trento@gmail.com.\u2022 Se avete meno di 13 anni portarvi un genitore o un accompagnatore maggiorenne\u2022 Portarvi un PC \u00a0(siamo in modalit\u00e0 BYOD = bring your own device)\u2022 Per i nuovi partecipanti, all'arrivo verr\u00e0 chiesto ai genitori di firmare una liberatoria per consentire la pubblicazione di foto dell'evento\u00a0sul sito di CoderDojo e social media\u00a0che potrebbero eventualmente riprendere il minore e/o i genitori. Nota: senza la firma non sar\u00e0 possibile partecipare all'evento.\r\nPer le mele: La Trentina :-)\u00a0\r\n\r\nVi aspettiamo!www.coderdojotrento.it\r\nSeguiteci e be cool :-)\r\nwww.coderdojotrento.it\r\ncoderdojo.trento@gmail.com\u00a0\r\nfacebook.com/coderdojotrento\r\ntwitter.com/coderdojotrento\r\nwww.linkedin.com/company/coderdojo-trento",
+        "html": "<P><SPAN><STRONG>Sabato 17 marzo ci troviamo al DISI di Povo, per la fascia di et\u00e0 7-17!<\/STRONG><\/SPAN><\/P>\r\n<P><SPAN>In quest'occasione saremo ospitati dal Dipartimento di Ingegneria e Scienze dell'Informazione <SPAN>di Trento nell'ambito degli <STRONG>ICT Days 2018<\/STRONG>: trovate tutte le informazioni sugli eventi collegati all'iniziativa sul <A HREF=\"http://2018.ictdays.it/it\" TARGET=\"_blank\" REL=\"noopener noreferrer nofollow\">sito ufficiale<\/A>. <\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN>Le iscrizioni come sempre\u00a0sono gratuite e saranno aperte una settimana prima del laboratorio.<\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN>Trovarci \u00e8 semplicissimo: una volta raggiunto il Polo Ferrari di Povo (via Sommarive 5/9), si entra presso la portineria dell'edificio \"Povo 2\" di via Sommarive 9, dove registreremo gli ingressi.<\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN>Una volta all'interno della struttura sar\u00e0 sufficiente seguire la segnaletica che ci condurr\u00e0 -attraverso il passaggio sospeso che collega i due edifici- alla sala Ofek che si trova nell'adiacente palazzina di \"Povo 1\" di via Sommarive 5.<\/SPAN><\/SPAN><SPAN><BR><\/SPAN><\/P>\r\n<P>\u00a0<IMG ALT=\"aula ofek\" SRC=\"https://cdn.evbuc.com/eventlogos/85274981/aulaofek.jpg\" HEIGHT=\"185\" WIDTH=\"609\"><\/P>\r\n<P><STRONG><SPAN>Il PC PORTALO TU, AL DIVERTIMENTO CI PENSIAMO NOI :-)<\/SPAN><\/STRONG><\/P>\r\n<P><SPAN>Vi aspettiamo !!!<\/SPAN><\/P>\r\n<P><SPAN><STRONG>CoderDojo<\/STRONG> \u00e8 un movimento senza scopo di lucro nato in Irlanda nel 2011 che conta oltre 300 computer club volontari in tutto il mondo. Rivolto ai<\/SPAN> bambini e agli adolescenti, ha lo scopo di organizzare incontri gratuiti per permettere loro di familiarizzare e imparare a conoscere gli strumenti di tecnologia informatica.<\/P>\r\n<P><SPAN><STRONG>Come Partecipare<\/STRONG><\/SPAN><\/P>\r\n<P><SPAN>La partecipazione gratuita ai corsi \u00e8 aperta a\u00a0chiunque. E'sufficiente:<\/SPAN><\/P>\r\n<P><SPAN>\u2022 Avere tra i 7 e i 17 anni<\/SPAN><BR><SPAN>\u2022 Iscrivervi qui o via email:\u00a0<\/SPAN><STRONG>coderdojo.trento@gmail.com<\/STRONG><SPAN>.<\/SPAN><BR><SPAN>\u2022 Se avete meno di 13 anni portarvi un genitore o un accompagnatore maggiorenne<\/SPAN><BR><SPAN>\u2022 Portarvi un PC \u00a0(siamo in modalit\u00e0 BYOD = bring your own device)<\/SPAN><BR><SPAN>\u2022 <SPAN>P<SPAN>er i nuovi partecipanti, all'arrivo verr\u00e0 chiesto ai genitori di firmare una liberatoria per consentire la pubblicazione di foto dell'evento\u00a0<\/SPAN><SPAN>sul sito di CoderDojo e social media\u00a0<\/SPAN><SPAN>che potrebbero eventualmente riprendere il minore e/o i genitori. Nota: senza la firma non sar\u00e0 possibile partecipare all'evento.<\/SPAN><\/SPAN><\/SPAN><\/P>\r\n<P><SPAN>P<SPAN>er le mele: La Trentina :-)\u00a0<\/SPAN><\/SPAN><\/P>\r\n<P><BR><\/P>\r\n<P><STRONG>Vi aspettiamo!<BR>www.coderdojotrento.it<\/STRONG><\/P>\r\n<P>Seguiteci e be cool :-)<\/P>\r\n<DIV><A HREF=\"http://www.coderdojotrento.it/\" TARGET=\"_blank\" REL=\"noopener nofollow nofollow nofollow noopener noreferrer nofollow nofollow nofollow nofollow nofollow nofollow nofollow nofollow noreferrer nofollow\">www.coderdojotrento.it<\/A><\/DIV>\r\n<DIV><A HREF=\"mailto:coderdojo.trento@gmail.com\" TARGET=\"_blank\" REL=\"noopener nofollow nofollow nofollow noopener noreferrer nofollow nofollow nofollow nofollow nofollow nofollow nofollow nofollow noreferrer nofollow\">coderdojo.trento@gmail.com<\/A>\u00a0<\/DIV>\r\n<DIV><A HREF=\"http://facebook.com/coderdojotrento\" TARGET=\"_blank\" REL=\"noopener nofollow nofollow nofollow noopener noreferrer nofollow nofollow nofollow nofollow nofollow nofollow nofollow nofollow noreferrer nofollow\">facebook.com/coderdojotrento<\/A><\/DIV>\r\n<DIV><A HREF=\"http://twitter.com/coderdojotrento\" TARGET=\"_blank\" REL=\"noopener nofollow nofollow nofollow noopener noreferrer nofollow nofollow nofollow nofollow nofollow nofollow nofollow nofollow noreferrer nofollow\">twitter.com/coderdojotrento<\/A><\/DIV>\r\n<DIV><A HREF=\"http://www.linkedin.com/company/coderdojo-trento\" TARGET=\"_blank\" REL=\"noopener nofollow nofollow nofollow noopener noreferrer nofollow nofollow nofollow nofollow nofollow nofollow nofollow nofollow noreferrer nofollow\">www.linkedin.com/company/coderdojo-trento<\/A><\/DIV>"
+      },
+      "id": "43083868009",
+      "url": "https://www.eventbrite.it/e/registrazione-coderdojo-trento-incontro-17-marzo-2018-per-gli-ict-days-universita-di-trento-povo-tn-43083868009?aff=ebapi",
+      "vanity_url": "https://cdtn-17-03-2018.eventbrite.it",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T14:30:00",
+        "utc": "2018-03-17T13:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T16:30:00",
+        "utc": "2018-03-17T15:30:00Z"
+      },
+      "organization_id": "85871905867",
+      "created": "2018-02-12T08:33:35Z",
+      "changed": "2018-03-07T09:09:37Z",
+      "capacity": 20,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "USD",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 1200,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "40791450",
+      "organizer_id": "5927350029",
+      "venue_id": "23245014",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43083868009/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 800,
+          "height": 400
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F40791450%2F85871905867%2F1%2Foriginal.jpg?s=bf3746bc878f2048ec898aa4f1f7d4aa",
+          "width": 800,
+          "height": 400
+        },
+        "id": "40791450",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F40791450%2F85871905867%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C800%2C400&s=581a550ca361cb90384cbbada57f857f",
+        "aspect_ratio": "2",
+        "edge_color": "#a7def2",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Lissone",
+        "html": "CoderDojo Lissone"
+      },
+      "description": {
+        "text": "La Citt\u00e0 di Lissone organizza un evento\u00a0CoderDojo\u00a0per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!\nDedicato a ragazze e \u00a0ragazzi tra i 7 e i 14 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo videogame: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.\u00a0\nPer\u00a0introdurre i ragazzi alle basi della programmazioni useremo\u00a0SCRATCH.\n\u00a0\ncreare\u2013 programmare- imparare\nScratch\u00a0\u00e8 un software\u00a0gratuito,\u00a0basato su un linguaggio di programmazione a\u00a0blocchi\u00a0che permette anche ai bambini pi\u00f9 piccoli di\u00a0creare animazioni, giochi\u00a0e piccoli fumetti sia statici che\u00a0animati, che possono essere condivise online con la comunit\u00e0.\nCon\u00a0Scratch i Ragazzi utilizzano la\u00a0logica e la creativit\u00e0\u00a0per incastrare tra di loro dei blocchi con\u00a0funzioni differenti e realizzare oggetti\u00a0multimediali.\nIl\u00a0software \u00e8 stato sviluppato dal\u00a0Lifelong Kindergarten Group\u00a0gestito da Mitchel Resnick presso il\u00a0Media Lab\u00a0del\u00a0Massachusetts Institute of Technology\n\u00a0\nPer partecipare ricordati di portare:\n\nUna merendina\nUn portatile con l'alimentatore e mouse (ehi, se non ne hai uno, fattelo prestare! Serve la tastiera, quindi i tablet non vanno bene)\nUn adulto accompagnatore! (Importante: deve restare con te durante l'evento). Mamma o pap\u00e0 dovranno firmare, il giorno dell'evento,\u00a0una preventiva autorizzazione per la tua partecipazione: ricordaglielo, senza non possiamo farti entrare!!\n\n\u00a0\nFAQ\n\u00c8 richiesto un documento di identit\u00e0 o ci sono limiti di et\u00e0 per essere ammessi all'evento?\nE' necessario un documento di identita' del genitore che accompagna il bambino. L'eta' del bambino deve essere compresa tra i 7 e i 14 anni.\nCosa posso portare e cosa non devo portare all'evento?\nE' necessario portare una merenda, una bottiglietta d'acqua e un pc per ciascun bambino.\nDove posso contattare l'organizzatore per qualsiasi domanda?\nE' possibile contattare l'organizzatore scrivendo a coderdojo.lissone@tiscali.it\nLa mia registrazione o il mio biglietto \u00e8 trasferibile?\nNon e' possibile trasferire il biglietto ad altre persone ed \u00e8 riservato esclusivamente ai minori sui quali si esercita la potesta' genitoriale.\nPosso aggiornare le mie informazioni di registrazione?\nE' possibile aggiornare le proprie informazioni, comunicando le modifiche tramite email a\u00a0coderdojo.lissone@tiscali.it\nDevo portare i biglietti stampati all'evento?\nPer semplificare le operazioni di accoglienza, e' preferibile portare il biglietto. Un documento di identita' valido dell'accompagnatore e', invece, obbligatorio.\nIl nome sulla registrazione o sul biglietto non corrisponde a quello del partecipante. Ci sono problemi?\nIl biglietto deve riportare il nome del partecipante (bambino).\n",
+        "html": "<P>La Citt\u00e0 di Lissone organizza un evento\u00a0<SPAN>CoderDojo<\/SPAN>\u00a0per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!<\/P>\n<P>Dedicato a ragazze e \u00a0ragazzi tra i 7 e i 14 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo videogame: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.\u00a0<\/P>\n<P>Per\u00a0introdurre i ragazzi alle basi della programmazioni useremo\u00a0<EM><SPAN>SCRATCH<\/SPAN><\/EM>.<\/P>\n<P>\u00a0<IMG ALT=\"\" SRC=\"https://cdn.evbuc.com/eventlogos/127762503/scratch.jpg\"><\/P>\n<P><SPAN><SPAN><SPAN>creare\u2013 programmare- imparare<\/SPAN><\/SPAN><\/SPAN><\/P>\n<P>Scratch\u00a0\u00e8 un software\u00a0gratuito,\u00a0basato su un linguaggio di programmazione a\u00a0blocchi\u00a0che permette anche ai bambini pi\u00f9 piccoli di\u00a0creare animazioni, giochi\u00a0e piccoli fumetti sia statici che\u00a0animati, che possono essere condivise online con la comunit\u00e0.<\/P>\n<P>Con\u00a0Scratch i Ragazzi utilizzano la\u00a0logica e la creativit\u00e0\u00a0per incastrare tra di loro dei blocchi con\u00a0funzioni differenti e realizzare oggetti\u00a0multimediali.<\/P>\n<P>Il\u00a0software \u00e8 stato sviluppato dal\u00a0<A HREF=\"http://llk.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Lifelong Kindergarten Group<\/A>\u00a0gestito da Mitchel Resnick presso il\u00a0<A HREF=\"http://www.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Media Lab<\/A>\u00a0del\u00a0<A HREF=\"http://www.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Massachusetts Institute of Technology<\/A><\/P>\n<P>\u00a0<\/P>\n<P>Per partecipare ricordati di portare:<\/P>\n<UL>\n<LI>Una merendina<\/LI>\n<LI>Un portatile con l'alimentatore e mouse (ehi, se non ne hai uno, fattelo prestare! Serve la tastiera, quindi i tablet non vanno bene)<\/LI>\n<LI><SPAN>Un adulto accompagnatore! (Importante: deve restare con te durante l'evento). Mamma o pap\u00e0 dovranno firmare, il giorno dell'evento,\u00a0una preventiva autorizzazione per la tua partecipazione: ricordaglielo, senza non possiamo farti entrare!!<\/SPAN><\/LI>\n<\/UL>\n<P>\u00a0<\/P>\n<P CLASS=\"panel_section\"><STRONG>FAQ<\/STRONG><\/P>\n<P><STRONG>\u00c8 richiesto un documento di identit\u00e0 o ci sono limiti di et\u00e0 per essere ammessi all'evento?<\/STRONG><\/P>\n<P>E' necessario un documento di identita' del genitore che accompagna il bambino. L'eta' del bambino deve essere compresa tra i 7 e i 14 anni.<\/P>\n<P><STRONG>Cosa posso portare e cosa non devo portare all'evento?<\/STRONG><\/P>\n<P>E' necessario portare una merenda, una bottiglietta d'acqua e un pc per ciascun bambino.<\/P>\n<P><STRONG>Dove posso contattare l'organizzatore per qualsiasi domanda?<\/STRONG><\/P>\n<P>E' possibile contattare l'organizzatore scrivendo a <A HREF=\"mailto:coderdojo.lissone@tiscali.it\" TARGET=\"_blank\" TITLE=\"coderdojo.lissone@tiscali.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">coderdojo.lissone@tiscali.it<\/A><\/P>\n<P><STRONG>La mia registrazione o il mio biglietto \u00e8 trasferibile?<\/STRONG><\/P>\n<P>Non e' possibile trasferire il biglietto ad altre persone ed \u00e8 riservato esclusivamente ai minori sui quali si esercita la potesta' genitoriale.<\/P>\n<P><STRONG>Posso aggiornare le mie informazioni di registrazione?<\/STRONG><\/P>\n<P>E' possibile aggiornare le proprie informazioni, comunicando le modifiche tramite email a\u00a0<A HREF=\"mailto:coderdojo.lissone@tiscali.it\" TARGET=\"_blank\" TITLE=\"coderdojo.lissone@tiscali.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">coderdojo.lissone@tiscali.it<\/A><\/P>\n<P><STRONG>Devo portare i biglietti stampati all'evento?<\/STRONG><\/P>\n<P>Per semplificare le operazioni di accoglienza, e' preferibile portare il biglietto. Un documento di identita' valido dell'accompagnatore e', invece, obbligatorio.<\/P>\n<P><STRONG>Il nome sulla registrazione o sul biglietto non corrisponde a quello del partecipante. Ci sono problemi?<\/STRONG><\/P>\n<P>Il biglietto deve riportare il nome del partecipante (bambino).<\/P>\n<P><BR><\/P>"
+      },
+      "id": "37979285064",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-lissone-37979285064?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-24T14:45:00",
+        "utc": "2018-03-24T13:45:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-24T17:15:00",
+        "utc": "2018-03-24T16:15:00Z"
+      },
+      "organization_id": "137476591615",
+      "created": "2017-09-17T15:15:37Z",
+      "changed": "2017-09-17T15:16:11Z",
+      "capacity": 10,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 900,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "35484398",
+      "organizer_id": "10843281342",
+      "venue_id": "15758358",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/37979285064/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 998,
+          "height": 499
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35484398%2F137476591615%2F1%2Foriginal.jpg?s=f99ccfdeedd0ebff8e0f6cfccbe589eb",
+          "width": null,
+          "height": null
+        },
+        "id": "35484398",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35484398%2F137476591615%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C998%2C499&s=d29ae45b4c7b01e0226b38347774fabe",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Lissone",
+        "html": "CoderDojo Lissone"
+      },
+      "description": {
+        "text": "La Citt\u00e0 di Lissone organizza un evento\u00a0CoderDojo\u00a0per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!\nDedicato a ragazze e \u00a0ragazzi tra i 7 e i 14 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo videogame: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.\u00a0\nPer\u00a0introdurre i ragazzi alle basi della programmazioni useremo\u00a0SCRATCH.\n\u00a0\ncreare\u2013 programmare- imparare\nScratch\u00a0\u00e8 un software\u00a0gratuito,\u00a0basato su un linguaggio di programmazione a\u00a0blocchi\u00a0che permette anche ai bambini pi\u00f9 piccoli di\u00a0creare animazioni, giochi\u00a0e piccoli fumetti sia statici che\u00a0animati, che possono essere condivise online con la comunit\u00e0.\nCon\u00a0Scratch i Ragazzi utilizzano la\u00a0logica e la creativit\u00e0\u00a0per incastrare tra di loro dei blocchi con\u00a0funzioni differenti e realizzare oggetti\u00a0multimediali.\nIl\u00a0software \u00e8 stato sviluppato dal\u00a0Lifelong Kindergarten Group\u00a0gestito da Mitchel Resnick presso il\u00a0Media Lab\u00a0del\u00a0Massachusetts Institute of Technology\n\u00a0\nPer partecipare ricordati di portare:\n\nUna merendina\nUn portatile con l'alimentatore e mouse (ehi, se non ne hai uno, fattelo prestare! Serve la tastiera, quindi i tablet non vanno bene)\nUn adulto accompagnatore! (Importante: deve restare con te durante l'evento). Mamma o pap\u00e0 dovranno firmare, il giorno dell'evento,\u00a0una preventiva autorizzazione per la tua partecipazione: ricordaglielo, senza non possiamo farti entrare!!\n\n\u00a0\nFAQ\n\u00c8 richiesto un documento di identit\u00e0 o ci sono limiti di et\u00e0 per essere ammessi all'evento?\nE' necessario un documento di identita' del genitore che accompagna il bambino. L'eta' del bambino deve essere compresa tra i 7 e i 14 anni.\nCosa posso portare e cosa non devo portare all'evento?\nE' necessario portare una merenda, una bottiglietta d'acqua e un pc per ciascun bambino.\nDove posso contattare l'organizzatore per qualsiasi domanda?\nE' possibile contattare l'organizzatore scrivendo a coderdojo.lissone@tiscali.it\nLa mia registrazione o il mio biglietto \u00e8 trasferibile?\nNon e' possibile trasferire il biglietto ad altre persone ed \u00e8 riservato esclusivamente ai minori sui quali si esercita la potesta' genitoriale.\nPosso aggiornare le mie informazioni di registrazione?\nE' possibile aggiornare le proprie informazioni, comunicando le modifiche tramite email a\u00a0coderdojo.lissone@tiscali.it\nDevo portare i biglietti stampati all'evento?\nPer semplificare le operazioni di accoglienza, e' preferibile portare il biglietto. Un documento di identita' valido dell'accompagnatore e', invece, obbligatorio.\nIl nome sulla registrazione o sul biglietto non corrisponde a quello del partecipante. Ci sono problemi?\nIl biglietto deve riportare il nome del partecipante (bambino).\n",
+        "html": "<P>La Citt\u00e0 di Lissone organizza un evento\u00a0<SPAN>CoderDojo<\/SPAN>\u00a0per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!<\/P>\n<P>Dedicato a ragazze e \u00a0ragazzi tra i 7 e i 14 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo videogame: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.\u00a0<\/P>\n<P>Per\u00a0introdurre i ragazzi alle basi della programmazioni useremo\u00a0<EM><SPAN>SCRATCH<\/SPAN><\/EM>.<\/P>\n<P>\u00a0<IMG ALT=\"\" SRC=\"https://cdn.evbuc.com/eventlogos/127762503/scratch.jpg\"><\/P>\n<P><SPAN><SPAN><SPAN>creare\u2013 programmare- imparare<\/SPAN><\/SPAN><\/SPAN><\/P>\n<P>Scratch\u00a0\u00e8 un software\u00a0gratuito,\u00a0basato su un linguaggio di programmazione a\u00a0blocchi\u00a0che permette anche ai bambini pi\u00f9 piccoli di\u00a0creare animazioni, giochi\u00a0e piccoli fumetti sia statici che\u00a0animati, che possono essere condivise online con la comunit\u00e0.<\/P>\n<P>Con\u00a0Scratch i Ragazzi utilizzano la\u00a0logica e la creativit\u00e0\u00a0per incastrare tra di loro dei blocchi con\u00a0funzioni differenti e realizzare oggetti\u00a0multimediali.<\/P>\n<P>Il\u00a0software \u00e8 stato sviluppato dal\u00a0<A HREF=\"http://llk.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Lifelong Kindergarten Group<\/A>\u00a0gestito da Mitchel Resnick presso il\u00a0<A HREF=\"http://www.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Media Lab<\/A>\u00a0del\u00a0<A HREF=\"http://www.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Massachusetts Institute of Technology<\/A><\/P>\n<P>\u00a0<\/P>\n<P>Per partecipare ricordati di portare:<\/P>\n<UL>\n<LI>Una merendina<\/LI>\n<LI>Un portatile con l'alimentatore e mouse (ehi, se non ne hai uno, fattelo prestare! Serve la tastiera, quindi i tablet non vanno bene)<\/LI>\n<LI><SPAN>Un adulto accompagnatore! (Importante: deve restare con te durante l'evento). Mamma o pap\u00e0 dovranno firmare, il giorno dell'evento,\u00a0una preventiva autorizzazione per la tua partecipazione: ricordaglielo, senza non possiamo farti entrare!!<\/SPAN><\/LI>\n<\/UL>\n<P>\u00a0<\/P>\n<P CLASS=\"panel_section\"><STRONG>FAQ<\/STRONG><\/P>\n<P><STRONG>\u00c8 richiesto un documento di identit\u00e0 o ci sono limiti di et\u00e0 per essere ammessi all'evento?<\/STRONG><\/P>\n<P>E' necessario un documento di identita' del genitore che accompagna il bambino. L'eta' del bambino deve essere compresa tra i 7 e i 14 anni.<\/P>\n<P><STRONG>Cosa posso portare e cosa non devo portare all'evento?<\/STRONG><\/P>\n<P>E' necessario portare una merenda, una bottiglietta d'acqua e un pc per ciascun bambino.<\/P>\n<P><STRONG>Dove posso contattare l'organizzatore per qualsiasi domanda?<\/STRONG><\/P>\n<P>E' possibile contattare l'organizzatore scrivendo a <A HREF=\"mailto:coderdojo.lissone@tiscali.it\" TARGET=\"_blank\" TITLE=\"coderdojo.lissone@tiscali.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">coderdojo.lissone@tiscali.it<\/A><\/P>\n<P><STRONG>La mia registrazione o il mio biglietto \u00e8 trasferibile?<\/STRONG><\/P>\n<P>Non e' possibile trasferire il biglietto ad altre persone ed \u00e8 riservato esclusivamente ai minori sui quali si esercita la potesta' genitoriale.<\/P>\n<P><STRONG>Posso aggiornare le mie informazioni di registrazione?<\/STRONG><\/P>\n<P>E' possibile aggiornare le proprie informazioni, comunicando le modifiche tramite email a\u00a0<A HREF=\"mailto:coderdojo.lissone@tiscali.it\" TARGET=\"_blank\" TITLE=\"coderdojo.lissone@tiscali.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">coderdojo.lissone@tiscali.it<\/A><\/P>\n<P><STRONG>Devo portare i biglietti stampati all'evento?<\/STRONG><\/P>\n<P>Per semplificare le operazioni di accoglienza, e' preferibile portare il biglietto. Un documento di identita' valido dell'accompagnatore e', invece, obbligatorio.<\/P>\n<P><STRONG>Il nome sulla registrazione o sul biglietto non corrisponde a quello del partecipante. Ci sono problemi?<\/STRONG><\/P>\n<P>Il biglietto deve riportare il nome del partecipante (bambino).<\/P>\n<P><BR><\/P>"
+      },
+      "id": "37979288073",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-lissone-37979288073?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-04-21T14:45:00",
+        "utc": "2018-04-21T12:45:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-04-21T17:15:00",
+        "utc": "2018-04-21T15:15:00Z"
+      },
+      "organization_id": "137476591615",
+      "created": "2017-09-17T15:16:22Z",
+      "changed": "2017-09-17T15:17:05Z",
+      "capacity": 10,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 900,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "35484414",
+      "organizer_id": "10843281342",
+      "venue_id": "15758358",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/37979288073/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 998,
+          "height": 499
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35484414%2F137476591615%2F1%2Foriginal.jpg?s=5426d68f5dda2240424b891b91a573c5",
+          "width": null,
+          "height": null
+        },
+        "id": "35484414",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35484414%2F137476591615%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C998%2C499&s=9e249e10ca5865c5910593d960b0db71",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Lissone",
+        "html": "CoderDojo Lissone"
+      },
+      "description": {
+        "text": "La Citt\u00e0 di Lissone organizza un evento\u00a0CoderDojo\u00a0per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!\nDedicato a ragazze e \u00a0ragazzi tra i 7 e i 14 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo videogame: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.\u00a0\nPer\u00a0introdurre i ragazzi alle basi della programmazioni useremo\u00a0SCRATCH.\n\u00a0\ncreare\u2013 programmare- imparare\nScratch\u00a0\u00e8 un software\u00a0gratuito,\u00a0basato su un linguaggio di programmazione a\u00a0blocchi\u00a0che permette anche ai bambini pi\u00f9 piccoli di\u00a0creare animazioni, giochi\u00a0e piccoli fumetti sia statici che\u00a0animati, che possono essere condivise online con la comunit\u00e0.\nCon\u00a0Scratch i Ragazzi utilizzano la\u00a0logica e la creativit\u00e0\u00a0per incastrare tra di loro dei blocchi con\u00a0funzioni differenti e realizzare oggetti\u00a0multimediali.\nIl\u00a0software \u00e8 stato sviluppato dal\u00a0Lifelong Kindergarten Group\u00a0gestito da Mitchel Resnick presso il\u00a0Media Lab\u00a0del\u00a0Massachusetts Institute of Technology\n\u00a0\nPer partecipare ricordati di portare:\n\nUna merendina\nUn portatile con l'alimentatore e mouse (ehi, se non ne hai uno, fattelo prestare! Serve la tastiera, quindi i tablet non vanno bene)\nUn adulto accompagnatore! (Importante: deve restare con te durante l'evento). Mamma o pap\u00e0 dovranno firmare, il giorno dell'evento,\u00a0una preventiva autorizzazione per la tua partecipazione: ricordaglielo, senza non possiamo farti entrare!!\n\n\u00a0\nFAQ\n\u00c8 richiesto un documento di identit\u00e0 o ci sono limiti di et\u00e0 per essere ammessi all'evento?\nE' necessario un documento di identita' del genitore che accompagna il bambino. L'eta' del bambino deve essere compresa tra i 7 e i 14 anni.\nCosa posso portare e cosa non devo portare all'evento?\nE' necessario portare una merenda, una bottiglietta d'acqua e un pc per ciascun bambino.\nDove posso contattare l'organizzatore per qualsiasi domanda?\nE' possibile contattare l'organizzatore scrivendo a coderdojo.lissone@tiscali.it\nLa mia registrazione o il mio biglietto \u00e8 trasferibile?\nNon e' possibile trasferire il biglietto ad altre persone ed \u00e8 riservato esclusivamente ai minori sui quali si esercita la potesta' genitoriale.\nPosso aggiornare le mie informazioni di registrazione?\nE' possibile aggiornare le proprie informazioni, comunicando le modifiche tramite email a\u00a0coderdojo.lissone@tiscali.it\nDevo portare i biglietti stampati all'evento?\nPer semplificare le operazioni di accoglienza, e' preferibile portare il biglietto. Un documento di identita' valido dell'accompagnatore e', invece, obbligatorio.\nIl nome sulla registrazione o sul biglietto non corrisponde a quello del partecipante. Ci sono problemi?\nIl biglietto deve riportare il nome del partecipante (bambino).\n",
+        "html": "<P>La Citt\u00e0 di Lissone organizza un evento\u00a0<SPAN>CoderDojo<\/SPAN>\u00a0per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!<\/P>\n<P>Dedicato a ragazze e \u00a0ragazzi tra i 7 e i 14 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo videogame: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.\u00a0<\/P>\n<P>Per\u00a0introdurre i ragazzi alle basi della programmazioni useremo\u00a0<EM><SPAN>SCRATCH<\/SPAN><\/EM>.<\/P>\n<P>\u00a0<IMG ALT=\"\" SRC=\"https://cdn.evbuc.com/eventlogos/127762503/scratch.jpg\"><\/P>\n<P><SPAN><SPAN><SPAN>creare\u2013 programmare- imparare<\/SPAN><\/SPAN><\/SPAN><\/P>\n<P>Scratch\u00a0\u00e8 un software\u00a0gratuito,\u00a0basato su un linguaggio di programmazione a\u00a0blocchi\u00a0che permette anche ai bambini pi\u00f9 piccoli di\u00a0creare animazioni, giochi\u00a0e piccoli fumetti sia statici che\u00a0animati, che possono essere condivise online con la comunit\u00e0.<\/P>\n<P>Con\u00a0Scratch i Ragazzi utilizzano la\u00a0logica e la creativit\u00e0\u00a0per incastrare tra di loro dei blocchi con\u00a0funzioni differenti e realizzare oggetti\u00a0multimediali.<\/P>\n<P>Il\u00a0software \u00e8 stato sviluppato dal\u00a0<A HREF=\"http://llk.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Lifelong Kindergarten Group<\/A>\u00a0gestito da Mitchel Resnick presso il\u00a0<A HREF=\"http://www.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Media Lab<\/A>\u00a0del\u00a0<A HREF=\"http://www.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Massachusetts Institute of Technology<\/A><\/P>\n<P>\u00a0<\/P>\n<P>Per partecipare ricordati di portare:<\/P>\n<UL>\n<LI>Una merendina<\/LI>\n<LI>Un portatile con l'alimentatore e mouse (ehi, se non ne hai uno, fattelo prestare! Serve la tastiera, quindi i tablet non vanno bene)<\/LI>\n<LI><SPAN>Un adulto accompagnatore! (Importante: deve restare con te durante l'evento). Mamma o pap\u00e0 dovranno firmare, il giorno dell'evento,\u00a0una preventiva autorizzazione per la tua partecipazione: ricordaglielo, senza non possiamo farti entrare!!<\/SPAN><\/LI>\n<\/UL>\n<P>\u00a0<\/P>\n<P CLASS=\"panel_section\"><STRONG>FAQ<\/STRONG><\/P>\n<P><STRONG>\u00c8 richiesto un documento di identit\u00e0 o ci sono limiti di et\u00e0 per essere ammessi all'evento?<\/STRONG><\/P>\n<P>E' necessario un documento di identita' del genitore che accompagna il bambino. L'eta' del bambino deve essere compresa tra i 7 e i 14 anni.<\/P>\n<P><STRONG>Cosa posso portare e cosa non devo portare all'evento?<\/STRONG><\/P>\n<P>E' necessario portare una merenda, una bottiglietta d'acqua e un pc per ciascun bambino.<\/P>\n<P><STRONG>Dove posso contattare l'organizzatore per qualsiasi domanda?<\/STRONG><\/P>\n<P>E' possibile contattare l'organizzatore scrivendo a <A HREF=\"mailto:coderdojo.lissone@tiscali.it\" TARGET=\"_blank\" TITLE=\"coderdojo.lissone@tiscali.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">coderdojo.lissone@tiscali.it<\/A><\/P>\n<P><STRONG>La mia registrazione o il mio biglietto \u00e8 trasferibile?<\/STRONG><\/P>\n<P>Non e' possibile trasferire il biglietto ad altre persone ed \u00e8 riservato esclusivamente ai minori sui quali si esercita la potesta' genitoriale.<\/P>\n<P><STRONG>Posso aggiornare le mie informazioni di registrazione?<\/STRONG><\/P>\n<P>E' possibile aggiornare le proprie informazioni, comunicando le modifiche tramite email a\u00a0<A HREF=\"mailto:coderdojo.lissone@tiscali.it\" TARGET=\"_blank\" TITLE=\"coderdojo.lissone@tiscali.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">coderdojo.lissone@tiscali.it<\/A><\/P>\n<P><STRONG>Devo portare i biglietti stampati all'evento?<\/STRONG><\/P>\n<P>Per semplificare le operazioni di accoglienza, e' preferibile portare il biglietto. Un documento di identita' valido dell'accompagnatore e', invece, obbligatorio.<\/P>\n<P><STRONG>Il nome sulla registrazione o sul biglietto non corrisponde a quello del partecipante. Ci sono problemi?<\/STRONG><\/P>\n<P>Il biglietto deve riportare il nome del partecipante (bambino).<\/P>\n<P><BR><\/P>"
+      },
+      "id": "37979293088",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-lissone-37979293088?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-05-12T14:45:00",
+        "utc": "2018-05-12T12:45:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-05-12T17:15:00",
+        "utc": "2018-05-12T15:15:00Z"
+      },
+      "organization_id": "137476591615",
+      "created": "2017-09-17T15:17:17Z",
+      "changed": "2017-09-17T15:18:02Z",
+      "capacity": 10,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 900,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "35484435",
+      "organizer_id": "10843281342",
+      "venue_id": "15758358",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/37979293088/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 998,
+          "height": 499
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35484435%2F137476591615%2F1%2Foriginal.jpg?s=cdbd58468f36b9d4c088ca551e913c1a",
+          "width": null,
+          "height": null
+        },
+        "id": "35484435",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35484435%2F137476591615%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C998%2C499&s=81d64ad4975bf3338dbfa823fcdaf178",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Lissone",
+        "html": "CoderDojo Lissone"
+      },
+      "description": {
+        "text": "La Citt\u00e0 di Lissone organizza un evento\u00a0CoderDojo\u00a0per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!\nDedicato a ragazze e \u00a0ragazzi tra i 7 e i 14 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo videogame: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.\u00a0\nPer\u00a0introdurre i ragazzi alle basi della programmazioni useremo\u00a0SCRATCH.\n\u00a0\ncreare\u2013 programmare- imparare\nScratch\u00a0\u00e8 un software\u00a0gratuito,\u00a0basato su un linguaggio di programmazione a\u00a0blocchi\u00a0che permette anche ai bambini pi\u00f9 piccoli di\u00a0creare animazioni, giochi\u00a0e piccoli fumetti sia statici che\u00a0animati, che possono essere condivise online con la comunit\u00e0.\nCon\u00a0Scratch i Ragazzi utilizzano la\u00a0logica e la creativit\u00e0\u00a0per incastrare tra di loro dei blocchi con\u00a0funzioni differenti e realizzare oggetti\u00a0multimediali.\nIl\u00a0software \u00e8 stato sviluppato dal\u00a0Lifelong Kindergarten Group\u00a0gestito da Mitchel Resnick presso il\u00a0Media Lab\u00a0del\u00a0Massachusetts Institute of Technology\n\u00a0\nPer partecipare ricordati di portare:\n\nUna merendina\nUn portatile con l'alimentatore e mouse (ehi, se non ne hai uno, fattelo prestare! Serve la tastiera, quindi i tablet non vanno bene)\nUn adulto accompagnatore! (Importante: deve restare con te durante l'evento). Mamma o pap\u00e0 dovranno firmare, il giorno dell'evento,\u00a0una preventiva autorizzazione per la tua partecipazione: ricordaglielo, senza non possiamo farti entrare!!\n\n\u00a0\nFAQ\n\u00c8 richiesto un documento di identit\u00e0 o ci sono limiti di et\u00e0 per essere ammessi all'evento?\nE' necessario un documento di identita' del genitore che accompagna il bambino. L'eta' del bambino deve essere compresa tra i 7 e i 14 anni.\nCosa posso portare e cosa non devo portare all'evento?\nE' necessario portare una merenda, una bottiglietta d'acqua e un pc per ciascun bambino.\nDove posso contattare l'organizzatore per qualsiasi domanda?\nE' possibile contattare l'organizzatore scrivendo a coderdojo.lissone@tiscali.it\nLa mia registrazione o il mio biglietto \u00e8 trasferibile?\nNon e' possibile trasferire il biglietto ad altre persone ed \u00e8 riservato esclusivamente ai minori sui quali si esercita la potesta' genitoriale.\nPosso aggiornare le mie informazioni di registrazione?\nE' possibile aggiornare le proprie informazioni, comunicando le modifiche tramite email a\u00a0coderdojo.lissone@tiscali.it\nDevo portare i biglietti stampati all'evento?\nPer semplificare le operazioni di accoglienza, e' preferibile portare il biglietto. Un documento di identita' valido dell'accompagnatore e', invece, obbligatorio.\nIl nome sulla registrazione o sul biglietto non corrisponde a quello del partecipante. Ci sono problemi?\nIl biglietto deve riportare il nome del partecipante (bambino).\n",
+        "html": "<P>La Citt\u00e0 di Lissone organizza un evento\u00a0<SPAN>CoderDojo<\/SPAN>\u00a0per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!<\/P>\n<P>Dedicato a ragazze e \u00a0ragazzi tra i 7 e i 14 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo videogame: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.\u00a0<\/P>\n<P>Per\u00a0introdurre i ragazzi alle basi della programmazioni useremo\u00a0<EM><SPAN>SCRATCH<\/SPAN><\/EM>.<\/P>\n<P>\u00a0<IMG ALT=\"\" SRC=\"https://cdn.evbuc.com/eventlogos/127762503/scratch.jpg\"><\/P>\n<P><SPAN><SPAN><SPAN>creare\u2013 programmare- imparare<\/SPAN><\/SPAN><\/SPAN><\/P>\n<P>Scratch\u00a0\u00e8 un software\u00a0gratuito,\u00a0basato su un linguaggio di programmazione a\u00a0blocchi\u00a0che permette anche ai bambini pi\u00f9 piccoli di\u00a0creare animazioni, giochi\u00a0e piccoli fumetti sia statici che\u00a0animati, che possono essere condivise online con la comunit\u00e0.<\/P>\n<P>Con\u00a0Scratch i Ragazzi utilizzano la\u00a0logica e la creativit\u00e0\u00a0per incastrare tra di loro dei blocchi con\u00a0funzioni differenti e realizzare oggetti\u00a0multimediali.<\/P>\n<P>Il\u00a0software \u00e8 stato sviluppato dal\u00a0<A HREF=\"http://llk.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Lifelong Kindergarten Group<\/A>\u00a0gestito da Mitchel Resnick presso il\u00a0<A HREF=\"http://www.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Media Lab<\/A>\u00a0del\u00a0<A HREF=\"http://www.media.mit.edu/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Massachusetts Institute of Technology<\/A><\/P>\n<P>\u00a0<\/P>\n<P>Per partecipare ricordati di portare:<\/P>\n<UL>\n<LI>Una merendina<\/LI>\n<LI>Un portatile con l'alimentatore e mouse (ehi, se non ne hai uno, fattelo prestare! Serve la tastiera, quindi i tablet non vanno bene)<\/LI>\n<LI><SPAN>Un adulto accompagnatore! (Importante: deve restare con te durante l'evento). Mamma o pap\u00e0 dovranno firmare, il giorno dell'evento,\u00a0una preventiva autorizzazione per la tua partecipazione: ricordaglielo, senza non possiamo farti entrare!!<\/SPAN><\/LI>\n<\/UL>\n<P>\u00a0<\/P>\n<P CLASS=\"panel_section\"><STRONG>FAQ<\/STRONG><\/P>\n<P><STRONG>\u00c8 richiesto un documento di identit\u00e0 o ci sono limiti di et\u00e0 per essere ammessi all'evento?<\/STRONG><\/P>\n<P>E' necessario un documento di identita' del genitore che accompagna il bambino. L'eta' del bambino deve essere compresa tra i 7 e i 14 anni.<\/P>\n<P><STRONG>Cosa posso portare e cosa non devo portare all'evento?<\/STRONG><\/P>\n<P>E' necessario portare una merenda, una bottiglietta d'acqua e un pc per ciascun bambino.<\/P>\n<P><STRONG>Dove posso contattare l'organizzatore per qualsiasi domanda?<\/STRONG><\/P>\n<P>E' possibile contattare l'organizzatore scrivendo a <A HREF=\"mailto:coderdojo.lissone@tiscali.it\" TARGET=\"_blank\" TITLE=\"coderdojo.lissone@tiscali.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">coderdojo.lissone@tiscali.it<\/A><\/P>\n<P><STRONG>La mia registrazione o il mio biglietto \u00e8 trasferibile?<\/STRONG><\/P>\n<P>Non e' possibile trasferire il biglietto ad altre persone ed \u00e8 riservato esclusivamente ai minori sui quali si esercita la potesta' genitoriale.<\/P>\n<P><STRONG>Posso aggiornare le mie informazioni di registrazione?<\/STRONG><\/P>\n<P>E' possibile aggiornare le proprie informazioni, comunicando le modifiche tramite email a\u00a0<A HREF=\"mailto:coderdojo.lissone@tiscali.it\" TARGET=\"_blank\" TITLE=\"coderdojo.lissone@tiscali.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">coderdojo.lissone@tiscali.it<\/A><\/P>\n<P><STRONG>Devo portare i biglietti stampati all'evento?<\/STRONG><\/P>\n<P>Per semplificare le operazioni di accoglienza, e' preferibile portare il biglietto. Un documento di identita' valido dell'accompagnatore e', invece, obbligatorio.<\/P>\n<P><STRONG>Il nome sulla registrazione o sul biglietto non corrisponde a quello del partecipante. Ci sono problemi?<\/STRONG><\/P>\n<P>Il biglietto deve riportare il nome del partecipante (bambino).<\/P>\n<P><BR><\/P>"
+      },
+      "id": "37979299106",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-lissone-37979299106?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-06-23T09:45:00",
+        "utc": "2018-06-23T07:45:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-06-23T12:15:00",
+        "utc": "2018-06-23T10:15:00Z"
+      },
+      "organization_id": "137476591615",
+      "created": "2017-09-17T15:18:13Z",
+      "changed": "2017-09-17T15:19:24Z",
+      "capacity": 10,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 900,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "35484450",
+      "organizer_id": "10843281342",
+      "venue_id": "15758358",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/37979299106/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 998,
+          "height": 499
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35484450%2F137476591615%2F1%2Foriginal.jpg?s=2214d39391adb4b61fc2725d94d5d12d",
+          "width": null,
+          "height": null
+        },
+        "id": "35484450",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F35484450%2F137476591615%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C998%2C499&s=62134b2ab004be0b00b0b3db13841d70",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "Scratch! Piccoli coder crescono. Coderdojo @DXC @HPE @TilaneDigitalFab",
+        "html": "Scratch! Piccoli coder crescono. Coderdojo @DXC @HPE @TilaneDigitalFab"
+      },
+      "description": {
+        "text": "Laboratorio di programmazione con Scratch\u00a0 adatto a diversi livelli di conoscenza.Si chiede di portare il proprio PC e si consiglia di scaricare ed installare Scratch prima di partecipare al laboratorio.Per informazioni: digitalfab@tilane.it\nDXC Technologies, Hewlett Packard\u00a0Enterprise\u00a0e Tilane Digital Fab ospitano un evento CoderDojo per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!Dedicato ai ragazzi tra gli 8 e i 12 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo progetto: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.Per scaricare ed installare: Scratch : https://scratch.mit.edu/download",
+        "html": "<P>Laboratorio di programmazione con <A HREF=\"https://scratch.mit.edu/\" TARGET=\"_blank\" TITLE=\"Scratch\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Scratch<\/A>\u00a0 adatto a diversi livelli di conoscenza.<BR><BR>Si chiede di portare il proprio PC e si consiglia di scaricare ed installare Scratch prima di partecipare al laboratorio.<BR>Per informazioni:<A HREF=\"mailto:digitalfab@tilane.it\" TARGET=\"_blank\" TITLE=\"digitalfab@tilane.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\"> digitalfab@tilane.it<\/A><A HREF=\"mailto:digitalfab@tilane.it\" TARGET=\"_blank\" TITLE=\"digitalfab@tilane.it\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\"><\/A><\/P>\n<P>DXC Technologies, Hewlett Packard\u00a0Enterprise\u00a0e Tilane Digital Fab ospitano un evento CoderDojo per mostrare che chiunque pu\u00f2 apprendere le basi dell'informatica anche divertendosi mentre lo fa!<BR><BR>Dedicato ai ragazzi tra gli 8 e i 12 anni, anche senza nessuna nozione di informatica, in poche ore li metteremo in grado di realizzare un piccolo progetto: perch\u00e9 crearlo \u00e8 pi\u00f9 divertente che giocarci.<BR><BR>Per scaricare ed installare: <A HREF=\"https://scratch.mit.edu/download\" TARGET=\"_blank\" TITLE=\"Scatch: https://scratch.mit.edu/download\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">Scratch : https://scratch.mit.edu/download<\/A><\/P>"
+      },
+      "id": "43630731693",
+      "url": "https://www.eventbrite.it/e/biglietti-scratch-piccoli-coder-crescono-coderdojo-dxc-hpe-tilanedigitalfab-43630731693?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T09:30:00",
+        "utc": "2018-03-17T08:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T12:30:00",
+        "utc": "2018-03-17T11:30:00Z"
+      },
+      "organization_id": "208118490516",
+      "created": "2018-02-27T21:32:51Z",
+      "changed": "2018-03-03T18:29:40Z",
+      "capacity": 20,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41680537",
+      "organizer_id": "15542734844",
+      "venue_id": "23494761",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/43630731693/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 496,
+          "height": 248
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41680537%2F208118490516%2F1%2Foriginal.jpg?s=3451e8653816f29016d0cea05126f2f3",
+          "width": 497,
+          "height": 269
+        },
+        "id": "41680537",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41680537%2F208118490516%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C496%2C248&s=4af842ce170f6c793a3c3521dd75c11f",
+        "aspect_ratio": "2",
+        "edge_color": "#a8d1b6",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "CoderDojo Aprilia - 17 Marzo 2018 - I robot e i pap\u00e0!",
+        "html": "CoderDojo Aprilia - 17 Marzo 2018 - I robot e i pap\u00e0!"
+      },
+      "description": {
+        "text": "Tornano a trovarci i nostri amici robot, infatti per questi ultimi 3 incontri della stagione le nostre attivit\u00e0 saranno tutte orientate intorno agli mBot.\nIn questo incontro prenderemo di nuovo familiarit\u00e0 con gli mBot facendoli muovere, colorare, suonare e riconoscere gli ostacoli.\u00a0\nEssendo anche la festa del pap\u00e0, realizzeremo un piccolo tinkering da regalare ai pap\u00e0,\nL'evento \u00e8 aperto ai ragazzi dai 7 ai 12 anni.\nIMPORTANTE: questo incontro si svolger\u00e0 presso la sede del comitato di quartiere APRILIA NORD vicino al parco Friuli. Ringraziamo in anticipo i membri del comitato per il loro aiuto e ospitalit\u00e0!\nCosa dovete portare:\n\nPortatile e mouse con MAKEBLOCK\u00a0pre-installato\u00a0e funzionante; (chi vorr\u00e0 potr\u00e0 lavorare in coppia anche se questa volta ognuno potr\u00e0 essere autonomo)\nUna prolunga o una ciabatta elettrica\nUna merenda per il break a met\u00e0 mattina\nPer il Tinkering portate con voi delle forbici e un colore nero (\u00e8 indifferente che sia pastello o pennarello)!\nUn genitore presente per tutta la durata della sessione (i genitori potranno accomodarsi in fondo alla sala mentre i loro Ninja sperimenteranno!\nTanta voglia di fare e di\u2026.sperimentare!!!\n\nCi vediamo sabato!",
+        "html": "<P>Tornano a trovarci i nostri amici robot, infatti per questi ultimi 3 incontri della stagione le nostre attivit\u00e0 saranno tutte orientate intorno agli mBot.<\/P>\n<P>In questo incontro prenderemo di nuovo familiarit\u00e0 con gli mBot facendoli muovere, colorare, suonare e riconoscere gli ostacoli.\u00a0<\/P>\n<P>Essendo anche la festa del pap\u00e0, realizzeremo un piccolo tinkering da regalare ai pap\u00e0,<\/P>\n<P>L'evento \u00e8 aperto ai ragazzi dai 7 ai 12 anni.<\/P>\n<P>IMPORTANTE: questo incontro si svolger\u00e0 presso la sede del comitato di quartiere APRILIA NORD vicino al parco Friuli. Ringraziamo in anticipo i membri del comitato per il loro aiuto e ospitalit\u00e0!<\/P>\n<P><SPAN>Cosa dovete portare:<\/SPAN><\/P>\n<OL>\n<LI>Portatile e mouse con <SPAN><STRONG>MAKEBLOCK<\/STRONG><\/SPAN>\u00a0pre-installato\u00a0e funzionante; (chi vorr\u00e0 potr\u00e0 lavorare in coppia anche se questa volta ognuno potr\u00e0 essere autonomo)<\/LI>\n<LI>Una prolunga o una ciabatta elettrica<\/LI>\n<LI>Una merenda per il break a met\u00e0 mattina<\/LI>\n<LI>Per il <STRONG>Tinkering<\/STRONG> portate con voi delle forbici e un colore nero (\u00e8 indifferente che sia pastello o pennarello)!<\/LI>\n<LI>Un genitore presente per tutta la durata della sessione (i genitori potranno accomodarsi in fondo alla sala mentre i loro Ninja sperimenteranno!<\/LI>\n<LI>Tanta voglia di fare e di\u2026.sperimentare!!!<\/LI>\n<\/OL>\n<P><SPAN>Ci vediamo sabato!<\/SPAN><\/P>"
+      },
+      "id": "44058962543",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-aprilia-17-marzo-2018-i-robot-e-i-papa-44058962543?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T10:00:00",
+        "utc": "2018-03-17T09:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T13:00:00",
+        "utc": "2018-03-17T12:00:00Z"
+      },
+      "organization_id": "137880912185",
+      "created": "2018-03-10T13:57:45Z",
+      "changed": "2018-03-10T18:04:41Z",
+      "capacity": 15,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "42025653",
+      "organizer_id": "8019050149",
+      "venue_id": "18324300",
+      "category_id": "115",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/44058962543/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 8
+          },
+          "width": 900,
+          "height": 450
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F42025653%2F137880912185%2F1%2Foriginal.jpg?s=7ab18077dada03e3fab12284e5499205",
+          "width": 900,
+          "height": 505
+        },
+        "id": "42025653",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F42025653%2F137880912185%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C8%2C900%2C450&s=a5233c4c0c44d0712343f5da17329a67",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "Coding Lab in Spring Time",
+        "html": "Coding Lab in Spring Time"
+      },
+      "description": {
+        "text": "Attivit\u00e0 proposte: Scratch, Arduino, HTML, MicroBit e MakeyMakey.\nI laboratori di CoderDojo Como sono gratuiti, con registrazione obbligatoria entro 2 giorni prima dell'evento.\nPer\u00a0 qualsiasi segnalazione sull'evento si prega di contattare l'organizzatore tramite email:\u00a0coderdojoco@gmail.com\nPer partecipare alle prossime attivit\u00e0 di Coderdojo Como, i bambini/ragazzi potranno aderire\u00a0all'Associazione Alfabeto Digitale con un contributo \u20ac 10/anno, per ricoprire la quota assicurativa. Maggiori dettagli nella pagina dedicata\u00a0sul sito di CoderDojo Como.\n\nbiglietti Soci\nbiglietti Standard per non-soci da completare sul posto. L'eventuale adesione ad Alfabeto Digitale sar\u00e0 possibile direttamente in loco, previa compilazione dell'apposito modulo che verr\u00e0 inviato tramite email.\n\nVi ricordiamo di portare:\n\nun pc con possibilit\u00e0 di connessione wi-fi\nun genitore/tutor che rimanga per tutta la durata dell\u2019incontro\nuna merenda (un po\u2019 di pi\u00f9, da condividere con gli altri!)\n",
+        "html": "<P>Attivit\u00e0 proposte: Scratch, Arduino, HTML, MicroBit e MakeyMakey.<\/P>\n<P><STRONG>I laboratori di CoderDojo Como sono gratuiti, con registrazione obbligatoria entro 2 giorni prima dell'evento.<\/STRONG><\/P>\n<P>Per\u00a0 qualsiasi segnalazione sull'evento si prega di contattare l'organizzatore tramite email:<STRONG>\u00a0coderdojoco@gmail.com<\/STRONG><\/P>\n<P>Per partecipare alle prossime attivit\u00e0 di Coderdojo Como, i bambini/ragazzi potranno aderire\u00a0<STRONG>all'Associazione Alfabeto Digitale con un contributo \u20ac 10/anno, per ricoprire la quota assicurativa<\/STRONG>. Maggiori dettagli nella <A HREF=\"https://www.coderdojocomo.it/diventare-soci-alfabeto-digitale/\" TARGET=\"_blank\" REL=\"noreferrer noopener nofollow noopener noreferrer nofollow\">pagina dedicata<\/A>\u00a0sul sito di CoderDojo Como.<\/P>\n<UL>\n<LI>biglietti Soci<\/LI>\n<LI>biglietti Standard per non-soci da completare sul posto. L'eventuale adesione ad Alfabeto Digitale sar\u00e0 possibile direttamente in loco, previa compilazione dell'apposito modulo che verr\u00e0 inviato tramite email.<\/LI>\n<\/UL>\n<P>Vi ricordiamo di portare:<\/P>\n<UL>\n<LI>un pc con possibilit\u00e0 di connessione wi-fi<\/LI>\n<LI>un genitore/tutor che rimanga per tutta la durata dell\u2019incontro<\/LI>\n<LI>una merenda (un po\u2019 di pi\u00f9, da condividere con gli altri!)<\/LI>\n<\/UL>"
+      },
+      "id": "44093915087",
+      "url": "https://www.eventbrite.it/e/biglietti-coding-lab-in-spring-time-44093915087?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-24T15:00:00",
+        "utc": "2018-03-24T14:00:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-24T18:00:00",
+        "utc": "2018-03-24T17:00:00Z"
+      },
+      "organization_id": "161079013086",
+      "created": "2018-03-12T07:51:10Z",
+      "changed": "2018-03-12T10:26:01Z",
+      "capacity": 35,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "42073790",
+      "organizer_id": "9002900226",
+      "venue_id": "21543240",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/44093915087/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 0
+          },
+          "width": 2160,
+          "height": 1080
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F42073790%2F161079013086%2F1%2Foriginal.jpg?s=5195b96a9d1929994140822a41e41c8e",
+          "width": 2160,
+          "height": 1080
+        },
+        "id": "42073790",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F42073790%2F161079013086%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C0%2C2160%2C1080&s=68b7c3dad14a749fedfd7d0ab0e675e0",
+        "aspect_ratio": "2",
+        "edge_color": "#a9a6a0",
+        "edge_color_set": true
+      }
+    },
+    {
+      "name": {
+        "text": "Coderdojo \"spring to come\" edition",
+        "html": "Coderdojo &#34;spring to come&#34; edition"
+      },
+      "description": {
+        "text": "Ed \u00e8 di nuovo coderdojo!\nE di nuovo potrete sviluppare i vostri giochi, animazioni, storie, con Scratch.\nE se questa volta facciamo qualcosa con le macchinine radiocomandate?.... Mistero...\nIntanto prepararte come sempre il vostro pc, il mouse, una merenda (magari da condividere con gli altri partecipanti) e un adulto che vi accompagni.\na presto!",
+        "html": "<P>Ed \u00e8 di nuovo coderdojo!<\/P>\n<P>E di nuovo potrete sviluppare i vostri giochi, animazioni, storie, con Scratch.<\/P>\n<P>E se questa volta facciamo qualcosa con le macchinine radiocomandate?.... Mistero...<\/P>\n<P>Intanto prepararte come sempre il vostro pc, il mouse, una merenda (magari da condividere con gli altri partecipanti) e un adulto che vi accompagni.<\/P>\n<P>a presto!<\/P>"
+      },
+      "id": "44019085269",
+      "url": "https://www.eventbrite.it/e/biglietti-coderdojo-spring-to-come-edition-44019085269?aff=ebapi",
+      "start": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T14:30:00",
+        "utc": "2018-03-17T13:30:00Z"
+      },
+      "end": {
+        "timezone": "Europe/Rome",
+        "local": "2018-03-17T17:30:00",
+        "utc": "2018-03-17T16:30:00Z"
+      },
+      "organization_id": "222072261934",
+      "created": "2018-03-09T11:53:36Z",
+      "changed": "2018-03-09T11:53:38Z",
+      "capacity": 25,
+      "capacity_is_custom": true,
+      "status": "live",
+      "currency": "EUR",
+      "listed": true,
+      "shareable": true,
+      "online_event": false,
+      "tx_time_limit": 480,
+      "hide_start_date": false,
+      "hide_end_date": false,
+      "locale": "it_IT",
+      "is_locked": false,
+      "privacy_setting": "unlocked",
+      "is_series": false,
+      "is_series_parent": false,
+      "is_reserved_seating": false,
+      "source": "create_2.0",
+      "is_free": true,
+      "version": "3.0.0",
+      "logo_id": "41978672",
+      "organizer_id": "14775712007",
+      "venue_id": "22124691",
+      "category_id": "102",
+      "subcategory_id": null,
+      "format_id": "9",
+      "resource_uri": "https://www.eventbriteapi.com/v3/events/44019085269/",
+      "logo": {
+        "crop_mask": {
+          "top_left": {
+            "x": 0,
+            "y": 177
+          },
+          "width": 1880,
+          "height": 940
+        },
+        "original": {
+          "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41978672%2F222072261934%2F1%2Foriginal.jpg?s=15ac18fd67255e081c71253563a384a4",
+          "width": 1881,
+          "height": 2541
+        },
+        "id": "41978672",
+        "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F41978672%2F222072261934%2F1%2Foriginal.jpg?h=200&w=450&rect=0%2C177%2C1880%2C940&s=0573055633aa588f7854c508cf0c5d8f",
+        "aspect_ratio": "2",
+        "edge_color": null,
+        "edge_color_set": true
+      }
+    }
+  ],
+  "location": {
+    "latitude": "43.767918",
+    "within": "350.0",
+    "longitude": "11.252379"
+  }
+}

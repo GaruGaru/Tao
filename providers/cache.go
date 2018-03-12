@@ -10,7 +10,7 @@ import (
 	"log"
 )
 
-func requestKey(lat float64, lon float64, rng int, sorting string) string {
+func RequestKey(lat float64, lon float64, rng int, sorting string) string {
 	return strings.Join(
 		[]string{float64ToString(lat), float64ToString(lon), strconv.Itoa(rng), sorting},
 		":",
@@ -57,7 +57,7 @@ func (rc RedisEventCache) Name() string {
 }
 
 func (rc RedisEventCache) Get(lat float64, lon float64, rng int, sorting string) (events []DojoEvent, present bool, err error) {
-	key := requestKey(lat, lon, rng, sorting)
+	key := RequestKey(lat, lon, rng, sorting)
 	cache, err := rc.redis.Get(key).Result()
 	if err != nil {
 		return nil, false, err
@@ -97,7 +97,7 @@ func (rc LocalEventCache) Name() string {
 }
 
 func (rc LocalEventCache) Get(lat float64, lon float64, rng int, sorting string) (events []DojoEvent, present bool, err error) {
-	key := requestKey(lat, lon, rng, sorting)
+	key := RequestKey(lat, lon, rng, sorting)
 	cache, exists := rc.cache.Get(key)
 	if exists {
 		events, err := eventsFromJson(cache)

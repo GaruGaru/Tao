@@ -23,7 +23,7 @@ func NewCachedEventsProvider(provider EventProvider, caches []EventsCache, stats
 }
 
 func (p CachedEventsProvider) fetchCache(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, bool) {
-	key := requestKey(lat, lon, rng, sorting)
+	key := RequestKey(lat, lon, rng, sorting)
 
 	var cached []DojoEvent
 	hitCacheIndex := 0
@@ -62,7 +62,7 @@ func (p CachedEventsProvider) fetchCache(lat float64, lon float64, rng int, sort
 
 func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, error) {
 
-	key := requestKey(lat, lon, rng, sorting)
+	key := RequestKey(lat, lon, rng, sorting)
 
 	cached, present := p.fetchCache(lat, lon, rng, sorting)
 
