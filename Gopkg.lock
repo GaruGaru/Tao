@@ -38,18 +38,6 @@
   version = "v0.0.3"
 
 [[projects]]
-  name = "github.com/sirupsen/logrus"
-  packages = ["."]
-  revision = "d682213848ed68c0a260ca37d6dd5ace8423f5ba"
-  version = "v1.0.4"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/smira/go-statsd"
-  packages = ["."]
-  revision = "d92014c192b9e4c8ffa3e8954a50950c9649646c"
-
-[[projects]]
   branch = "master"
   name = "github.com/ugorji/go"
   packages = ["codec"]
@@ -57,14 +45,14 @@
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/crypto"
-  packages = ["ssh/terminal"]
-  revision = "5119cf507ed5294cc409c092980c7497ee5d6fd2"
+  name = "github.com/wunderlist/ttlcache"
+  packages = ["."]
+  revision = "fa8f18d5e019f6bdf076153e60dccf2c6fc7ccf5"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
-  packages = ["unix","windows"]
+  packages = ["unix"]
   revision = "2c42eef0765b9837fbdab12011af7830f55f88f0"
 
 [[projects]]
@@ -82,6 +70,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "bf4379c09342e92c830db9fc0c6793d1e877d7fc725a38978b61bfee617bee06"
+  inputs-digest = "d7d68cc28418d22eba179c6c381dd16287bebfe2d063737e2d23cf0117f96ab9"
   solver-name = "gps-cdcl"
   solver-version = 1

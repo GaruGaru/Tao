@@ -23,13 +23,17 @@ func main() {
 		DB:       0,
 	})
 
-	cacheDuration := 30 * time.Minute
+	localCacheExpiration := 15 * time.Minute
+	remoteCacheExpiration := 30 * time.Minute
+
+	caches := []providers.EventsCache{
+		providers.NewLocalCache(localCacheExpiration),
+		providers.NewRedisEventsCache(*redisClient, remoteCacheExpiration),
+	}
 
 	provider := providers.NewCachedEventsProvider(providers.ProvidersManager{
-		Providers: []providers.EventProvider{
-			providers.NewEventBriteProvider(),
-		},
-	}, *redisClient, cacheDuration, statsdClient)
+		Providers: []providers.EventProvider{providers.NewEventBriteProvider(),},
+	}, caches, statsdClient)
 
 	taoApi := api.EventsApi{Provider: provider, Statsd: statsdClient}
 
