@@ -26,11 +26,11 @@ func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting 
 	key := requestKey(lat, lon, rng, sorting)
 
 	for _, cache := range p.Cache {
-		fmt.Printf("Fetching cache from: " + cache.Name())
+		fmt.Println(fmt.Sprintf("Fetching cache from: %s",cache.Name()))
 		cacheFetchStart := time.Now()
 		result, present, err := cache.Get(lat, lon, rng, sorting)
 		if err == nil && present {
-			fmt.Printf("Cache hit from: " + cache.Name())
+			fmt.Println(fmt.Sprintf("Cache hit from: %s",cache.Name()))
 			p.statsd.Inc(fmt.Sprintf("cache.%s.hit", cache.Name()), 1, 1.0)
 			p.statsd.TimingDuration(fmt.Sprintf("cache.%s.latency", cache.Name()), time.Now().Sub(cacheFetchStart), 1.0)
 			return result, nil
@@ -40,7 +40,7 @@ func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting 
 		p.statsd.Inc(fmt.Sprintf("cache.%s.miss", cache.Name()), 1, 1.0)
 	}
 
-	fmt.Printf("Cache miss")
+	fmt.Println("Cache miss")
 
 	fetchStart := time.Now()
 
