@@ -5,6 +5,7 @@ import (
 	"github.com/cactus/go-statsd-client/statsd"
 	"fmt"
 	"time"
+	"log"
 )
 
 type CachedEventsProvider struct {
@@ -26,11 +27,11 @@ func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting 
 	key := requestKey(lat, lon, rng, sorting)
 
 	for _, cache := range p.Cache {
-		fmt.Println(fmt.Sprintf("Fetching cache from: %s",cache.Name()))
+		log.Println(fmt.Sprintf("Fetching cache from: %s",cache.Name()))
 		cacheFetchStart := time.Now()
 		result, present, err := cache.Get(lat, lon, rng, sorting)
 		if err == nil && present {
-			fmt.Println(fmt.Sprintf("Cache hit from: %s",cache.Name()))
+			log.Println(fmt.Sprintf("Cache hit from: %s",cache.Name()))
 			p.statsd.Inc(fmt.Sprintf("cache.%s.hit", cache.Name()), 1, 1.0)
 			p.statsd.TimingDuration(fmt.Sprintf("cache.%s.latency", cache.Name()), time.Now().Sub(cacheFetchStart), 1.0)
 			return result, nil
@@ -40,7 +41,7 @@ func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting 
 		p.statsd.Inc(fmt.Sprintf("cache.%s.miss", cache.Name()), 1, 1.0)
 	}
 
-	fmt.Println("Cache miss")
+	log.Println("Cache miss")
 
 	fetchStart := time.Now()
 
