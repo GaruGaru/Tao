@@ -55,9 +55,7 @@ func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting 
 
 	p.statsd.Inc("fetch.ok", 1, 1.0)
 
-	cacheUpdateStart := time.Now()
 	p.updateCache(events, key)
-	p.statsd.TimingDuration("cache.update.latency", time.Now().Sub(cacheUpdateStart), 1.0)
 
 	return events, nil
 
@@ -65,12 +63,14 @@ func (p CachedEventsProvider) Events(lat float64, lon float64, rng int, sorting 
 
 func (p CachedEventsProvider) updateCache(events []DojoEvent, key string) {
 	for _, cache := range p.Cache {
+		cacheUpdateStart := time.Now()
 		err := cache.Put(key, events)
 		if err != nil {
 			println(err.Error())
 			p.statsd.Inc(fmt.Sprintf("cache.%s.update.error", cache.Name()), 1, 1.0)
 		} else {
 			p.statsd.Inc(fmt.Sprintf("cache.%s.update.ok", cache.Name()), 1, 1.0)
+			p.statsd.TimingDuration(fmt.Sprintf("cache.%s.update.latency", cache.Name()), time.Now().Sub(cacheUpdateStart), 1.0)
 		}
 	}
 }
