@@ -44,6 +44,13 @@ type RedisEventCache struct {
 	cacheDuration time.Duration
 }
 
+func NewRedisEventsCache(redis redis.Client, cacheDuration time.Duration) RedisEventCache {
+	return RedisEventCache{
+		redis:         redis,
+		cacheDuration: cacheDuration,
+	}
+}
+
 func (rc RedisEventCache) Name() string {
 	return "redis"
 }

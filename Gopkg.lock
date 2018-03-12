@@ -8,18 +8,6 @@
   version = "v3.1.1"
 
 [[projects]]
-  name = "github.com/cespare/xxhash"
-  packages = ["."]
-  revision = "5c37fe3735342a2e0d01c87a907579987c8936cc"
-  version = "v1.0.0"
-
-[[projects]]
-  name = "github.com/coocood/freecache"
-  packages = ["."]
-  revision = "f3233c8095b26cd0dea0b136b931708c05defa08"
-  version = "v1.0.1"
-
-[[projects]]
   branch = "master"
   name = "github.com/gin-contrib/sse"
   packages = ["."]
@@ -50,12 +38,6 @@
   version = "v0.0.3"
 
 [[projects]]
-  name = "github.com/sirupsen/logrus"
-  packages = ["."]
-  revision = "d682213848ed68c0a260ca37d6dd5ace8423f5ba"
-  version = "v1.0.4"
-
-[[projects]]
   branch = "master"
   name = "github.com/ugorji/go"
   packages = ["codec"]
@@ -69,14 +51,8 @@
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/crypto"
-  packages = ["ssh/terminal"]
-  revision = "5119cf507ed5294cc409c092980c7497ee5d6fd2"
-
-[[projects]]
-  branch = "master"
   name = "golang.org/x/sys"
-  packages = ["unix","windows"]
+  packages = ["unix"]
   revision = "2c42eef0765b9837fbdab12011af7830f55f88f0"
 
 [[projects]]
@@ -94,6 +70,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "c33253a5d07f2a0debe7cccc83e64bb134f78c2932176c54b40e308bfb30b9cd"
+  inputs-digest = "d7d68cc28418d22eba179c6c381dd16287bebfe2d063737e2d23cf0117f96ab9"
   solver-name = "gps-cdcl"
   solver-version = 1
