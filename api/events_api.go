@@ -68,3 +68,44 @@ func (api EventsApi) eventsV1(c *gin.Context) {
 	}
 
 }
+
+func (api EventsApi) eventsV2(c *gin.Context) {
+
+	lat, e := strconv.ParseFloat(c.Query("lat"), 64)
+	if e != nil {
+		c.String(400, "Invalid parameter lat")
+		return
+	}
+
+	lon, e := strconv.ParseFloat(c.Query("lon"), 64)
+	if e != nil {
+		c.String(400, "Invalid parameter lon")
+		return
+	}
+
+	rng, e := strconv.Atoi(c.Query("range"))
+	if e != nil {
+		c.String(400, "Invalid parameter range")
+		return
+	}
+
+	sorting := c.Query("sort_by")
+	if len(sorting) == 0 {
+		sorting = "distance"
+	}
+
+	events, err := api.Provider.Events(lat, lon, rng, sorting)
+
+	if err == nil {
+		api.Statsd.Inc("request.eventsv2.ok", 1, 1)
+		response := providers.DojoEventResponse{
+			Count:  len(events),
+			Events: events,
+		}
+		c.JSON(200, response)
+	} else {
+		api.Statsd.Inc("request.eventsv2.fail", 1, 1)
+		c.Error(err)
+	}
+
+}

@@ -4,6 +4,11 @@ type EventProvider interface {
 	Events(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, error)
 }
 
+type DojoEventResponse struct {
+	Count  int       `json:"count"`
+	Events []DojoEvent `json:"events"`
+}
+
 type DojoEvent struct {
 	Title        string        `json:"title"`
 	Description  string        `json:"description"`
