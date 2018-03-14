@@ -22,6 +22,8 @@ func (api EventsApi) Run() {
 
 	r.GET("/api/v1/events", api.eventsV1)
 
+	r.GET("/api/v2/events", api.eventsV2)
+
 	r.Run() // listen and serve on 0.0.0.0:8080
 
 }
