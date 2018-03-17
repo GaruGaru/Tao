@@ -190,37 +190,41 @@ func (e EventBrite) processEvent(hLat float64, hLon float64, event Event, events
 	venue, err := e.venue(event.VenueID)
 
 	if err == nil {
-
-		lat, _ := strconv.ParseFloat(venue.Address.Latitude, 64)
-		lon, _ := strconv.ParseFloat(venue.Address.Longitude, 64)
-
-
-		distance := Distance(hLat, hLon, lat, lon) / 1000
-
-		events <- DojoEvent{
-			Title:       event.Name.Text,
-			Description: event.Description.Text,
-			Logo:        event.Logo.URL,
-			TicketUrl:   event.URL,
-			Capacity:    event.Capacity,
-			Location: DojoLocation{
-				Address:    venue.Address.Address1,
-				City:       venue.Address.City,
-				Name:       venue.Name,
-				Country:    venue.Address.Country,
-				PostalCode: venue.Address.PostalCode,
-				Latitude:   lat,
-				Longitude:  lon,
-				Distance:   distance,
-			},
-			Organizer: DojoOrganizer{Id: event.OrganizerID},
-			Free:      event.IsFree,
-		}
-
+		events <- toDojoEvent(hLat, hLon, event, venue)
 	} else {
 		fmt.Printf("Unable to fetch venue for id %d: %s\n", event.VenueID, err)
 	}
 
+}
+
+func toDojoEvent(hLat float64, hLon float64, event Event, venue Venue) (DojoEvent) {
+
+	lat, _ := strconv.ParseFloat(venue.Address.Latitude, 64)
+	lon, _ := strconv.ParseFloat(venue.Address.Longitude, 64)
+
+	distance := Distance(hLat, hLon, lat, lon) / 1000
+
+	return DojoEvent{
+		Title:       event.Name.Text,
+		Description: event.Description.Text,
+		Logo:        event.Logo.URL,
+		TicketUrl:   event.URL,
+		Capacity:    event.Capacity,
+		StartTime:   event.Start.Utc.Unix(),
+		EndTime:     event.Start.Utc.Unix(),
+		Location: DojoLocation{
+			Address:    venue.Address.Address1,
+			City:       venue.Address.City,
+			Name:       venue.Name,
+			Country:    venue.Address.Country,
+			PostalCode: venue.Address.PostalCode,
+			Latitude:   lat,
+			Longitude:  lon,
+			Distance:   distance,
+		},
+		Organizer: DojoOrganizer{Id: event.OrganizerID},
+		Free:      event.IsFree,
+	}
 }
 
 func (e EventBrite) venue(venueID string) (Venue, error) {
