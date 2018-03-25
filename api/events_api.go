@@ -17,20 +17,8 @@ type EventsApi struct {
 func (api EventsApi) Run() {
 
 	r := gin.New()
-
+	r.Use(cors.Default())
 	r.Use(gin.Recovery())
-
-	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"*"},
-		AllowMethods:     []string{"GET"},
-		AllowHeaders:     []string{"Origin"},
-		ExposeHeaders:    []string{"Content-Length"},
-		AllowCredentials: true,
-		AllowOriginFunc: func(origin string) bool {
-			return true
-		},
-		MaxAge: 12 * time.Hour,
-	}))
 
 	r.GET("/probe", probe)
 
