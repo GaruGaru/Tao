@@ -6,7 +6,6 @@ import (
 	"github.com/gin-contrib/cors"
 	"strconv"
 	"github.com/cactus/go-statsd-client/statsd"
-	"time"
 )
 
 type EventsApi struct {
