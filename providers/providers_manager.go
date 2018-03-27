@@ -36,6 +36,10 @@ func (m ProvidersManager) Events(lat float64, lon float64, rng int, sorting stri
 
 	sort.Slice(dojoEvents, func(i, j int) bool { return dojoEvents[i].Location.Distance < dojoEvents[j].Location.Distance })
 
+	if dojoEvents == nil {
+		dojoEvents = []DojoEvent{}
+	}
+
 	return dojoEvents, nil
 
 }
