@@ -25,7 +25,9 @@ steps:
     type: push
     title: Image push
     candidate: ${{build_production_image}}
-    tag: ${{CF_SHORT_REVISION}}
+    tags:
+      -  ${{CF_SHORT_REVISION}}
+      - 'latest'
     fail_fast: true
 
   deploy_to_swarm:

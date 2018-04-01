@@ -1,5 +1,12 @@
 # Tao 
 
+[![Build Status](https://travis-ci.org/GaruGaru/Tao.svg?branch=master)](https://travis-ci.org/GaruGaru/Tao)
+![license](https://img.shields.io/github/license/GaruGaru/Tao.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/GaruGaru/Tao)](https://goreportcard.com/report/github.com/GaruGaru/Tao)
+![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/garugaru/tao/latest.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/garugaru/tao.svg)
+
+
 ![Logo](https://github.com/GaruGaru/Tao/blob/master/res/Tao.png)
 
 ### Fast, scalable, container ready aggregator for coderdojo events
