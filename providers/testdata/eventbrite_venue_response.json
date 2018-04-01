@@ -1,0 +1,25 @@
+{
+  "address": {
+    "address_1": "Lungadige Galtarossa, 21",
+    "address_2": null,
+    "city": "Verona",
+    "region": "Veneto",
+    "postal_code": "37133",
+    "country": "IT",
+    "latitude": "45.4302285",
+    "longitude": "10.99863419999997",
+    "localized_address_display": "Lungadige Galtarossa, 21, 37133 Verona",
+    "localized_area_display": "Verona",
+    "localized_multi_line_address_display": [
+      "Lungadige Galtarossa, 21",
+      "37133 Verona"
+    ]
+  },
+  "resource_uri": "https://www.eventbriteapi.com/v3/venues/19088098/",
+  "id": "19088098",
+  "age_restriction": null,
+  "capacity": null,
+  "name": "311 Verona",
+  "latitude": "45.4302285",
+  "longitude": "10.99863419999997"
+}

@@ -131,21 +131,28 @@ type EventBrite struct {
 
 func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, error) {
 
-	events, err := e.eventsList(lat, lon, rng, sorting)
+	events, err := e.eventsList(lat, lon, rng, sorting, 1)
 
 	if err != nil {
 		return nil, err
 	}
 
-	eventsCount := len(events.Events)
+	eventsCount := events.Pagination.ObjectCount
 	fmt.Printf("Got %d events from eventbrite\n", eventsCount)
 	eventsChannel := make(chan DojoEvent, eventsCount)
 	var wg sync.WaitGroup
 	wg.Add(eventsCount)
 
-	for _, event := range events.Events {
-		go e.processEvent(lat, lon, event, eventsChannel, &wg)
+	if events.Pagination.HasMoreItems{
+		for i := 1; i < events.Pagination.PageCount+1; i++ {
+			go fetchAndProcessEvents(e, lat, lon, rng, sorting, i, eventsChannel, &wg)
+		}
+	}else{
+		for _, event := range events.Events {
+			go e.processEvent(lat, lon, event, eventsChannel, &wg)
+		}
 	}
+
 
 	wg.Wait()
 	close(eventsChannel)
@@ -159,10 +166,24 @@ func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([
 	return dojoEvents, nil
 }
 
-func (e EventBrite) eventsList(lat float64, lon float64, rng int, sorting string) (EventbriteResponse, error) {
-	apiUrl := e.eventListUrl(lat, lon, rng, sorting)
+func fetchAndProcessEvents(e EventBrite, lat float64, lon float64, rng int, sorting string, i int, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
+		currEvents, err := e.eventsList(lat, lon, rng, sorting, i)
+		fmt.Println(fmt.Sprintf("Processing %d events, pagination %d", len(currEvents.Events), i))
+		if err == nil {
+			for _, event := range currEvents.Events {
+				go e.processEvent(lat, lon, event, eventsChannel, wg)
+			}
+		} else {
+			fmt.Printf("Unable to get events")
+		}
+}
+
+func (e EventBrite) eventsList(lat float64, lon float64, rng int, sorting string, page int) (EventbriteResponse, error) {
+	apiUrl := e.eventListUrl(lat, lon, rng, sorting, page)
 
 	resp, err := http.Get(apiUrl.String())
+
+	fmt.Println("Calling " + apiUrl.String())
 
 	if err != nil {
 		return EventbriteResponse{}, err
@@ -251,7 +272,7 @@ func (e EventBrite) venue(venueID string) (Venue, error) {
 
 }
 
-func (e EventBrite) eventListUrl(lat float64, lon float64, rng int, sorting string) url.URL {
+func (e EventBrite) eventListUrl(lat float64, lon float64, rng int, sorting string, page int) url.URL {
 	apiUrl := &url.URL{
 		Scheme: "https",
 		Host:   "www.eventbriteapi.com",
@@ -266,6 +287,7 @@ func (e EventBrite) eventListUrl(lat float64, lon float64, rng int, sorting stri
 	query.Set("location.within", strconv.Itoa(rng)+"km")
 	query.Set("sort_by", sorting)
 	query.Set("price", "free")
+	query.Set("page", strconv.Itoa(page))
 
 	apiUrl.RawQuery = query.Encode()
 
