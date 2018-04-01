@@ -1,15 +1,15 @@
 package providers
 
 import (
-	"time"
-	"net/url"
-	"strconv"
-	"net/http"
-	"io/ioutil"
 	"encoding/json"
-	"sync"
 	"fmt"
+	"io/ioutil"
+	"net/http"
+	"net/url"
 	"os"
+	"strconv"
+	"sync"
+	"time"
 )
 
 type Address struct {
@@ -44,8 +44,8 @@ type Event struct {
 		Text string `json:"text"`
 		HTML string `json:"html"`
 	} `json:"description"`
-	ID  string `json:"id"`
-	URL string `json:"url"`
+	ID    string `json:"id"`
+	URL   string `json:"url"`
 	Start struct {
 		Timezone string    `json:"timezone"`
 		Local    string    `json:"local"`
@@ -84,7 +84,7 @@ type Event struct {
 	SubcategoryID     interface{} `json:"subcategory_id"`
 	FormatID          string      `json:"format_id"`
 	ResourceURI       string      `json:"resource_uri"`
-	Logo struct {
+	Logo              struct {
 		CropMask struct {
 			TopLeft struct {
 				X int `json:"x"`
@@ -113,7 +113,7 @@ type EventbriteResponse struct {
 		PageCount    int  `json:"page_count"`
 		HasMoreItems bool `json:"has_more_items"`
 	} `json:"pagination"`
-	Events [] Event `json:"events"`
+	Events   []Event `json:"events"`
 	Location struct {
 		Latitude  string `json:"latitude"`
 		Within    string `json:"within"`
@@ -143,16 +143,15 @@ func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([
 	var wg sync.WaitGroup
 	wg.Add(eventsCount)
 
-	if events.Pagination.HasMoreItems{
+	if events.Pagination.HasMoreItems {
 		for i := 1; i < events.Pagination.PageCount+1; i++ {
 			go fetchAndProcessEvents(e, lat, lon, rng, sorting, i, eventsChannel, &wg)
 		}
-	}else{
+	} else {
 		for _, event := range events.Events {
 			go e.processEvent(lat, lon, event, eventsChannel, &wg)
 		}
 	}
-
 
 	wg.Wait()
 	close(eventsChannel)
@@ -167,15 +166,15 @@ func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([
 }
 
 func fetchAndProcessEvents(e EventBrite, lat float64, lon float64, rng int, sorting string, i int, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
-		currEvents, err := e.eventsList(lat, lon, rng, sorting, i)
-		fmt.Println(fmt.Sprintf("Processing %d events, pagination %d", len(currEvents.Events), i))
-		if err == nil {
-			for _, event := range currEvents.Events {
-				go e.processEvent(lat, lon, event, eventsChannel, wg)
-			}
-		} else {
-			fmt.Printf("Unable to get events")
+	currEvents, err := e.eventsList(lat, lon, rng, sorting, i)
+	fmt.Println(fmt.Sprintf("Processing %d events, pagination %d", len(currEvents.Events), i))
+	if err == nil {
+		for _, event := range currEvents.Events {
+			go e.processEvent(lat, lon, event, eventsChannel, wg)
 		}
+	} else {
+		fmt.Printf("Unable to get events")
+	}
 }
 
 func (e EventBrite) eventsList(lat float64, lon float64, rng int, sorting string, page int) (EventbriteResponse, error) {
@@ -213,12 +212,12 @@ func (e EventBrite) processEvent(hLat float64, hLon float64, event Event, events
 	if err == nil {
 		events <- toDojoEvent(hLat, hLon, event, venue)
 	} else {
-		fmt.Printf("Unable to fetch venue for id %d: %s\n", event.VenueID, err)
+		fmt.Printf("Unable to fetch venue for id %s: %s\n", event.VenueID, err)
 	}
 
 }
 
-func toDojoEvent(hLat float64, hLon float64, event Event, venue Venue) (DojoEvent) {
+func toDojoEvent(hLat float64, hLon float64, event Event, venue Venue) DojoEvent {
 
 	lat, _ := strconv.ParseFloat(venue.Address.Latitude, 64)
 	lon, _ := strconv.ParseFloat(venue.Address.Longitude, 64)

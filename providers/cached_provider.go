@@ -1,11 +1,11 @@
 package providers
 
 import (
-	"strconv"
-	"github.com/cactus/go-statsd-client/statsd"
 	"fmt"
-	"time"
+	"github.com/cactus/go-statsd-client/statsd"
 	"log"
+	"strconv"
+	"time"
 )
 
 type CachedEventsProvider struct {

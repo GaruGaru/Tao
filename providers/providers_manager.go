@@ -1,8 +1,8 @@
 package providers
 
 import (
-	"sync"
 	"sort"
+	"sync"
 )
 
 type ProvidersManager struct {

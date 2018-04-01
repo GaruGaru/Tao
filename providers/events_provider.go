@@ -5,7 +5,7 @@ type EventProvider interface {
 }
 
 type DojoEventResponse struct {
-	Count  int       `json:"count"`
+	Count  int         `json:"count"`
 	Events []DojoEvent `json:"events"`
 }
 

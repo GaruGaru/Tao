@@ -1,9 +1,9 @@
 package providers
 
 import (
-	"testing"
-	"io/ioutil"
 	"encoding/json"
+	"io/ioutil"
+	"testing"
 	"time"
 )
 

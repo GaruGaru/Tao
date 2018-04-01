@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/GaruGaru/Tao/providers"
 	"github.com/GaruGaru/Tao/api"
+	"github.com/GaruGaru/Tao/providers"
 	"github.com/cactus/go-statsd-client/statsd"
-	"os"
 	"github.com/go-redis/redis"
+	"os"
 	"time"
 )
 
@@ -32,7 +32,7 @@ func main() {
 	}
 
 	provider := providers.NewCachedEventsProvider(providers.ProvidersManager{
-		Providers: []providers.EventProvider{providers.NewEventBriteProvider(),},
+		Providers: []providers.EventProvider{providers.NewEventBriteProvider()},
 	}, caches, statsdClient)
 
 	taoApi := api.EventsApi{Provider: provider, Statsd: statsdClient}

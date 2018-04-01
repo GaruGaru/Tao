@@ -1,13 +1,13 @@
 package providers
 
 import (
+	"encoding/json"
 	"github.com/go-redis/redis"
 	"github.com/wunderlist/ttlcache"
-	"encoding/json"
-	"time"
-	"strings"
-	"strconv"
 	"log"
+	"strconv"
+	"strings"
+	"time"
 )
 
 func RequestKey(lat float64, lon float64, rng int, sorting string) string {

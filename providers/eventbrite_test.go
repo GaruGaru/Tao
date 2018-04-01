@@ -1,10 +1,10 @@
 package providers
 
 import (
-	"testing"
+	"gopkg.in/h2non/gock.v1"
 	"io/ioutil"
 	"path"
-	"gopkg.in/h2non/gock.v1"
+	"testing"
 )
 
 func readTestDataRaw(t *testing.T, file string) string {
@@ -15,7 +15,6 @@ func readTestDataRaw(t *testing.T, file string) string {
 	}
 	return string(rawContent)
 }
-
 
 func TestFetchArticlesWithoutPagination(t *testing.T) {
 	defer gock.Off() // Flush pending mocks after test execution
@@ -46,7 +45,6 @@ func TestFetchArticlesWithoutPagination(t *testing.T) {
 	}
 
 }
-
 
 func TestFetchArticlesWithPagination(t *testing.T) {
 	defer gock.Off() // Flush pending mocks after test execution

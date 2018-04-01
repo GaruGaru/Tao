@@ -2,10 +2,10 @@ package api
 
 import (
 	"github.com/GaruGaru/Tao/providers"
-	"github.com/gin-gonic/gin"
-	"github.com/gin-contrib/cors"
-	"strconv"
 	"github.com/cactus/go-statsd-client/statsd"
+	"github.com/gin-contrib/cors"
+	"github.com/gin-gonic/gin"
+	"strconv"
 )
 
 type EventsApi struct {

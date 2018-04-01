@@ -1,10 +1,9 @@
 package providers
 
 import (
+	"github.com/cactus/go-statsd-client/statsd"
 	"testing"
 	"time"
-	"github.com/cactus/go-statsd-client/statsd"
-
 )
 
 type TestEventProvider struct {
@@ -34,10 +33,9 @@ func TestCachedProvider(t *testing.T) {
 		t.FailNow()
 	}
 
-	if len(events) != len(testEvents){
+	if len(events) != len(testEvents) {
 		t.Log("Cached event count <> original events count")
 		t.FailNow()
 	}
-
 
 }
