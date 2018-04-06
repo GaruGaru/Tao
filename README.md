@@ -4,7 +4,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/GaruGaru/Tao)](https://goreportcard.com/report/github.com/GaruGaru/Tao)
 ![license](https://img.shields.io/github/license/GaruGaru/Tao.svg)
 ![Docker Pulls](https://img.shields.io/docker/pulls/garugaru/tao.svg)
-
+[![Docker image](https://images.microbadger.com/badges/image/garugaru/tao.svg)](https://microbadger.com/images/garugaru/tao "Get your own image badge on microbadger.com")
 
 ![Logo](https://github.com/GaruGaru/Tao/blob/master/res/Tao.png)
 
