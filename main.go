@@ -7,7 +7,6 @@ import (
 	"github.com/go-redis/redis"
 	"os"
 	"time"
-	"github.com/GaruGaru/Tao/scraper"
 )
 
 func main() {
@@ -35,6 +34,7 @@ func main() {
 	eventsProvider := providers.ProvidersManager{
 		Providers: []providers.EventProvider{providers.NewEventBriteProvider()},
 	}
+
 	cachedProvider := providers.NewCachedEventsProvider(eventsProvider, caches, statsdClient)
 
 	taoApi := api.EventsApi{Provider: cachedProvider, Statsd: statsdClient}
