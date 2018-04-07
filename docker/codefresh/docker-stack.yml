@@ -13,8 +13,6 @@ services:
         - proxy
         - internal
         - statsd
-      volumes:
-          - /swarm/file_store_r2/redis:/data
       deploy:
         labels:
           - traefik.docker.network=proxy
@@ -30,6 +28,8 @@ services:
     image: redis:3.2.11-alpine
     networks:
       - internal
+    volumes:
+        - /swarm/file_store_r2/redis:/data
     deploy:
       mode: replicated
       replicas: 1
