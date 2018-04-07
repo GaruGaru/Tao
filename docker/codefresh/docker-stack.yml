@@ -13,6 +13,8 @@ services:
         - proxy
         - internal
         - statsd
+      volumes:
+          - /swarm/file_store_r2/redis:/data
       deploy:
         labels:
           - traefik.docker.network=proxy
