@@ -1,0 +1,9 @@
+version: "3"
+services:
+
+  tao:
+      command: go test ./... -v
+      volumes:
+        - ../:/gopath/src/github.com/GaruGaru/Tao
+      environment:
+        - REDIS_HOST=tao-redis:6379

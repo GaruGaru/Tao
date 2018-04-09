@@ -1,17 +1,37 @@
 version: "3"
 services:
 
-  tao:
+  tao-api:
       image: garugaru/tao
+      command: /gopath/src/github.com/GaruGaru/Tao/main serve-api
       build:
         context: ../
         dockerfile: docker/Dockerfile.dev
       ports:
         - 8081:8080
       environment:
+        - STORAGE=redis
+        - REDIS_HOST=tao-redis:6379
         - PORT=8080
         - GIN_MODE=debug
         - EVENTBRITE_TOKEN=TOKEN
+      depends_on:
+        - tao-redis
+
+  tao-scraper:
+      image: garugaru/tao
+      command: /gopath/src/github.com/GaruGaru/Tao/main scraper
+      build:
+        context: ../
+        dockerfile: docker/Dockerfile.dev
+      environment:
+        - STORAGE=redis
+        - REDIS_HOST=tao-redis:6379
+        - PORT=8080
+        - GIN_MODE=debug
+        - EVENTBRITE_TOKEN=TOKEN
+      depends_on:
+        - tao-redis
 
   tao-redis:
     image: redis:3.2.11-alpine

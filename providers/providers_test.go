@@ -5,6 +5,10 @@ import (
 	"testing"
 	"time"
 	"fmt"
+	"encoding/json"
+	"github.com/go-redis/redis"
+	"github.com/GaruGaru/Tao/tests"
+	"math/rand"
 )
 
 type TestEventProvider struct {
@@ -39,6 +43,49 @@ func TestAllFailingProvider(t *testing.T) {
 
 	if len(events) != 0 {
 		t.Log("Cached event count <> original events count")
+		t.FailNow()
+	}
+
+}
+
+func eventToJson(e DojoEvent) string {
+	b, err := json.Marshal(e)
+	if err != nil {
+		panic(err)
+	}
+	return string(b)
+}
+
+func TestRedisEventsProvider(t *testing.T) {
+
+	prefix := rand.Int()
+	geoKey := fmt.Sprintf("%d_test_locations", prefix)
+	redisClient := tests.TestRedisClient(t)
+	testEvents := loadTestData(t)
+
+	for _, e := range testEvents {
+		key := fmt.Sprintf("%d:%s:%s:%d", prefix, e.Title, e.TicketUrl, e.StartTime)
+		geoResult := redisClient.GeoAdd(geoKey, &redis.GeoLocation{Longitude: e.Location.Longitude, Latitude: e.Location.Latitude, Name: key})
+		redisClient.Set(key, eventToJson(e), 0)
+		if geoResult.Err() != nil {
+			t.FailNow()
+		}
+	}
+
+	redisProvider := RedisEventsProvider{
+		Redis:        *redisClient,
+		LocationsKey: geoKey,
+	}
+
+	events, err := redisProvider.Events(0, 0, 1000000, "distance")
+
+	if err != nil {
+		t.Log(err.Error())
+		t.FailNow()
+	}
+
+	if len(events) != len(testEvents) {
+		t.Log(fmt.Sprintf("Expecting %d events but got %d", len(testEvents), len(events)))
 		t.FailNow()
 	}
 

@@ -8,10 +8,18 @@ steps:
     dockerfile: docker/Dockerfile.dev
     tag: ${{CF_SHORT_REVISION}}
 
-  unit-tests:
-    image: ${{build_test_image}}
-    commands:
-      - cd /gopath/src/github.com/GaruGaru/Tao && dep ensure && go test -v
+  unit_test:
+    title: Unit Tests
+    type: composition
+    working_directory: ${{main_clone}}
+    composition: ./docker/codefresh/codefresh-composition.yml
+    composition_candidates:
+      tao-test:
+        image: '${{build_test_image}}'
+        entrypoint: sh -c "cd /gopath/src/github.com/GaruGaru/Tao && dep ensure && go test ./... -v"
+        environment:
+          - REDIS_HOST=tao-redis:6379
+
 
   build_production_image:
     title: Building Production Image
