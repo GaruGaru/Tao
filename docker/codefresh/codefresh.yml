@@ -15,7 +15,7 @@ steps:
     composition: ./docker/codefresh/codefresh-composition.yml
     composition_candidates:
       tao-test:
-        image: '${{build_image}}'
+        image: '${{build_test_image}}'
         entrypoint: sh -c "/gopath/src/github.com/GaruGaru/Tao && dep ensure && go test ./... -v"
         environment:
           - REDIS_HOST=tao-redis
