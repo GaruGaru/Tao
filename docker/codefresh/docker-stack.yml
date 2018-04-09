@@ -3,7 +3,7 @@ services:
 
   tao-api:
       image: garugaru/tao
-      command: /gopath/src/github.com/GaruGaru/Tao/main serve-api
+      command: ./main serve-api
       environment:
         GIN_MODE: release
         PORT: 80
@@ -25,7 +25,7 @@ services:
 
   tao-scraper:
       image: garugaru/tao
-      command: /gopath/src/github.com/GaruGaru/Tao/main scraper
+      command: ./main scraper
       environment:
         EVENTBRITE_TOKEN: ${EVENTBRITE_TOKEN}
         STATSD_HOST: ${STATSD_HOST}
