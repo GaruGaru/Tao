@@ -14,8 +14,6 @@ func (d DojoScraper) Run() error {
 
 	err := d.Lock.Obtain()
 	if err == nil {
-
-
 		fmt.Println("Starting scraper")
 		events, err := d.Scraper.Scrape()
 		fmt.Println("Done scraper")
