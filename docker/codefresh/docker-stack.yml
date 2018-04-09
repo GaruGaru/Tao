@@ -24,8 +24,8 @@ services:
           condition: on-failure
 
   tao-scraper:
-      image: garugaru/tao --storage=redis
-      command: ./main scraper
+      image: garugaru/tao
+      command: ./main scraper --storage=redis
       environment:
         EVENTBRITE_TOKEN: ${EVENTBRITE_TOKEN}
         STATSD_HOST: ${STATSD_HOST}
