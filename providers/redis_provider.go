@@ -14,8 +14,10 @@ type RedisEventsProvider struct {
 
 func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, error) {
 
+	fmt.Printf("Geo query with lat: %f, lon: %f, range: %f", lat, lon, float64(rng))
 	locations := r.Redis.GeoRadius(r.LocationsKey, lon, lat, &redis.GeoRadiusQuery{
 		Radius: float64(rng),
+		Unit: "km",
 	})
 
 	if locations.Err() != nil && locations.Err() != redis.Nil {
