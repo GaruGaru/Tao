@@ -5,6 +5,7 @@ import (
 	"github.com/go-redis/redis"
 	"fmt"
 	"encoding/json"
+	"io/ioutil"
 )
 
 type EventsStorage interface {
@@ -30,6 +31,19 @@ func (m InMemoryEventsStorage) Store(events []providers.DojoEvent) error {
 		m.Storage[keyFromEvent(e)] = jsonEvent
 	}
 	return nil
+}
+
+type FileSystemEventsStorage struct {
+	StoreFile string
+}
+
+func (m FileSystemEventsStorage) Store(events []providers.DojoEvent) error {
+	content, err := json.Marshal(events)
+	if err != nil{
+		return err
+	}
+	err = ioutil.WriteFile(m.StoreFile, content, 0644)
+	return err
 }
 
 type RedisEventsStorage struct {

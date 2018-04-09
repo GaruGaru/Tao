@@ -34,8 +34,12 @@ type RedisDojoScraperLock struct {
 }
 
 func (l RedisDojoScraperLock) Obtain() error {
-	l.Redis.SetNX(l.LockKey, "lock", 0)
-	return nil
+	res := l.Redis.SetNX(l.LockKey, "lock", 0)
+	if res.Val() == false {
+		return fmt.Errorf("unable to obtain redis lock for key: %s", l.LockKey)
+	} else {
+		return nil
+	}
 }
 
 func (l RedisDojoScraperLock) Release() error {
@@ -44,11 +48,15 @@ func (l RedisDojoScraperLock) Release() error {
 		return r.Err()
 	} else {
 		v, e := r.Result()
-		if v == 1 {
-			return nil
-		}else{
+
+		if e != nil && e != redis.Nil {
 			return e
+		} else if v == 1 {
+			return nil
+		} else {
+			return fmt.Errorf("unable to release redis lock for key %s", l.LockKey)
 		}
+
 	}
 	return r.Err()
 }

@@ -13,7 +13,7 @@ type DojoScraper struct {
 func (d DojoScraper) Run() error {
 
 	if d.Lock.Obtain() == nil {
-		defer d.Lock.Release()
+
 
 		fmt.Println("Starting scraper")
 		events, err := d.Scraper.Scrape()
@@ -23,7 +23,10 @@ func (d DojoScraper) Run() error {
 		}
 
 		err = d.Storage.Store(events)
-
+		releaseErr := d.Lock.Release()
+		if releaseErr != nil {
+			return releaseErr
+		}
 		return err
 
 	} else {

@@ -53,7 +53,7 @@ func NewRedisEventsCache(redis redis.Client, cacheDuration time.Duration) RedisE
 }
 
 func (rc RedisEventCache) Name() string {
-	return "redis"
+	return "Redis"
 }
 
 func (rc RedisEventCache) Get(lat float64, lon float64, rng int, sorting string) (events []DojoEvent, present bool, err error) {

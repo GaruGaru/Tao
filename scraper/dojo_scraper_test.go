@@ -6,16 +6,47 @@ import (
 	"math/rand"
 	"github.com/GaruGaru/Tao/tests"
 	"github.com/go-redis/redis"
+	"github.com/GaruGaru/Tao/providers"
+	"io/ioutil"
+	"encoding/json"
 )
+
+func LoadTestEvents(t *testing.T, path string) []providers.DojoEvent {
+	testJson, err := ioutil.ReadFile(path)
+
+	if err != nil {
+		t.Log("Unable to read test json file")
+		t.FailNow()
+	}
+
+	var events []providers.DojoEvent
+
+	err = json.Unmarshal(testJson, &events)
+
+	if err != nil {
+		t.Log("Unable to unmarshal test json file")
+		t.FailNow()
+	}
+
+	return events
+}
+
+type TestEventProvider struct {
+	DojoEvents []providers.DojoEvent
+}
+
+func (p TestEventProvider) Events(lat float64, lon float64, rng int, sorting string) ([]providers.DojoEvent, error) {
+	return p.DojoEvents, nil
+}
 
 func TestEventsScraper(t *testing.T) {
 
-	testEvents := tests.LoadTestEvents(t, "testdata/provider_response.json")
+	testEvents := LoadTestEvents(t, "testdata/provider_response.json")
 
 	store := NewInMemoryEventsStorage()
 	dojoScraper := DojoScraper{
 		Storage: store,
-		Scraper: DefaultEventScraper{Provider: tests.TestEventProvider{DojoEvents: testEvents},},
+		Scraper: DefaultEventScraper{Provider: TestEventProvider{DojoEvents: testEvents},},
 		Lock:    FileSystemLock{LockFile: fmt.Sprintf("test.lock.%d", rand.Int())},
 	}
 
@@ -39,22 +70,26 @@ func TestEventsScraperWithRedis(t *testing.T) {
 
 	redisClient := tests.TestRedisClient(t)
 
-	testEvents := tests.LoadTestEvents(t, "testdata/provider_response.json")
+	testEvents := LoadTestEvents(t, "testdata/provider_response.json")
 
-	geoKey := fmt.Sprintf("locations_test_%d", rand.Int())
+	geoKey := fmt.Sprintf("locations_test_%d", rand.Int31())
+
+	lockKey := fmt.Sprintf("test_lock_%d", rand.Int31())
 
 	dojoScraper := DojoScraper{
 		Storage: RedisEventsStorage{Redis: *redisClient, GeoKey: geoKey},
-		Scraper: DefaultEventScraper{Provider: tests.TestEventProvider{DojoEvents: testEvents},},
-		Lock:    RedisDojoScraperLock{Redis: *redisClient, LockKey: fmt.Sprintf("test_lock_%d", rand.Int())},
+		Scraper: DefaultEventScraper{Provider: TestEventProvider{DojoEvents: testEvents},},
+		Lock:    RedisDojoScraperLock{Redis: *redisClient, LockKey: lockKey},
 	}
+
+	defer dojoScraper.Lock.Release()
 
 	dojoScraper.Run()
 
 	obtain := dojoScraper.Lock.Obtain()
 
 	if obtain != nil {
-		t.Log("Scraper hasn't released the lock")
+		t.Log(obtain)
 		t.FailNow()
 	}
 

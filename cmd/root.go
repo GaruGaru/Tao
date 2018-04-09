@@ -15,7 +15,7 @@ var StatsdHost string
 
 func init() {
 
-	rootCmd.PersistentFlags().StringVarP(&Storage, "storage", "s", "memory", "Values storage")
+	rootCmd.PersistentFlags().StringVarP(&Storage, "storage", "s", "local", "Values storage")
 	viper.BindPFlag("storage", rootCmd.PersistentFlags().Lookup("storage"))
 
 	rootCmd.PersistentFlags().StringVarP(&RedisHost, "redis_host", "r", "localhost:6379", "Redis storage host")

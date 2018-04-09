@@ -3,7 +3,6 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/go-redis/redis"
 	"github.com/GaruGaru/Tao/scraper"
 	"github.com/GaruGaru/Tao/providers"
 )
@@ -19,25 +18,26 @@ func init() {
 	rootCmd.AddCommand(scraperCmd)
 }
 
+func newEventsProvider() providers.EventProvider {
+	availableProviders := make([]providers.EventProvider, 1)
+
+	if viper.GetString("eventbrite_token") != "" {
+		availableProviders = append(availableProviders, providers.EventBrite{ApiKey: viper.GetString("eventbrite_token")})
+	}
+
+	return providers.ProvidersManager{Providers: availableProviders,}
+}
+
 var scraperCmd = &cobra.Command{
 	Use:   "scraper",
 	Short: "Start the scraper",
 	Long:  `Start the events scraper with customizable storage`,
 	Run: func(cmd *cobra.Command, args []string) {
 
-		redisClient := redis.NewClient(&redis.Options{
-			Addr:     viper.GetString("redis_host"),
-			DB:       0,
-		})
-
-		eventsProvider := providers.ProvidersManager{
-			Providers: []providers.EventProvider{providers.EventBrite{ApiKey: viper.GetString("eventbrite_token")}},
-		}
-
 		dojoScraper := scraper.DojoScraper{
-			Scraper: scraper.DefaultEventScraper{Provider: eventsProvider},
-			Storage: scraper.RedisEventsStorage{Redis: *redisClient, GeoKey: "locations"},
-			Lock:    scraper.FileSystemLock{LockFile: "/tmp/tao.lock"},
+			Scraper: scraper.DefaultEventScraper{Provider: newEventsProvider()},
+			Storage: GetScraperStorage(),
+			Lock:    GetScraperLock(),
 		}
 
 		err := dojoScraper.Run()
