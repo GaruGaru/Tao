@@ -1,52 +1,9 @@
 package main
 
 import (
-	"github.com/GaruGaru/Tao/api"
-	"github.com/GaruGaru/Tao/providers"
-	"github.com/cactus/go-statsd-client/statsd"
-	"github.com/go-redis/redis"
-	"os"
-	"time"
+	"github.com/GaruGaru/Tao/cmd"
 )
 
 func main() {
-
-	statsdClient, err := statsd.NewClient(getEnv("STATSD_HOST", "localhost:8125"), "tao")
-
-	if err != nil {
-		panic(err)
-	}
-
-	redisClient := redis.NewClient(&redis.Options{
-		Addr:     getEnv("REDIS_HOST", "localhost:6379"),
-		Password: "",
-		DB:       0,
-	})
-
-	localCacheExpiration := 15 * time.Minute
-	remoteCacheExpiration := 30 * time.Minute
-
-	caches := []providers.EventsCache{
-		providers.NewLocalCache(localCacheExpiration),
-		providers.NewRedisEventsCache(*redisClient, remoteCacheExpiration),
-	}
-
-	eventsProvider := providers.ProvidersManager{
-		Providers: []providers.EventProvider{providers.NewEventBriteProvider()},
-	}
-
-	cachedProvider := providers.NewCachedEventsProvider(eventsProvider, caches, statsdClient)
-
-	taoApi := api.EventsApi{Provider: cachedProvider, Statsd: statsdClient}
-
-	taoApi.Run()
-
-}
-
-func getEnv(key, fallback string) string {
-	value := os.Getenv(key)
-	if len(value) == 0 {
-		return fallback
-	}
-	return value
+	cmd.Execute()
 }

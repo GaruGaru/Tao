@@ -12,6 +12,8 @@ services:
         - PORT=8080
         - GIN_MODE=debug
         - EVENTBRITE_TOKEN=TOKEN
+      depends_on:
+        - tao-redis
 
   tao-redis:
     image: redis:3.2.11-alpine

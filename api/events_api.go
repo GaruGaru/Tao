@@ -6,6 +6,7 @@ import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"strconv"
+	"fmt"
 )
 
 type EventsApi struct {
@@ -13,9 +14,10 @@ type EventsApi struct {
 	Statsd   statsd.Statter
 }
 
-func (api EventsApi) Run() {
+func (api EventsApi) Run(port int) {
 
 	r := gin.New()
+
 	r.Use(cors.Default())
 	r.Use(gin.Recovery())
 
@@ -25,7 +27,7 @@ func (api EventsApi) Run() {
 
 	r.GET("/api/v2/events", api.eventsV2)
 
-	r.Run() // listen and serve on 0.0.0.0:8080
+	r.Run(fmt.Sprintf(":%d", port))
 
 }
 
