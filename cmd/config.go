@@ -12,7 +12,7 @@ func GetConfiguredStorage() string {
 	return viper.GetString("storage")
 }
 
-func GetStatsdClient() statsd.Statter {
+func GetStatter() statsd.Statter {
 	host := viper.GetString("statsd_host")
 
 	if host == "" {
@@ -34,6 +34,10 @@ func GetRedisClient() *redis.Client {
 	})
 }
 
+func GetRedisLocationsKey() string {
+	return "tao_events_locations"
+}
+
 func GetScraperLock() scraper.DojoScraperLock {
 	storage := GetConfiguredStorage()
 	if storage == "local" {
@@ -51,7 +55,7 @@ func GetScraperStorage() scraper.EventsStorage {
 	} else if storage == "redis" {
 		return scraper.RedisEventsStorage{
 			Redis:  *GetRedisClient(),
-			GeoKey: "tao_locations",
+			GeoKey: GetRedisLocationsKey(),
 		}
 	}
 	panic(fmt.Errorf("unable to create scraper events storage instance for storage type: %s", storage))

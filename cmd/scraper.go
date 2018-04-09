@@ -5,9 +5,12 @@ import (
 	"github.com/spf13/viper"
 	"github.com/GaruGaru/Tao/scraper"
 	"github.com/GaruGaru/Tao/providers"
+	"fmt"
+	"time"
 )
 
 var EventbriteToken string
+var RunDelay int
 
 func init() {
 
@@ -15,11 +18,15 @@ func init() {
 
 	viper.BindPFlag("eventbrite_token", scraperCmd.Flags().Lookup("eventbrite_token"))
 
+	scraperCmd.Flags().IntVarP(&RunDelay, "scraper_delay", "d", 3600, "Scraper run delay in seconds")
+
+	viper.BindPFlag("scraper_delay", scraperCmd.Flags().Lookup("scraper_delay"))
+
 	rootCmd.AddCommand(scraperCmd)
 }
 
 func newEventsProvider() providers.EventProvider {
-	availableProviders := make([]providers.EventProvider, 1)
+	availableProviders := make([]providers.EventProvider, 0)
 
 	if viper.GetString("eventbrite_token") != "" {
 		availableProviders = append(availableProviders, providers.EventBrite{ApiKey: viper.GetString("eventbrite_token")})
@@ -40,10 +47,14 @@ var scraperCmd = &cobra.Command{
 			Lock:    GetScraperLock(),
 		}
 
-		err := dojoScraper.Run()
+		for ; ; {
+			err := dojoScraper.Run()
 
-		if err != nil {
-			panic(err)
+			if err != nil {
+				fmt.Printf("Scraping failed: %s\n", err.Error())
+			}
+
+			time.Sleep(time.Duration(viper.GetInt("scraper_delay")) * time.Second)
 		}
 
 	},

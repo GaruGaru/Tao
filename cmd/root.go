@@ -28,8 +28,6 @@ func init() {
 
 }
 
-
-
 var rootCmd = &cobra.Command{
 	Use:   "tao",
 	Short: "Tao is an aggregator for coderdojo events",

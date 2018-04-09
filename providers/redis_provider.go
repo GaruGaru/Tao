@@ -25,8 +25,6 @@ func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting s
 
 	results := locations.Val()
 
-	events := make([]DojoEvent, len(results))
-
 	var wg sync.WaitGroup
 
 	eventsChannel := make(chan DojoEvent, len(results))
@@ -34,7 +32,7 @@ func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting s
 	wg.Add(len(results))
 
 	for _, l := range results {
-		 go fetchEventInfo(l, r, eventsChannel, &wg)
+		go fetchEventInfo(l, r, eventsChannel, &wg)
 	}
 
 	wg.Wait()
@@ -46,7 +44,7 @@ func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting s
 		dojoEvents = append(dojoEvents, e)
 	}
 
-	return events, nil
+	return dojoEvents, nil
 }
 func fetchEventInfo(l redis.GeoLocation, r RedisEventsProvider, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
 	defer wg.Done()

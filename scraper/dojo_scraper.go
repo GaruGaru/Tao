@@ -12,7 +12,8 @@ type DojoScraper struct {
 
 func (d DojoScraper) Run() error {
 
-	if d.Lock.Obtain() == nil {
+	err := d.Lock.Obtain()
+	if err == nil {
 
 
 		fmt.Println("Starting scraper")
@@ -30,7 +31,7 @@ func (d DojoScraper) Run() error {
 		return err
 
 	} else {
-		fmt.Printf("Scraper already running")
+		fmt.Printf("Scraper already running: %s\n", err)
 		return nil
 	}
 

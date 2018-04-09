@@ -35,7 +35,9 @@ type RedisDojoScraperLock struct {
 
 func (l RedisDojoScraperLock) Obtain() error {
 	res := l.Redis.SetNX(l.LockKey, "lock", 0)
-	if res.Val() == false {
+	if res.Err() != nil {
+		return res.Err()
+	} else if res.Val() == false {
 		return fmt.Errorf("unable to obtain redis lock for key: %s", l.LockKey)
 	} else {
 		return nil

@@ -24,14 +24,15 @@ var apiCmd = &cobra.Command{
 	Long:  `Start the events api server`,
 	Run: func(cmd *cobra.Command, args []string) {
 
-		statter := GetStatsdClient()
+		redisClient := GetRedisClient()
+		statter := GetStatter()
 
 		localCacheExpiration := 15 * time.Minute
 		remoteCacheExpiration := 30 * time.Minute
 
 		caches := []providers.EventsCache{
 			providers.NewLocalCache(localCacheExpiration),
-			providers.NewRedisEventsCache(*GetRedisClient(), remoteCacheExpiration),
+			providers.NewRedisEventsCache(*redisClient, remoteCacheExpiration),
 		}
 
 		eventsProvider := providers.ProvidersManager{
@@ -40,7 +41,14 @@ var apiCmd = &cobra.Command{
 
 		cachedProvider := providers.NewCachedEventsProvider(eventsProvider, caches, statter)
 
-		taoApi := api.EventsApi{Provider: cachedProvider, Statsd: statter}
+		taoApi := api.EventsApi{
+			Provider: cachedProvider,
+			Statsd:   statter,
+			RedisProvider: providers.RedisEventsProvider{
+				Redis:        *redisClient,
+				LocationsKey: GetRedisLocationsKey(),
+			},
+		}
 
 		taoApi.Run(viper.GetInt("port"))
 	},
