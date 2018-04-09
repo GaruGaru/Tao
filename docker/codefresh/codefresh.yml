@@ -43,7 +43,8 @@ steps:
     working_directory: ${{main_clone}}
     commands:
       - rdocker ${{RDOCKER_HOST}} docker stack deploy --compose-file docker/codefresh/docker-stack.yml ${{STACK_NAME}}
-      - rdocker ${{RDOCKER_HOST}} docker service update --force --image garugaru/tao:${{CF_SHORT_REVISION}} ${{STACK_NAME}}_tao
+      - rdocker ${{RDOCKER_HOST}} docker service update --force --image garugaru/tao:${{CF_SHORT_REVISION}} ${{STACK_NAME}}_tao-api
+      - rdocker ${{RDOCKER_HOST}} docker service update --force --image garugaru/tao:${{CF_SHORT_REVISION}} ${{STACK_NAME}}_tao-scraper
     environment:
       - SSH_KEY=${{SSH_KEY}}
     when:
