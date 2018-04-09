@@ -17,6 +17,8 @@ steps:
       tao-test:
         image: '${{build_image}}'
         entrypoint: sh -c "/gopath/src/github.com/GaruGaru/Tao && dep ensure && go test ./... -v"
+        environment:
+          - REDIS_HOST=tao-redis
 
 
   build_production_image:
