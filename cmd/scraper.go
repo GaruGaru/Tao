@@ -47,14 +47,27 @@ var scraperCmd = &cobra.Command{
 			Lock:    GetScraperLock(),
 		}
 
+		delayer := GetScraperDelayer()
+
 		for ; ; {
-			err := dojoScraper.Run()
+			canRun, err := delayer.CanRun()
 
 			if err != nil {
-				fmt.Printf("Scraping failed: %s\n", err.Error())
+				fmt.Println(err.Error())
+				continue
 			}
 
-			time.Sleep(time.Duration(viper.GetInt("scraper_delay")) * time.Second)
+			if canRun {
+				err := dojoScraper.Run()
+
+				if err != nil {
+					fmt.Printf("Scraping failed: %s\n", err.Error())
+				}
+
+				time.Sleep(time.Duration(viper.GetInt("scraper_delay")) * time.Second)
+				delayer.Refresh()
+			}
+
 		}
 
 	},
