@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"sync"
+	"sort"
 )
 
 type RedisEventsProvider struct {
@@ -43,6 +44,12 @@ func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting s
 
 	for e := range eventsChannel {
 		dojoEvents = append(dojoEvents, e)
+	}
+
+	if sorting == "distance" {
+		sort.Slice(dojoEvents, func(i, j int) bool { return dojoEvents[i].Location.Distance < dojoEvents[j].Location.Distance })
+	} else if sorting == "date" {
+		sort.Slice(dojoEvents, func(i, j int) bool { return dojoEvents[i].StartTime < dojoEvents[j].StartTime })
 	}
 
 	return dojoEvents, nil

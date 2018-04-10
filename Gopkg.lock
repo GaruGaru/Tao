@@ -56,6 +56,12 @@
   version = "v1.0"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/jasonlvhit/gocron"
+  packages = ["."]
+  revision = "54194c9749d48b073c9aeb2c787b6882e95dd0cd"
+
+[[projects]]
   name = "github.com/magiconair/properties"
   packages = ["."]
   revision = "c3beff4c2358b44d0493c7dda585e7db7ff28ae6"
@@ -160,6 +166,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f72f3cfecfa86f210c3fa8a7971110184cc98880f338558b107b07cf8beced11"
+  inputs-digest = "ed71d5923bb618493320b2718c89ef0f7bfe2a8afb01e5b19266f5cc62c10ee7"
   solver-name = "gps-cdcl"
   solver-version = 1

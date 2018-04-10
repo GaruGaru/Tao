@@ -1,12 +1,12 @@
 package cmd
 
 import (
+	"github.com/jasonlvhit/gocron"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/GaruGaru/Tao/scraper"
 	"github.com/GaruGaru/Tao/providers"
 	"fmt"
-	"time"
 )
 
 var EventbriteToken string
@@ -49,26 +49,28 @@ var scraperCmd = &cobra.Command{
 
 		delayer := GetScraperDelayer()
 
-		for ; ; {
+		delay := uint64(viper.GetInt("scraper_delay"))
+
+		fmt.Printf("Running scraper every %d seconds\n", delay)
+
+		gocron.Every(delay).Seconds().Do(func() {
 			canRun, err := delayer.CanRun()
 
 			if err != nil {
 				fmt.Println(err.Error())
-				continue
-			}
+			} else {
+				if canRun {
+					err := dojoScraper.Run()
 
-			if canRun {
-				err := dojoScraper.Run()
-
-				if err != nil {
-					fmt.Printf("Scraping failed: %s\n", err.Error())
+					if err != nil {
+						fmt.Printf("Scraping failed: %s\n", err.Error())
+					}
+					delayer.Refresh()
 				}
-
-				time.Sleep(time.Duration(viper.GetInt("scraper_delay")) * time.Second)
-				delayer.Refresh()
 			}
 
-		}
+		})
+		<- gocron.Start()
 
 	},
 }
