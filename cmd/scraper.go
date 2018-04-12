@@ -7,7 +7,6 @@ import (
 	"github.com/GaruGaru/Tao/scraper"
 	"github.com/GaruGaru/Tao/providers"
 	log "github.com/sirupsen/logrus"
-	"fmt"
 )
 
 var EventbriteToken string
