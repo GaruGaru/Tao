@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"fmt"
 	"github.com/spf13/cobra"
+	log "github.com/sirupsen/logrus"
 )
 
 func init() {
@@ -16,6 +16,6 @@ var versionCmd = &cobra.Command{
 	Short: "Print the version number of Tao",
 	Long:  `Print the verbose version number of Tao`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("Tao • coderdojo events aggregator %s", version)
+		log.Infof("Tao version %s", version)
 	},
 }

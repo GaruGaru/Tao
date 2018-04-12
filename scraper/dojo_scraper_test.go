@@ -9,6 +9,7 @@ import (
 	"github.com/GaruGaru/Tao/providers"
 	"io/ioutil"
 	"encoding/json"
+	"github.com/cactus/go-statsd-client/statsd"
 )
 
 func LoadTestEvents(t *testing.T, path string) []providers.DojoEvent {
@@ -48,6 +49,7 @@ func TestEventsScraper(t *testing.T) {
 		Storage: store,
 		Scraper: DefaultEventScraper{Provider: TestEventProvider{DojoEvents: testEvents},},
 		Lock:    FileSystemLock{LockFile: fmt.Sprintf("test.lock.%d", rand.Int())},
+		Statter: &statsd.NoopClient{},
 	}
 
 	dojoScraper.Run()
@@ -80,6 +82,7 @@ func TestEventsScraperWithRedis(t *testing.T) {
 		Storage: RedisEventsStorage{Redis: *redisClient, GeoKey: geoKey},
 		Scraper: DefaultEventScraper{Provider: TestEventProvider{DojoEvents: testEvents},},
 		Lock:    RedisDojoScraperLock{Redis: *redisClient, LockKey: lockKey},
+		Statter: &statsd.NoopClient{},
 	}
 
 	defer dojoScraper.Lock.Release()

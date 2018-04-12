@@ -6,6 +6,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/GaruGaru/Tao/scraper"
 	"github.com/GaruGaru/Tao/providers"
+	log "github.com/sirupsen/logrus"
 	"fmt"
 )
 
@@ -52,25 +53,31 @@ var scraperCmd = &cobra.Command{
 
 		delay := uint64(viper.GetInt("scraper_delay"))
 
-		fmt.Printf("Running scraper every %d seconds\n", delay)
+		log.WithFields(log.Fields{
+			"storage": viper.GetString("storage"),
+			"delay": delay,
+		}).Info("Tao scraper service started")
 
 		gocron.Every(delay).Seconds().Do(func() {
 			canRun, err := delayer.CanRun()
 
 			if err != nil {
-				fmt.Println(err.Error())
+				log.Error(err.Error())
 			} else {
 				if canRun {
+					log.Info("Scraping started")
 					err := dojoScraper.Run()
 
 					if err != nil {
-						fmt.Printf("Scraping failed: %s\n", err.Error())
+						log.Errorf("Error %s", err.Error())
 					}
 					delayer.Refresh()
+					log.Info("Done scraping")
 				}
 			}
 
 		})
+
 		<- gocron.Start()
 
 	},
