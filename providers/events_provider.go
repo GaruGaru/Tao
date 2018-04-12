@@ -19,7 +19,7 @@ type DojoEvent struct {
 	EndTime      int64         `json:"endtime"`
 	Capacity     int           `json:"capacity"`
 	Participants int           `json:"participants"`
-	Location     DojoLocation  `json:"Location"`
+	Location     DojoLocation  `json:"location"`
 	Organizer    DojoOrganizer `json:"organizer"`
 	Free         bool          `json:"free"`
 	Price        float32       `json:"price"`
