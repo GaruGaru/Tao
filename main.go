@@ -8,8 +8,4 @@ import (
 
 func main() {
 	cmd.Execute()
-
-	d := time.Duration(2)*time.Second
-
-	fmt.Println(d)
 }
