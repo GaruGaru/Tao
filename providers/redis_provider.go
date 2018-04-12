@@ -36,8 +36,8 @@ func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting s
 
 	wg.Add(len(results))
 
-	for _, l := range results {
-		go fetchEventInfo(l, r, eventsChannel, &wg)
+	for _, geoLocation := range results {
+		go fetchEventInfo(lat, lon, geoLocation, r, eventsChannel, &wg)
 	}
 
 	wg.Wait()
@@ -58,7 +58,7 @@ func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting s
 	return dojoEvents, nil
 }
 
-func fetchEventInfo(geoLocation redis.GeoLocation, r RedisEventsProvider, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
+func fetchEventInfo(hLat float64, hLon float64, geoLocation redis.GeoLocation, r RedisEventsProvider, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
 	defer wg.Done()
 	key := geoLocation.Name
 	get := r.Redis.Get(key)
@@ -66,7 +66,7 @@ func fetchEventInfo(geoLocation redis.GeoLocation, r RedisEventsProvider, events
 	if get.Err() != nil || err != nil {
 		fmt.Printf("Unable to get event from json for key %s\n", key)
 	} else {
-		event.Location.Distance = geoLocation.Dist
+		event.Location.Distance = Distance(hLat, hLon, event.Location.Latitude, event.Location.Longitude)
 		eventsChannel <- event
 	}
 }
