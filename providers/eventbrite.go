@@ -10,6 +10,7 @@ import (
 	"strconv"
 	"sync"
 	"time"
+	log "github.com/sirupsen/logrus"
 )
 
 type Address struct {
@@ -44,8 +45,8 @@ type Event struct {
 		Text string `json:"text"`
 		HTML string `json:"html"`
 	} `json:"description"`
-	ID    string `json:"id"`
-	URL   string `json:"url"`
+	ID  string `json:"id"`
+	URL string `json:"url"`
 	Start struct {
 		Timezone string    `json:"timezone"`
 		Local    string    `json:"local"`
@@ -84,7 +85,7 @@ type Event struct {
 	SubcategoryID     interface{} `json:"subcategory_id"`
 	FormatID          string      `json:"format_id"`
 	ResourceURI       string      `json:"resource_uri"`
-	Logo              struct {
+	Logo struct {
 		CropMask struct {
 			TopLeft struct {
 				X int `json:"x"`
@@ -113,7 +114,7 @@ type EventbriteResponse struct {
 		PageCount    int  `json:"page_count"`
 		HasMoreItems bool `json:"has_more_items"`
 	} `json:"pagination"`
-	Events   []Event `json:"events"`
+	Events []Event `json:"events"`
 	Location struct {
 		Latitude  string `json:"latitude"`
 		Within    string `json:"within"`
@@ -138,7 +139,9 @@ func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([
 	}
 
 	eventsCount := events.Pagination.ObjectCount
-	fmt.Printf("Got %d events from eventbrite\n", eventsCount)
+
+	log.Infof("Got %d events from eventbrite api", eventsCount)
+
 	eventsChannel := make(chan DojoEvent, eventsCount)
 	var wg sync.WaitGroup
 	wg.Add(eventsCount)
@@ -167,22 +170,24 @@ func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([
 
 func fetchAndProcessEvents(e EventBrite, lat float64, lon float64, rng int, sorting string, i int, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
 	currEvents, err := e.eventsList(lat, lon, rng, sorting, i)
-	fmt.Println(fmt.Sprintf("Processing %d events, pagination %d", len(currEvents.Events), i))
+
+	log.Infof("Processing %d from api page %d", len(currEvents.Events), i)
+
 	if err == nil {
 		for _, event := range currEvents.Events {
 			go e.processEvent(lat, lon, event, eventsChannel, wg)
 		}
 	} else {
-		fmt.Printf("Unable to get events")
+		log.Errorf("Unable to get events from pagination %d: %s", i, err.Error())
 	}
 }
 
 func (e EventBrite) eventsList(lat float64, lon float64, rng int, sorting string, page int) (EventbriteResponse, error) {
 	apiUrl := e.eventListUrl(lat, lon, rng, sorting, page)
 
-	resp, err := http.Get(apiUrl.String())
+	log.Infof("Calling eventbrite api: %s", apiUrl)
 
-	fmt.Println("Calling " + apiUrl.String())
+	resp, err := http.Get(apiUrl.String())
 
 	if err != nil {
 		return EventbriteResponse{}, err
@@ -212,7 +217,7 @@ func (e EventBrite) processEvent(hLat float64, hLon float64, event Event, events
 	if err == nil {
 		events <- toDojoEvent(hLat, hLon, event, venue)
 	} else {
-		fmt.Printf("Unable to fetch venue for id %s: %s\n", event.VenueID, err)
+		log.Errorf("Unable to fetch event venue with id %s: %s", event.VenueID, err)
 	}
 
 }
