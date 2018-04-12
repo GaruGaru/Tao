@@ -58,14 +58,15 @@ func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting s
 	return dojoEvents, nil
 }
 
-func fetchEventInfo(l redis.GeoLocation, r RedisEventsProvider, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
+func fetchEventInfo(geoLocation redis.GeoLocation, r RedisEventsProvider, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
 	defer wg.Done()
-	key := l.Name
+	key := geoLocation.Name
 	get := r.Redis.Get(key)
 	event, err := eventFromJson(get.Val())
 	if get.Err() != nil || err != nil {
 		fmt.Printf("Unable to get event from json for key %s\n", key)
 	} else {
+		event.Location.Distance = geoLocation.Dist
 		eventsChannel <- event
 	}
 }
