@@ -7,6 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"strconv"
 	"fmt"
+	"time"
 )
 
 type EventsApi struct {
@@ -132,10 +133,12 @@ func (api EventsApi) eventsV3(c *gin.Context) {
 		c.String(400, err.Error())
 	}
 
+	start := time.Now()
 	events, err := api.RedisProvider.Events(req.latitude, req.longitude, req.searchRange, req.sorting)
 
 	if err == nil {
 		api.Statsd.Inc("request.eventsv3.ok", 1, 1)
+		api.Statsd.TimingDuration("request.eventsv3.latency", time.Now().Sub(start), 1)
 		response := providers.DojoEventResponse{
 			Count:  len(events),
 			Events: events,

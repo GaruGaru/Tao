@@ -6,19 +6,22 @@ import (
 	"fmt"
 	"sync"
 	"sort"
+	"github.com/cactus/go-statsd-client/statsd"
 )
 
 type RedisEventsProvider struct {
 	Redis        redis.Client
 	LocationsKey string
+	Statter      statsd.Statter
 }
 
 func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, error) {
 
 	fmt.Printf("Geo query with lat: %f, lon: %f, range: %f", lat, lon, float64(rng))
+
 	locations := r.Redis.GeoRadius(r.LocationsKey, lon, lat, &redis.GeoRadiusQuery{
 		Radius: float64(rng),
-		Unit: "km",
+		Unit:   "km",
 	})
 
 	if locations.Err() != nil && locations.Err() != redis.Nil {
@@ -54,6 +57,7 @@ func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting s
 
 	return dojoEvents, nil
 }
+
 func fetchEventInfo(l redis.GeoLocation, r RedisEventsProvider, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
 	defer wg.Done()
 	key := l.Name

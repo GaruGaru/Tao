@@ -45,6 +45,7 @@ var scraperCmd = &cobra.Command{
 			Scraper: scraper.DefaultEventScraper{Provider: newEventsProvider()},
 			Storage: GetScraperStorage(),
 			Lock:    GetScraperLock(),
+			Statter: GetStatter(),
 		}
 
 		delayer := GetScraperDelayer()
