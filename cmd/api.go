@@ -36,7 +36,10 @@ var apiCmd = &cobra.Command{
 		}
 
 		eventsProvider := providers.ProvidersManager{
-			Providers: []providers.EventProvider{providers.NewEventBriteProvider()},
+			Providers: []providers.EventProvider{
+				providers.NewEventBriteProvider(),
+				providers.NewZenPlatformProvider(),
+			},
 		}
 
 		cachedProvider := providers.NewCachedEventsProvider(eventsProvider, caches, statter)

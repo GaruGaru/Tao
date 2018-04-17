@@ -28,6 +28,8 @@ func init() {
 func newEventsProvider() providers.EventProvider {
 	availableProviders := make([]providers.EventProvider, 0)
 
+	availableProviders = append(availableProviders, providers.NewZenPlatformProvider())
+
 	if viper.GetString("eventbrite_token") != "" {
 		availableProviders = append(availableProviders, providers.EventBrite{ApiKey: viper.GetString("eventbrite_token")})
 	}
@@ -54,7 +56,7 @@ var scraperCmd = &cobra.Command{
 
 		log.WithFields(log.Fields{
 			"storage": viper.GetString("storage"),
-			"delay": delay,
+			"delay":   delay,
 		}).Info("Tao scraper service started")
 
 		gocron.Every(delay).Seconds().Do(func() {
@@ -77,7 +79,8 @@ var scraperCmd = &cobra.Command{
 
 		})
 
-		<- gocron.Start()
+		gocron.RunAll()
+		<-gocron.Start()
 
 	},
 }

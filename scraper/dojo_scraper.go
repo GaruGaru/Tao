@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/cactus/go-statsd-client/statsd"
 	"time"
+	log "github.com/sirupsen/logrus"
 )
 
 type DojoScraper struct {

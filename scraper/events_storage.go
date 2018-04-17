@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"encoding/json"
 	"io/ioutil"
+	"time"
 )
 
 type EventsStorage interface {
@@ -62,7 +63,9 @@ func (p RedisEventsStorage) Store(events []providers.DojoEvent) error {
 			return err
 		}
 
-		addResult := p.Redis.Set(key, jsonEvent, 0)
+		expiration := time.Now().Sub(time.Unix(event.StartTime,0))
+
+		addResult := p.Redis.Set(key, jsonEvent, expiration)
 
 		if addResult.Err() != nil {
 			return addResult.Err()

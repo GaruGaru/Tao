@@ -195,6 +195,15 @@ func (e EventBrite) eventsList(lat float64, lon float64, rng int, sorting string
 
 	defer resp.Body.Close()
 
+	if resp.StatusCode != 200 {
+		log.WithFields(log.Fields{
+			"url":         apiUrl,
+			"status_code": resp.StatusCode,
+			"status":      resp.Status,
+		})
+		return EventbriteResponse{}, fmt.Errorf("eventbrite events api, unexpected status code %d != 200", resp.StatusCode)
+	}
+
 	body, err := ioutil.ReadAll(resp.Body)
 
 	var events EventbriteResponse
@@ -261,6 +270,16 @@ func (e EventBrite) venue(venueID string) (Venue, error) {
 	}
 
 	defer resp.Body.Close()
+
+
+	if resp.StatusCode != 200 {
+		log.WithFields(log.Fields{
+			"url":         venueApiUrl,
+			"status_code": resp.StatusCode,
+			"status":      resp.Status,
+		})
+		return Venue{}, fmt.Errorf("eventbrite venue api, unexpected status code %d != 200", resp.StatusCode)
+	}
 
 	body, err := ioutil.ReadAll(resp.Body)
 
