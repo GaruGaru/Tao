@@ -28,7 +28,7 @@ func init() {
 func newEventsProvider() providers.EventProvider {
 	availableProviders := make([]providers.EventProvider, 0)
 
-	// availableProviders = append(availableProviders, providers.NewZenPlatformProvider())
+	availableProviders = append(availableProviders, providers.NewZenPlatformProvider())
 
 	if viper.GetString("eventbrite_token") != "" {
 		availableProviders = append(availableProviders, providers.EventBrite{ApiKey: viper.GetString("eventbrite_token")})
@@ -74,6 +74,8 @@ var scraperCmd = &cobra.Command{
 					}
 					delayer.Refresh()
 					log.Info("Done scraping")
+				}else{
+					log.Infof("Can't run scraper, tried too early")
 				}
 			}
 

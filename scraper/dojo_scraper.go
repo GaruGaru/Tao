@@ -17,6 +17,7 @@ func (d DojoScraper) Run() error {
 
 	err := d.Lock.Obtain()
 	if err == nil {
+
 		log.Info("Starting scraper")
 		d.Statter.Inc("scraper.run", 1, 1)
 

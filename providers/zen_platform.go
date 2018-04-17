@@ -174,7 +174,7 @@ func (z ZenPlatformProvider) fetchEventsFromDojos(dojos []ZenDojo) ([]DojoEvent,
 	wg.Add(dojosCount)
 
 	for _, dojo := range dojos {
-		go z.fetchEventsFromZenDojo(dojo, dojosChannel, &wg)
+		z.fetchEventsFromZenDojo(dojo, dojosChannel, &wg)
 	}
 
 	wg.Wait()
@@ -246,8 +246,9 @@ func (z ZenPlatformProvider) fetchEventsFromZenDojo(dojo ZenDojo, eventsChannel 
 		zenEvents = append(zenEvents, zenToDojoEvent(dojo, event))
 	}
 
-	log.Infof("Got %d events from zen coderdojo %s", len(zenEvents), dojo.ID)
-
+	if len(zenEvents) != 0 {
+		log.Infof("Got %d events from zen coderdojo %s", len(zenEvents), dojo.ID)
+	}
 	eventsChannel <- zenEvents
 
 }
