@@ -18,14 +18,14 @@ func (d DojoScraper) Run() error {
 
 	err := d.Lock.Obtain()
 	if err == nil {
-		fmt.Println("Starting scraper")
+		log.Info("Starting scraper")
 		d.Statter.Inc("scraper.run", 1, 1)
 
 		startScrape := time.Now()
 		events, err := d.Scraper.Scrape()
 		d.Statter.TimingDuration("scraper.scraping.latency", time.Now().Sub(startScrape), 1)
 
-		fmt.Println("Done scraper")
+		log.Info("Done scraper")
 		if err != nil {
 			d.Statter.Inc("scraper.scraping.error", 1, 1)
 			return err
@@ -47,7 +47,7 @@ func (d DojoScraper) Run() error {
 		return err
 
 	} else {
-		fmt.Printf("Scraper already running: %s\n", err)
+		log.Infof("Scraper already running %s", err.Error())
 		d.Statter.Inc("scraper.already_running", 1, 1)
 		return nil
 	}
