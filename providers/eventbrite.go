@@ -302,6 +302,10 @@ func (e EventBrite) eventListUrl(lat float64, lon float64, rng int, sorting stri
 		Path:   "/v3/events/search/",
 	}
 
+	if rng == 1<<63 - 1{
+		rng = 0
+	}
+
 	query := apiUrl.Query()
 	query.Set("q", "coderdojo")
 	query.Set("token", e.ApiKey)
