@@ -225,13 +225,11 @@ func (e EventBriteProvider) processEvent(hLat float64, hLon float64, event Event
 
 	defer group.Done()
 
-	log.Infof("Processing event %s", event.ID)
-
 	venue, err := e.venue(event.VenueID)
 
 	if err == nil {
 		events <- toDojoEvent(hLat, hLon, event, venue)
-		log.Infof("Processed event %s", event.ID)
+
 	} else {
 		log.WithFields(log.Fields{
 			"venue_id": event.VenueID,
