@@ -175,7 +175,7 @@ func (e EventBriteProvider) Events(lat float64, lon float64, rng int, sorting st
 func fetchAndProcessEvents(e EventBriteProvider, lat float64, lon float64, rng int, sorting string, i int, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
 	currEvents, err := e.eventsList(lat, lon, rng, sorting, i)
 
-	log.Infof("Processing %d from api page %d", len(currEvents.Events), i)
+	log.Infof("Processing %d from eventbrite page %d", len(currEvents.Events), i)
 
 	if err == nil {
 		for _, event := range currEvents.Events {
@@ -225,12 +225,18 @@ func (e EventBriteProvider) processEvent(hLat float64, hLon float64, event Event
 
 	defer group.Done()
 
+	log.Infof("Processing event %s", event.ID)
+
 	venue, err := e.venue(event.VenueID)
 
 	if err == nil {
 		events <- toDojoEvent(hLat, hLon, event, venue)
+		log.Infof("Processed event %s", event.ID)
 	} else {
-		log.Errorf("Unable to fetch event venue with id %s: %s", event.VenueID, err)
+		log.WithFields(log.Fields{
+			"venue_id": event.VenueID,
+			"error":    err.Error(),
+		}).Error("Unable to fetch event venue")
 	}
 
 }
@@ -270,6 +276,7 @@ func (e EventBriteProvider) venue(venueID string) (Venue, error) {
 	resp, err := e.Client.Get(venueApiUrl.String())
 
 	if err != nil {
+		log.Warnf("Venue api error: %s", err.Error())
 		return Venue{}, err
 	}
 
@@ -291,6 +298,11 @@ func (e EventBriteProvider) venue(venueID string) (Venue, error) {
 	err = json.Unmarshal(body, &venue)
 
 	if err != nil {
+		log.WithFields(log.Fields{
+			"json":  string(body),
+			"error": err,
+		}).Warn("Unable to unmarshal venue json")
+
 		return Venue{}, err
 	}
 
@@ -305,7 +317,7 @@ func (e EventBriteProvider) eventListUrl(lat float64, lon float64, rng int, sort
 		Path:   "/v3/events/search/",
 	}
 
-	if rng == 1<<63 - 1{
+	if rng == 1<<63-1 {
 		rng = 0
 	}
 
