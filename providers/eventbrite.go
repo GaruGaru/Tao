@@ -229,7 +229,6 @@ func (e EventBriteProvider) processEvent(hLat float64, hLon float64, event Event
 
 	if err == nil {
 		events <- toDojoEvent(hLat, hLon, event, venue)
-
 	} else {
 		log.WithFields(log.Fields{
 			"venue_id": event.VenueID,

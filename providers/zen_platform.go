@@ -246,12 +246,15 @@ func (z ZenPlatformProvider) fetchEventsFromZenDojo(dojo ZenDojo, eventsChannel 
 
 	zenEvents := make([]DojoEvent, 0)
 	for _, event := range events.Results {
-		zenEvents = append(zenEvents, zenToDojoEvent(dojo, event))
+		if event.StartTime.Nanosecond() > time.Now().Nanosecond() {
+			zenEvents = append(zenEvents, zenToDojoEvent(dojo, event))
+		}
 	}
 
 	if len(zenEvents) != 0 {
 		log.Infof("Got %d events from zen coderdojo %s", len(zenEvents), dojo.ID)
 	}
+
 	eventsChannel <- zenEvents
 
 }
