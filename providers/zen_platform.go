@@ -246,7 +246,7 @@ func (z ZenPlatformProvider) fetchEventsFromZenDojo(dojo ZenDojo, eventsChannel 
 
 	zenEvents := make([]DojoEvent, 0)
 	for _, event := range events.Results {
-		if event.StartTime.Nanosecond() > time.Now().Nanosecond() {
+		if event.StartTime.After(time.Now()) {
 			zenEvents = append(zenEvents, zenToDojoEvent(dojo, event))
 		}
 	}
