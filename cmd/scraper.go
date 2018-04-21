@@ -31,7 +31,7 @@ func newEventsProvider() providers.EventProvider {
 	availableProviders = append(availableProviders, providers.NewZenPlatformProvider())
 
 	if viper.GetString("eventbrite_token") != "" {
-		availableProviders = append(availableProviders, providers.EventBrite{ApiKey: viper.GetString("eventbrite_token")})
+		availableProviders = append(availableProviders, providers.EventBriteProvider{ApiKey: viper.GetString("eventbrite_token")})
 	}
 
 	return providers.ProvidersManager{Providers: availableProviders,}

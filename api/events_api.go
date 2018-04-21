@@ -65,9 +65,9 @@ func (api EventsApi) Run(port int) {
 
 	r.GET("/probe", probe)
 
-	r.GET("/api/v1/events", api.eventsV1)
+	//r.GET("/api/v1/events", api.eventsV1)
 
-	r.GET("/api/v2/events", api.eventsV2)
+	//r.GET("/api/v2/events", api.eventsV2)
 
 	r.GET("/api/v3/events", api.eventsV3)
 

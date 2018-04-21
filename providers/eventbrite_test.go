@@ -30,7 +30,7 @@ func TestFetchArticlesWithoutPagination(t *testing.T) {
 		Reply(200).
 		BodyString(readTestDataRaw(t, "eventbrite_venue_response.json"))
 
-	eventbrite := EventBrite{ApiKey: "test"}
+	eventbrite := EventBriteProvider{ApiKey: "test"}
 
 	events, err := eventbrite.Events(10, 10, 1000, "distance")
 
@@ -72,7 +72,7 @@ func TestFetchArticlesWithPagination(t *testing.T) {
 		Reply(200).
 		BodyString(readTestDataRaw(t, "eventbrite_venue_response.json"))
 
-	eventbrite := EventBrite{ApiKey: "test"}
+	eventbrite := EventBriteProvider{ApiKey: "test"}
 
 	events, err := eventbrite.Events(10, 10, 1000, "distance")
 

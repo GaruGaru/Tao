@@ -47,7 +47,13 @@ func TestEventsScraper(t *testing.T) {
 	store := NewInMemoryEventsStorage()
 	dojoScraper := DojoScraper{
 		Storage: store,
-		Scraper: DefaultEventScraper{Provider: TestEventProvider{DojoEvents: testEvents},},
+		Scraper: DefaultEventScraper{Provider: providers.ProvidersManager{Providers: []providers.EventProvider{
+			TestEventProvider{DojoEvents: testEvents},
+			TestEventProvider{DojoEvents: testEvents},
+			TestEventProvider{DojoEvents: testEvents},
+			TestEventProvider{DojoEvents: testEvents},
+			TestEventProvider{DojoEvents: testEvents},
+		 }},},
 		Lock:    FileSystemLock{LockFile: fmt.Sprintf("test.lock.%d", rand.Int())},
 		Statter: &statsd.NoopClient{},
 	}

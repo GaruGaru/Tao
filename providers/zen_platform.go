@@ -139,10 +139,13 @@ type BoundingBoxRequest struct {
 }
 
 type ZenPlatformProvider struct {
+	Client http.Client
 }
 
 func NewZenPlatformProvider() ZenPlatformProvider {
-	return ZenPlatformProvider{}
+	return ZenPlatformProvider{
+		Client: http.Client{Timeout: 10 * time.Second},
+	}
 }
 
 func (z ZenPlatformProvider) Events(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, error) {
@@ -204,7 +207,7 @@ func (z ZenPlatformProvider) fetchEventsFromZenDojo(dojo ZenDojo, eventsChannel 
 		return
 	}
 
-	resp, err := http.Get(url.String())
+	resp, err := z.Client.Get(url.String())
 
 	if err != nil {
 		logrus.WithFields(logrus.Fields{
@@ -322,7 +325,7 @@ func (z ZenPlatformProvider) fetchDojos(lat float64, lon float64, rng int) ([]Ze
 		"body": string(jbytes),
 	}).Info("Fetching zen nearby dojos")
 
-	resp, err := http.Post(url, "application/json", bytes.NewBuffer(jbytes))
+	resp, err := z.Client.Post(url, "application/json", bytes.NewBuffer(jbytes))
 
 	if err != nil {
 		return nil, err

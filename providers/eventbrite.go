@@ -122,15 +122,19 @@ type EventbriteResponse struct {
 	} `json:"location"`
 }
 
-func NewEventBriteProvider() EventBrite {
-	return EventBrite{ApiKey: os.Getenv("EVENTBRITE_TOKEN")}
+func NewEventBriteProvider() EventBriteProvider {
+	return EventBriteProvider{
+		ApiKey: os.Getenv("EVENTBRITE_TOKEN"),
+		Client: http.Client{Timeout: 10 * time.Second},
+	}
 }
 
-type EventBrite struct {
+type EventBriteProvider struct {
 	ApiKey string
+	Client http.Client
 }
 
-func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, error) {
+func (e EventBriteProvider) Events(lat float64, lon float64, rng int, sorting string) ([]DojoEvent, error) {
 
 	events, err := e.eventsList(lat, lon, rng, sorting, 1)
 
@@ -168,7 +172,7 @@ func (e EventBrite) Events(lat float64, lon float64, rng int, sorting string) ([
 	return dojoEvents, nil
 }
 
-func fetchAndProcessEvents(e EventBrite, lat float64, lon float64, rng int, sorting string, i int, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
+func fetchAndProcessEvents(e EventBriteProvider, lat float64, lon float64, rng int, sorting string, i int, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
 	currEvents, err := e.eventsList(lat, lon, rng, sorting, i)
 
 	log.Infof("Processing %d from api page %d", len(currEvents.Events), i)
@@ -182,12 +186,12 @@ func fetchAndProcessEvents(e EventBrite, lat float64, lon float64, rng int, sort
 	}
 }
 
-func (e EventBrite) eventsList(lat float64, lon float64, rng int, sorting string, page int) (EventbriteResponse, error) {
+func (e EventBriteProvider) eventsList(lat float64, lon float64, rng int, sorting string, page int) (EventbriteResponse, error) {
 	apiUrl := e.eventListUrl(lat, lon, rng, sorting, page)
 
 	log.Infof("Calling eventbrite api: %s", apiUrl)
 
-	resp, err := http.Get(apiUrl.String())
+	resp, err := e.Client.Get(apiUrl.String())
 
 	if err != nil {
 		return EventbriteResponse{}, err
@@ -217,7 +221,7 @@ func (e EventBrite) eventsList(lat float64, lon float64, rng int, sorting string
 	return events, nil
 }
 
-func (e EventBrite) processEvent(hLat float64, hLon float64, event Event, events chan DojoEvent, group *sync.WaitGroup) {
+func (e EventBriteProvider) processEvent(hLat float64, hLon float64, event Event, events chan DojoEvent, group *sync.WaitGroup) {
 
 	defer group.Done()
 
@@ -261,16 +265,15 @@ func toDojoEvent(hLat float64, hLon float64, event Event, venue Venue) DojoEvent
 	}
 }
 
-func (e EventBrite) venue(venueID string) (Venue, error) {
+func (e EventBriteProvider) venue(venueID string) (Venue, error) {
 	venueApiUrl := e.venueUrl(venueID)
-	resp, err := http.Get(venueApiUrl.String())
+	resp, err := e.Client.Get(venueApiUrl.String())
 
 	if err != nil {
 		return Venue{}, err
 	}
 
 	defer resp.Body.Close()
-
 
 	if resp.StatusCode != 200 {
 		log.WithFields(log.Fields{
@@ -295,7 +298,7 @@ func (e EventBrite) venue(venueID string) (Venue, error) {
 
 }
 
-func (e EventBrite) eventListUrl(lat float64, lon float64, rng int, sorting string, page int) url.URL {
+func (e EventBriteProvider) eventListUrl(lat float64, lon float64, rng int, sorting string, page int) url.URL {
 	apiUrl := &url.URL{
 		Scheme: "https",
 		Host:   "www.eventbriteapi.com",
@@ -317,7 +320,7 @@ func (e EventBrite) eventListUrl(lat float64, lon float64, rng int, sorting stri
 	return *apiUrl
 }
 
-func (e EventBrite) venueUrl(venueID string) url.URL {
+func (e EventBriteProvider) venueUrl(venueID string) url.URL {
 	apiUrl := &url.URL{
 		Scheme: "https",
 		Host:   "www.eventbriteapi.com",
