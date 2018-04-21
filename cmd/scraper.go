@@ -28,7 +28,7 @@ func init() {
 func newEventsProvider() providers.EventProvider {
 	availableProviders := make([]providers.EventProvider, 0)
 
-	//availableProviders = append(availableProviders, providers.NewZenPlatformProvider())
+	availableProviders = append(availableProviders, providers.NewZenPlatformProvider())
 
 	if viper.GetString("eventbrite_token") != "" {
 		availableProviders = append(availableProviders, providers.EventBriteProvider{ApiKey: viper.GetString("eventbrite_token")})
