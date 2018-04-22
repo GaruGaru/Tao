@@ -11,6 +11,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"io/ioutil"
 	log "github.com/sirupsen/logrus"
+	"math/rand"
 )
 
 type ZenDojo struct {
@@ -174,13 +175,15 @@ func (z ZenPlatformProvider) fetchEventsFromDojos(dojos []ZenDojo) ([]DojoEvent,
 	dojosCount := len(dojos)
 	dojosChannel := make(chan []DojoEvent, dojosCount)
 	var wg sync.WaitGroup
-	wg.Add(dojosCount)
+
 
 	for _, dojo := range dojos {
-		z.fetchEventsFromZenDojo(dojo, dojosChannel, &wg)
+			wg.Add(1)
+			go z.fetchEventsFromZenDojo(dojo, dojosChannel, &wg)
 	}
 
 	wg.Wait()
+	log.Info("Done waiting")
 	close(dojosChannel)
 
 	var dojoEvents []DojoEvent
@@ -238,7 +241,6 @@ func (z ZenPlatformProvider) fetchEventsFromZenDojo(dojo ZenDojo, eventsChannel 
 
 	if err != nil {
 		logrus.WithFields(logrus.Fields{
-			"json":  string(body),
 			"error": err.Error(),
 		}).Error("Unable to unmarshal json")
 		return
