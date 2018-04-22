@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"path"
 	"testing"
+	"fmt"
 )
 
 func readTestDataRaw(t *testing.T, file string) string {
@@ -82,7 +83,7 @@ func TestFetchArticlesWithPagination(t *testing.T) {
 	}
 
 	if len(events) != 150 {
-		t.Log("Fetched events count does not match != 150")
+		t.Log(fmt.Sprintf("Fetched events count does not match  %d != 150", len(events)))
 		t.FailNow()
 	}
 

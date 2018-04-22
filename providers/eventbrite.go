@@ -148,14 +148,13 @@ func (e EventBriteProvider) Events(lat float64, lon float64, rng int, sorting st
 
 	eventsChannel := make(chan DojoEvent, eventsCount)
 	var wg sync.WaitGroup
-
+	wg.Add(events.Pagination.ObjectCount)
 
 	if events.Pagination.HasMoreItems {
 		for i := 1; i < events.Pagination.PageCount+1; i++ {
 			go fetchAndProcessEvents(e, lat, lon, rng, sorting, i, eventsChannel, &wg)
 		}
 	} else {
-		wg.Add(eventsCount)
 		for _, event := range events.Events {
 			go e.processEvent(lat, lon, event, eventsChannel, &wg)
 		}
@@ -179,7 +178,6 @@ func fetchAndProcessEvents(e EventBriteProvider, lat float64, lon float64, rng i
 	log.Infof("Processing %d from eventbrite page %d", len(currEvents.Events), i)
 
 	if err == nil {
-		wg.Add(len(currEvents.Events))
 		for _, event := range currEvents.Events {
 			go e.processEvent(lat, lon, event, eventsChannel, wg)
 		}
