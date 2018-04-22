@@ -11,7 +11,6 @@ import (
 	"github.com/sirupsen/logrus"
 	"io/ioutil"
 	log "github.com/sirupsen/logrus"
-	"math/rand"
 )
 
 type ZenDojo struct {
