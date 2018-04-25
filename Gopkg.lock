@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/afex/hystrix-go"
+  packages = ["hystrix","hystrix/metric_collector","hystrix/rolling"]
+  revision = "f86abeeb9f72803eb19b0d7a25159e55b80e7254"
+
+[[projects]]
   name = "github.com/cactus/go-statsd-client"
   packages = ["statsd"]
   revision = "138b925ccdf617776955904ba7759fce64406cec"
@@ -36,6 +42,18 @@
   packages = [".","internal","internal/consistenthash","internal/hashtag","internal/pool","internal/proto"]
   revision = "8b4fa6d443e35ca8b1c37be877285252430b06a3"
   version = "v6.8.3"
+
+[[projects]]
+  name = "github.com/gojektech/heimdall"
+  packages = ["."]
+  revision = "b496d1f3593487abf8161822f38a6612704fdc44"
+  version = "v3.0.0"
+
+[[projects]]
+  name = "github.com/gojektech/valkyrie"
+  packages = ["."]
+  revision = "6aee720afcdffc337029305c126e0079491063f0"
+  version = "v1.0"
 
 [[projects]]
   branch = "master"
@@ -84,6 +102,12 @@
   packages = ["."]
   revision = "acdc4509485b587f5e675510c4f2c63e90ff68a8"
   version = "v1.1.0"
+
+[[projects]]
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
 
 [[projects]]
   name = "github.com/sirupsen/logrus"
@@ -178,6 +202,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "81097c4a82c0cbbae35329049d890d1a5203784cf638af8597d489f6e813a8e3"
+  inputs-digest = "e7a07a60c2448ad75c0050088fa7c7a233d980b9c1721620fbdaaa0fc8a26737"
   solver-name = "gps-cdcl"
   solver-version = 1

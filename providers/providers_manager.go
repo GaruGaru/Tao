@@ -3,6 +3,7 @@ package providers
 import (
 	"sort"
 	"sync"
+	"github.com/sirupsen/logrus"
 )
 
 type ProvidersManager struct {
@@ -52,5 +53,7 @@ func fetchEvents(provider EventProvider, lat float64, lon float64, rng int, sort
 	events, err := provider.Events(lat, lon, rng, sorting)
 	if err == nil {
 		eventsChannel <- events
+	}else{
+		logrus.Error(err.Error())
 	}
 }

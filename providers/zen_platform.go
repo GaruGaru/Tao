@@ -2,14 +2,12 @@ package providers
 
 import (
 	"time"
-	"net/http"
 	"bytes"
 	"fmt"
 	"encoding/json"
 	"sync"
 	"net/url"
 	"github.com/sirupsen/logrus"
-	"io/ioutil"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -29,7 +27,7 @@ type ZenDojo struct {
 	AlternativeFrequency string      `json:"alternative_frequency"`
 	Country struct {
 		CountryName   string `json:"countryName"`
-		CountryNumber int    `json:"countryNumber"`
+		CountryNumber interface{}    `json:"countryNumber,omitempty"`
 		Continent     string `json:"continent"`
 		Alpha2        string `json:"alpha2"`
 		Alpha3        string `json:"alpha3"`
@@ -64,7 +62,7 @@ type ZenDojo struct {
 	Alpha3                     string        `json:"alpha3"`
 	Address1                   string        `json:"address1"`
 	Address2                   string        `json:"address2"`
-	CountryNumber              int           `json:"country_number"`
+	CountryNumber              interface{}   `json:"country_number,omitempty"`
 	CountryName                string        `json:"country_name"`
 	Admin1Code                 interface{}   `json:"admin1_code"`
 	Admin1Name                 interface{}   `json:"admin1_name"`
@@ -139,12 +137,12 @@ type BoundingBoxRequest struct {
 }
 
 type ZenPlatformProvider struct {
-	Client http.Client
+	Client ApiClient
 }
 
 func NewZenPlatformProvider() ZenPlatformProvider {
 	return ZenPlatformProvider{
-		Client: http.Client{Timeout: 10 * time.Second},
+		Client: NewHttpApiClient(20 * time.Second),
 	}
 }
 
@@ -175,10 +173,9 @@ func (z ZenPlatformProvider) fetchEventsFromDojos(dojos []ZenDojo) ([]DojoEvent,
 	dojosChannel := make(chan []DojoEvent, dojosCount)
 	var wg sync.WaitGroup
 
-
 	for _, dojo := range dojos {
-			wg.Add(1)
-			go z.fetchEventsFromZenDojo(dojo, dojosChannel, &wg)
+		wg.Add(1)
+		z.fetchEventsFromZenDojo(dojo, dojosChannel, &wg)
 	}
 
 	wg.Wait()
@@ -200,7 +197,7 @@ func (z ZenPlatformProvider) fetchEventsFromDojos(dojos []ZenDojo) ([]DojoEvent,
 func (z ZenPlatformProvider) fetchEventsFromZenDojo(dojo ZenDojo, eventsChannel chan []DojoEvent, wg *sync.WaitGroup) {
 	defer wg.Done()
 
-	log.WithField("coderdojo", dojo.ID).Info("Fetching zen events for dojo")
+	log.WithField("coderdojo", dojo.ID).Debug("Fetching zen events for dojo")
 	rawUrl := fmt.Sprintf("https://zen.coderdojo.com/api/3.0/dojos/%s/events?query[status]=published&query[public]=1&query[afterDate]=%d&query[utcOffset]=0", dojo.ID, 0)
 	url, err := url.Parse(rawUrl)
 
@@ -209,39 +206,12 @@ func (z ZenPlatformProvider) fetchEventsFromZenDojo(dojo ZenDojo, eventsChannel 
 		return
 	}
 
-	resp, err := z.Client.Get(url.String())
-
-	if err != nil {
-		logrus.WithFields(logrus.Fields{
-			"url":   url.String(),
-			"error": err.Error(),
-			"dojo":  dojo.ID,
-		}).Error("Unable to fetch events from dojo")
-		return
-	}
-
-	defer resp.Body.Close()
-
-	if resp.StatusCode != 200 {
-		logrus.WithFields(logrus.Fields{
-			"url":         url.String(),
-			"status_code": resp.StatusCode,
-			"status":      resp.Status,
-			"dojo":        dojo.ID,
-		}).Error("Unable to fetch events from dojo, unexpected http response code")
-		return
-	}
-
-	body, err := ioutil.ReadAll(resp.Body)
-
 	var events ZenDojoEvents
 
-	err = json.Unmarshal(body, &events)
+	err = z.Client.Get(url.String(), &events)
 
-	if err != nil {
-		logrus.WithFields(logrus.Fields{
-			"error": err.Error(),
-		}).Error("Unable to unmarshal json")
+	if err != nil{
+		log.Error(err.Error())
 		return
 	}
 
@@ -329,23 +299,9 @@ func (z ZenPlatformProvider) fetchDojos(lat float64, lon float64, rng int) ([]Ze
 		"body": string(jbytes),
 	}).Info("Fetching zen nearby dojos")
 
-	resp, err := z.Client.Post(url, "application/json", bytes.NewBuffer(jbytes))
-
-	if err != nil {
-		return nil, err
-	}
-
-	defer resp.Body.Close()
-
-	if resp.StatusCode != 200 {
-		return nil, fmt.Errorf("error response code %d != 200: %s", resp.StatusCode, resp.Status)
-	}
-
-	decoder := json.NewDecoder(resp.Body)
-
 	var dojos []ZenDojo
 
-	decoder.Decode(&dojos)
+	err = z.Client.Post(url, bytes.NewBuffer(jbytes), &dojos)
 
-	return dojos, nil
+	return dojos, err
 }
