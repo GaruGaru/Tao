@@ -263,7 +263,7 @@ func toDojoEvent(hLat float64, hLon float64, event Event, venue Venue) DojoEvent
 			Longitude:  lon,
 			Distance:   distance,
 		},
-		Organizer: DojoOrganizer{Id: event.OrganizerID},
+		Organizer: DojoOrganizer{Id: event.OrganizerID, Platform: "eventbrite"},
 		Free:      event.IsFree,
 	}
 }
