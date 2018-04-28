@@ -56,7 +56,7 @@ func TestEventsScraper(t *testing.T) {
 			TestEventProvider{DojoEvents: testEvents},
 		 }},},
 		Lock:    FileSystemLock{LockFile: fmt.Sprintf("test.lock.%d", rand.Int())},
-		Delayer: LocalScraperDelayer{Delay: 60*time.Second, lastRun: time.Now()},
+		Delayer: LocalScraperDelayer{Delay: 0, lastRun: time.Now()},
 		Statter: &statsd.NoopClient{},
 	}
 
