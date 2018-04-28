@@ -10,6 +10,7 @@ import (
 	"io/ioutil"
 	"encoding/json"
 	"github.com/cactus/go-statsd-client/statsd"
+	"time"
 )
 
 func LoadTestEvents(t *testing.T, path string) []providers.DojoEvent {
@@ -55,6 +56,7 @@ func TestEventsScraper(t *testing.T) {
 			TestEventProvider{DojoEvents: testEvents},
 		 }},},
 		Lock:    FileSystemLock{LockFile: fmt.Sprintf("test.lock.%d", rand.Int())},
+		Delayer: LocalScraperDelayer{Delay: 60*time.Second, lastRun: time.Now()},
 		Statter: &statsd.NoopClient{},
 	}
 
@@ -80,6 +82,8 @@ func TestEventsScraperWithRedis(t *testing.T) {
 
 	testEvents := LoadTestEvents(t, "testdata/provider_response.json")
 
+	delayerKey := fmt.Sprintf("test_delayer_%d", rand.Int31())
+
 	geoKey := fmt.Sprintf("locations_test_%d", rand.Int31())
 
 	lockKey := fmt.Sprintf("test_lock_%d", rand.Int31())
@@ -88,6 +92,7 @@ func TestEventsScraperWithRedis(t *testing.T) {
 		Storage: RedisEventsStorage{Redis: *redisClient, GeoKey: geoKey},
 		Scraper: DefaultEventScraper{Provider: TestEventProvider{DojoEvents: testEvents},},
 		Lock:    RedisDojoScraperLock{Redis: *redisClient, LockKey: lockKey},
+		Delayer: RedisScraperDelayer{Redis: *redisClient, Delay: 60*time.Second, TimeKey: delayerKey},
 		Statter: &statsd.NoopClient{},
 	}
 
@@ -133,5 +138,18 @@ func TestEventsScraperWithRedis(t *testing.T) {
 			t.FailNow()
 		}
 	}
+
+	key, err := redisClient.Get(delayerKey).Result()
+
+	if err != nil{
+		t.Log(err.Error())
+		t.FailNow()
+	}
+
+	if key == ""{
+		t.Log("empty delayer key")
+		t.FailNow()
+	}
+
 
 }

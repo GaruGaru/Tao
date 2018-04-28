@@ -47,10 +47,9 @@ var scraperCmd = &cobra.Command{
 			Scraper: scraper.DefaultEventScraper{Provider: newEventsProvider()},
 			Storage: GetScraperStorage(),
 			Lock:    GetScraperLock(),
+			Delayer: GetScraperDelayer(),
 			Statter: GetStatter(),
 		}
-
-		delayer := GetScraperDelayer()
 
 		delay := uint64(viper.GetInt("scraper_delay"))
 
@@ -60,29 +59,19 @@ var scraperCmd = &cobra.Command{
 		}).Info("Tao scraper service started")
 
 		gocron.Every(delay).Seconds().Do(func() {
-			canRun, err := delayer.CanRun()
+
+			log.Info("Scraping started")
+			err := dojoScraper.Run()
 
 			if err != nil {
-				log.Error(err.Error())
-			} else {
-				if canRun {
-					log.Info("Scraping started")
-					err := dojoScraper.Run()
-
-					if err != nil {
-						log.Errorf("Error %s", err.Error())
-					}
-					delayer.Refresh()
-					log.Info("Done scraping")
-				}else{
-					log.Infof("Can't run scraper, tried too early")
-				}
+				log.Errorf("Error %s", err.Error())
 			}
+
+			log.Info("Done scraping")
 
 		})
 
 		gocron.RunAll()
 		<-gocron.Start()
-
 	},
 }
