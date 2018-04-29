@@ -40,23 +40,25 @@ func (d DojoScraper) Run() error {
 
 		startScrape := time.Now()
 		events, err := d.Scraper.Scrape()
-		d.Statter.TimingDuration("scraper.scraping.latency", time.Now().Sub(startScrape), 1)
+
 
 		log.Info("Done scraper")
 		if err != nil {
 			d.Statter.Inc("scraper.scraping.error", 1, 1)
 			return err
+		}else{
+			d.Statter.TimingDuration("scraper.scraping.latency", time.Now().Sub(startScrape), 1.0)
 		}
 
 		startStore := time.Now()
+
 		err = d.Storage.Store(events)
 
 		if err != nil {
 			d.Statter.Inc("scraper.storage.error", 1, 1)
+		}else{
+			d.Statter.TimingDuration("scraper.storage.latency", time.Now().Sub(startStore), 1.0)
 		}
-
-		d.Statter.TimingDuration("scraper.storage.latency", time.Now().Sub(startStore), 1)
-
 
 		return err
 
