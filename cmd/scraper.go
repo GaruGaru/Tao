@@ -7,6 +7,9 @@ import (
 	"github.com/GaruGaru/Tao/scraper"
 	"github.com/GaruGaru/Tao/providers"
 	log "github.com/sirupsen/logrus"
+	"os"
+	"os/signal"
+	"syscall"
 )
 
 var EventbriteToken string
@@ -37,6 +40,23 @@ func newEventsProvider() providers.EventProvider {
 	return providers.ProvidersManager{Providers: availableProviders,}
 }
 
+func handleOsSignals(scraper *scraper.DojoScraper) {
+	c := make(chan os.Signal, 1)
+	signal.Notify(c,
+		syscall.SIGHUP,
+		syscall.SIGINT,
+		syscall.SIGTERM,
+		syscall.SIGQUIT,
+	)
+	go func() {
+		sig := <-c
+		log.Infof("Got signal %s, terminating gracefully", sig.String())
+		scraper.Lock.Release()
+		log.Info("Tao scraper terminated successfully")
+		os.Exit(1)
+	}()
+}
+
 var scraperCmd = &cobra.Command{
 	Use:   "scraper",
 	Short: "Start the scraper",
@@ -50,6 +70,8 @@ var scraperCmd = &cobra.Command{
 			Delayer: GetScraperDelayer(),
 			Statter: GetStatter(),
 		}
+
+		handleOsSignals(&dojoScraper)
 
 		delay := uint64(viper.GetInt("scraper_delay"))
 
