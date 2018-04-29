@@ -7,6 +7,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"time"
+	"github.com/sirupsen/logrus"
 )
 
 type EventsStorage interface {
@@ -80,8 +81,11 @@ func (p RedisEventsStorage) Store(events []providers.DojoEvent) error {
 	}
 
 	saveResult := p.Redis.Save()
+	if saveResult.Err() != nil{
+		logrus.Warn("Redis auto save is running, skipped Save command")
+	}
 
-	return saveResult.Err()
+	return nil
 }
 
 func keyFromEvent(event providers.DojoEvent) string {
