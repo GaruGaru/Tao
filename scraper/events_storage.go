@@ -64,18 +64,22 @@ func (p RedisEventsStorage) Store(events []providers.DojoEvent) error {
 			return err
 		}
 
-		expiration := time.Now().Sub(time.Unix(event.StartTime,0))
+		eventStart := time.Unix(event.StartTime,0)
 
-		addResult := p.Redis.Set(key, jsonEvent, expiration)
+		expiration := eventStart.Sub(time.Now())
 
-		if addResult.Err() != nil {
-			return addResult.Err()
-		}
+		if expiration > 0 {
+			addResult := p.Redis.Set(key, jsonEvent, expiration)
 
-		geoResult := p.Redis.GeoAdd(p.GeoKey, &redis.GeoLocation{Longitude: event.Location.Longitude, Latitude: event.Location.Latitude, Name: key})
+			if addResult.Err() != nil {
+				return addResult.Err()
+			}
 
-		if geoResult.Err() != nil {
-			return geoResult.Err()
+			geoResult := p.Redis.GeoAdd(p.GeoKey, &redis.GeoLocation{Longitude: event.Location.Longitude, Latitude: event.Location.Latitude, Name: key})
+
+			if geoResult.Err() != nil {
+				return geoResult.Err()
+			}
 		}
 
 	}

@@ -39,8 +39,8 @@ func (d DojoScraper) Run() error {
 		d.Statter.Inc("scraper.run", 1, 1)
 
 		startScrape := time.Now()
-		events, err := d.Scraper.Scrape()
 
+		events, err := d.Scraper.Scrape()
 
 		log.Info("Done scraper")
 		if err != nil {

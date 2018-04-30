@@ -54,7 +54,7 @@ func TestEventsScraper(t *testing.T) {
 			TestEventProvider{DojoEvents: testEvents},
 			TestEventProvider{DojoEvents: testEvents},
 			TestEventProvider{DojoEvents: testEvents},
-		 }},},
+		}},},
 		Lock:    FileSystemLock{LockFile: fmt.Sprintf("test.lock.%d", rand.Int())},
 		Delayer: LocalScraperDelayer{Delay: 0, lastRun: time.Now()},
 		Statter: &statsd.NoopClient{},
@@ -82,6 +82,12 @@ func TestEventsScraperWithRedis(t *testing.T) {
 
 	testEvents := LoadTestEvents(t, "testdata/provider_response.json")
 
+	for i := range testEvents {
+		e := &testEvents[i]
+		e.StartTime = time.Now().Add(48 * time.Hour).Unix()
+		e.EndTime = time.Now().Add(49 * time.Hour).Unix()
+	}
+
 	delayerKey := fmt.Sprintf("test_delayer_%d", rand.Int31())
 
 	geoKey := fmt.Sprintf("locations_test_%d", rand.Int31())
@@ -92,7 +98,7 @@ func TestEventsScraperWithRedis(t *testing.T) {
 		Storage: RedisEventsStorage{Redis: *redisClient, GeoKey: geoKey},
 		Scraper: DefaultEventScraper{Provider: TestEventProvider{DojoEvents: testEvents},},
 		Lock:    RedisDojoScraperLock{Redis: *redisClient, LockKey: lockKey},
-		Delayer: RedisScraperDelayer{Redis: *redisClient, Delay: 60*time.Second, TimeKey: delayerKey},
+		Delayer: RedisScraperDelayer{Redis: *redisClient, Delay: 60 * time.Second, TimeKey: delayerKey},
 		Statter: &statsd.NoopClient{},
 	}
 
@@ -141,15 +147,14 @@ func TestEventsScraperWithRedis(t *testing.T) {
 
 	key, err := redisClient.Get(delayerKey).Result()
 
-	if err != nil{
+	if err != nil {
 		t.Log(err.Error())
 		t.FailNow()
 	}
 
-	if key == ""{
+	if key == "" {
 		t.Log("empty delayer key")
 		t.FailNow()
 	}
-
 
 }
