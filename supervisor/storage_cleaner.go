@@ -2,6 +2,7 @@ package supervisor
 
 import (
 	"github.com/go-redis/redis"
+	"github.com/cactus/go-statsd-client/statsd"
 )
 
 type CleanerResult struct {
@@ -15,6 +16,7 @@ type StorageCleaner interface {
 type RedisStorageCleaner struct {
 	Redis     redis.Client
 	EventsKey string
+	Statter   statsd.Statter
 }
 
 type NoOpCleaner struct {
@@ -33,6 +35,7 @@ func (cleaner RedisStorageCleaner) Cleanup() (CleanerResult, error) {
 	result, err := cmd.Result()
 
 	if err != nil {
+		cleaner.Statter.Inc("cleaner.run.error", 1, 1.0)
 		return CleanerResult{}, err
 	}
 
@@ -54,9 +57,14 @@ func (cleaner RedisStorageCleaner) Cleanup() (CleanerResult, error) {
 		if res == 0 {
 			removed++
 			cleaner.Redis.ZRem(cleaner.EventsKey, k)
+			cleaner.Statter.Inc("cleaner.result.removed", 1, 1.0)
 		}
 
 	}
+
+	cleaner.Redis.BgSave()
+
+	cleaner.Statter.Inc("cleaner.run.ok", 1, 1.0)
 
 	return CleanerResult{Removed: removed,}, nil
 

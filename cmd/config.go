@@ -81,6 +81,7 @@ func GetStorageCleaner() supervisor.StorageCleaner {
 		return supervisor.RedisStorageCleaner{
 			Redis:     *GetRedisClient(),
 			EventsKey: GetRedisLocationsKey(),
+			Statter:   GetStatter(),
 		}
 	}
 	panic(fmt.Errorf("unable to create scraper events delayer instance for storage type: %s", storage))

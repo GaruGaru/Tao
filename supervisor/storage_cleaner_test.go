@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"math/rand"
 	"github.com/go-redis/redis"
+	"github.com/cactus/go-statsd-client/statsd"
 )
 
 func TestFileSystemLockObtainFail(t *testing.T) {
@@ -22,6 +23,7 @@ func TestFileSystemLockObtainFail(t *testing.T) {
 	cleaner := RedisStorageCleaner{
 		Redis:     *redisClient,
 		EventsKey: key,
+		Statter: &statsd.NoopClient{},
 	}
 
 	result, err := cleaner.Cleanup()
