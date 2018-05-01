@@ -71,6 +71,8 @@ var scraperCmd = &cobra.Command{
 			Statter: GetStatter(),
 		}
 
+		cleaner := GetStorageCleaner()
+
 		handleOsSignals(&dojoScraper)
 
 		delay := uint64(viper.GetInt("scraper_delay"))
@@ -81,16 +83,23 @@ var scraperCmd = &cobra.Command{
 		}).Info("Tao scraper service started")
 
 		gocron.Every(delay).Seconds().Do(func() {
-
 			log.Info("Scraping started")
 			err := dojoScraper.Run()
-
 			if err != nil {
 				log.Errorf("Error %s", err.Error())
 			}
-
 			log.Info("Done scraping")
+		})
 
+		gocron.Every(3).Hours().Do(func() {
+			log.Info("Storage cleaner started")
+			res, err := cleaner.Cleanup()
+			if err != nil {
+				log.Errorf("Error %s", err.Error())
+			} else {
+				log.Infof("Cleaner removed %d expired events", res.Removed)
+			}
+			log.Info("Storage cleaner scraping")
 		})
 
 		gocron.RunAll()

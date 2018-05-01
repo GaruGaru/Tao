@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"github.com/cactus/go-statsd-client/statsd"
 	"time"
+	"github.com/GaruGaru/Tao/supervisor"
 )
 
 func GetConfiguredStorage() string {
@@ -68,6 +69,19 @@ func GetScraperDelayer() scraper.ScraperDelayer {
 		return scraper.LocalScraperDelayer{}
 	} else if storage == "redis" {
 		return scraper.NewRedisScraperDelayer(*GetRedisClient(), time.Duration(viper.GetInt("scraper_delay"))*time.Second)
+	}
+	panic(fmt.Errorf("unable to create scraper events delayer instance for storage type: %s", storage))
+}
+
+func GetStorageCleaner() supervisor.StorageCleaner {
+	storage := GetConfiguredStorage()
+	if storage == "local" {
+		return supervisor.NoOpCleaner{}
+	} else if storage == "redis" {
+		return supervisor.RedisStorageCleaner{
+			Redis:     *GetRedisClient(),
+			EventsKey: GetRedisLocationsKey(),
+		}
 	}
 	panic(fmt.Errorf("unable to create scraper events delayer instance for storage type: %s", storage))
 }
