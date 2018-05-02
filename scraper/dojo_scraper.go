@@ -46,8 +46,10 @@ func (d DojoScraper) Run() error {
 		if err != nil {
 			d.Statter.Inc("scraper.scraping.error", 1, 1)
 			return err
-		}else{
-			d.Statter.TimingDuration("scraper.scraping.latency", time.Now().Sub(startScrape), 1.0)
+		} else {
+			duration := time.Now().Sub(startScrape)
+			log.Infof("Scraper ran in %f seconds", duration.Seconds())
+			d.Statter.TimingDuration("scraper.scraping.latency", duration, 1)
 		}
 
 		startStore := time.Now()
@@ -56,8 +58,10 @@ func (d DojoScraper) Run() error {
 
 		if err != nil {
 			d.Statter.Inc("scraper.storage.error", 1, 1)
-		}else{
-			d.Statter.TimingDuration("scraper.storage.latency", time.Now().Sub(startStore), 1.0)
+		} else {
+			duration := time.Now().Sub(startStore)
+			log.Infof("Storage saved in %f seconds", duration.Seconds())
+			d.Statter.TimingDuration("scraper.storage.latency", duration, 1)
 		}
 
 		return err
