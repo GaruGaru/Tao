@@ -43,7 +43,7 @@ func (r RedisEventsProvider) Events(lat float64, lon float64, rng int, sorting s
 	wg.Wait()
 	close(eventsChannel)
 
-	var dojoEvents []DojoEvent
+	var dojoEvents = make([]DojoEvent, 0)
 
 	for e := range eventsChannel {
 		dojoEvents = append(dojoEvents, e)
