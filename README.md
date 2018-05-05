@@ -13,7 +13,7 @@
 ## Supported platforms 
 
 - Eventbrite 
-- Zen *[in-progress]*
+- Zen
 
 # Run locally
 
