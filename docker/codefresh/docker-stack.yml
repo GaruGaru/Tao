@@ -31,6 +31,7 @@ services:
         EVENTBRITE_TOKEN: ${EVENTBRITE_TOKEN}
         STATSD_HOST: ${STATSD_HOST}
         REDIS_HOST: "tao-redis:6379"
+        SCRAPER_DELAY: 10800
       networks:
         - internal
         - statsd
