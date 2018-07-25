@@ -3,7 +3,7 @@ services:
 
   tao-api:
       image: garugaru/tao
-      command: ./main serve-api --storage=redis
+      command: ./tao serve-api --storage=redis
       environment:
         GIN_MODE: release
         PORT: 80
@@ -26,7 +26,7 @@ services:
 
   tao-scraper:
       image: garugaru/tao
-      command: ./main scraper --storage=redis
+      command: ./tao scraper --storage=redis
       environment:
         EVENTBRITE_TOKEN: ${EVENTBRITE_TOKEN}
         STATSD_HOST: ${STATSD_HOST}

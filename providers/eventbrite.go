@@ -45,8 +45,8 @@ type Event struct {
 		Text string `json:"text"`
 		HTML string `json:"html"`
 	} `json:"description"`
-	ID  string `json:"id"`
-	URL string `json:"url"`
+	ID    string `json:"id"`
+	URL   string `json:"url"`
 	Start struct {
 		Timezone string    `json:"timezone"`
 		Local    string    `json:"local"`
@@ -85,7 +85,7 @@ type Event struct {
 	SubcategoryID     interface{} `json:"subcategory_id"`
 	FormatID          string      `json:"format_id"`
 	ResourceURI       string      `json:"resource_uri"`
-	Logo struct {
+	Logo              struct {
 		CropMask struct {
 			TopLeft struct {
 				X int `json:"x"`
@@ -114,7 +114,7 @@ type EventbriteResponse struct {
 		PageCount    int  `json:"page_count"`
 		HasMoreItems bool `json:"has_more_items"`
 	} `json:"pagination"`
-	Events []Event `json:"events"`
+	Events   []Event `json:"events"`
 	Location struct {
 		Latitude  string `json:"latitude"`
 		Within    string `json:"within"`
