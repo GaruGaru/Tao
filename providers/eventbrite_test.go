@@ -91,9 +91,10 @@ func TestFetchArticlesWithPagination(t *testing.T) {
 
 func TestFetchArticlesWithPaginationWithRateLimit(t *testing.T) {
 	defer gock.Off() // Flush pending mocks after test execution
-
+	gock.Off()
 	gock.New("https://www.eventbriteapi.com").
 		Get("/v3/events/search/").
+		MatchParam("page", "1").
 		Persist().
 		Reply(200).
 		BodyString(readTestDataRaw(t, "eventbrite_response_p1.json"))
@@ -101,8 +102,8 @@ func TestFetchArticlesWithPaginationWithRateLimit(t *testing.T) {
 	gock.New("https://www.eventbriteapi.com").
 		Get("/v3/events/search/").
 		MatchParam("page", "2").
-		Reply(200).
-		BodyString(readTestDataRaw(t, "eventbrite_response_p2.json"))
+		Reply(403).
+		BodyString("Rate-limited")
 
 	gock.New("https://www.eventbriteapi.com").
 		MatchParam("page", "3").
@@ -124,8 +125,8 @@ func TestFetchArticlesWithPaginationWithRateLimit(t *testing.T) {
 		t.FailNow()
 	}
 
-	if len(events) != 100 {
-		t.Log(fmt.Sprintf("Fetched events count does not match  %d != 100", len(events)))
+	if len(events) != 50 {
+		t.Log(fmt.Sprintf("Fetched events count does not match  %d != 50", len(events)))
 		t.FailNow()
 	}
 

@@ -45,8 +45,8 @@ type Event struct {
 		Text string `json:"text"`
 		HTML string `json:"html"`
 	} `json:"description"`
-	ID    string `json:"id"`
-	URL   string `json:"url"`
+	ID  string `json:"id"`
+	URL string `json:"url"`
 	Start struct {
 		Timezone string    `json:"timezone"`
 		Local    string    `json:"local"`
@@ -85,7 +85,7 @@ type Event struct {
 	SubcategoryID     interface{} `json:"subcategory_id"`
 	FormatID          string      `json:"format_id"`
 	ResourceURI       string      `json:"resource_uri"`
-	Logo              struct {
+	Logo struct {
 		CropMask struct {
 			TopLeft struct {
 				X int `json:"x"`
@@ -114,7 +114,7 @@ type EventbriteResponse struct {
 		PageCount    int  `json:"page_count"`
 		HasMoreItems bool `json:"has_more_items"`
 	} `json:"pagination"`
-	Events   []Event `json:"events"`
+	Events []Event `json:"events"`
 	Location struct {
 		Latitude  string `json:"latitude"`
 		Within    string `json:"within"`
@@ -152,7 +152,7 @@ func (e EventBriteProvider) Events(lat float64, lon float64, rng int, sorting st
 
 	if events.Pagination.HasMoreItems {
 		for i := 1; i < events.Pagination.PageCount+1; i++ {
-			go fetchAndProcessEvents(e, lat, lon, rng, sorting, i, eventsChannel, &wg)
+			go fetchAndProcessEvents(e, lat, lon, rng, sorting, i, events.Pagination.PageSize, eventsChannel, &wg)
 		}
 	} else {
 		for _, event := range events.Events {
@@ -172,17 +172,20 @@ func (e EventBriteProvider) Events(lat float64, lon float64, rng int, sorting st
 	return dojoEvents, nil
 }
 
-func fetchAndProcessEvents(e EventBriteProvider, lat float64, lon float64, rng int, sorting string, i int, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
-	currEvents, err := e.eventsList(lat, lon, rng, sorting, i)
+func fetchAndProcessEvents(e EventBriteProvider, lat float64, lon float64, rng int, sorting string, pageIndex int, pageSize int, eventsChannel chan DojoEvent, wg *sync.WaitGroup) {
+	currEvents, err := e.eventsList(lat, lon, rng, sorting, pageIndex)
 
-	log.Infof("Processing %d from eventbrite page %d", len(currEvents.Events), i)
+	log.Infof("Processing %d from eventbrite page %d", len(currEvents.Events), pageIndex)
 
 	if err == nil {
 		for _, event := range currEvents.Events {
 			go e.processEvent(lat, lon, event, eventsChannel, wg)
 		}
 	} else {
-		log.Errorf("Unable to get events from pagination %d: %s", i, err.Error())
+		log.Errorf("Unable to get events from pagination %d: %s", pageIndex, err.Error())
+		for i := 0; i < pageSize; i++ {
+			wg.Done()
+		}
 	}
 }
 
