@@ -36,6 +36,7 @@ steps:
     tags:
       -  ${{CF_SHORT_REVISION}}
       - 'latest'
+      - ${{CF_BRANCH_TAG_NORMALIZED}}
     fail_fast: true
 
   deploy_to_swarm:
