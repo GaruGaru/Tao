@@ -13,5 +13,5 @@ type DefaultEventScraper struct {
 }
 
 func (s DefaultEventScraper) Scrape() ([]providers.DojoEvent, error) {
-	return s.Provider.Events(0.0, 0.0, 1<<63 - 1, "distance")
+	return s.Provider.Events(0.0, 0.0, 1<<63-1, "distance")
 }

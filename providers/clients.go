@@ -1,12 +1,12 @@
 package providers
 
 import (
-	"github.com/gojektech/heimdall"
-	"io/ioutil"
 	"encoding/json"
-	"time"
 	"fmt"
+	"github.com/gojektech/heimdall"
 	"io"
+	"io/ioutil"
+	"time"
 )
 
 type ApiClient interface {

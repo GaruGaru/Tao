@@ -1,11 +1,11 @@
 package cmd
 
 import (
+	"github.com/GaruGaru/Tao/api"
+	"github.com/GaruGaru/Tao/providers"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"time"
-	"github.com/GaruGaru/Tao/providers"
-	"github.com/GaruGaru/Tao/api"
 )
 
 var Port int

@@ -1,9 +1,9 @@
 package scraper
 
 import (
-	"os"
 	"fmt"
 	"github.com/go-redis/redis"
+	"os"
 )
 
 type DojoScraperLock interface {

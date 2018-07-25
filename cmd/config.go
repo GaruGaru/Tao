@@ -1,13 +1,13 @@
 package cmd
 
 import (
-	"github.com/spf13/viper"
-	"github.com/go-redis/redis"
-	"github.com/GaruGaru/Tao/scraper"
 	"fmt"
-	"github.com/cactus/go-statsd-client/statsd"
-	"time"
+	"github.com/GaruGaru/Tao/scraper"
 	"github.com/GaruGaru/Tao/supervisor"
+	"github.com/cactus/go-statsd-client/statsd"
+	"github.com/go-redis/redis"
+	"github.com/spf13/viper"
+	"time"
 )
 
 func GetConfiguredStorage() string {

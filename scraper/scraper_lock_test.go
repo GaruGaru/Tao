@@ -1,10 +1,10 @@
 package scraper
 
 import (
-	"testing"
 	"fmt"
-	"math/rand"
 	"github.com/GaruGaru/Tao/tests"
+	"math/rand"
+	"testing"
 )
 
 func TestFileSystemLockObtainRelease(t *testing.T) {

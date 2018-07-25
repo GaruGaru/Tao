@@ -1,14 +1,14 @@
 package providers
 
 import (
+	"encoding/json"
+	"fmt"
+	"github.com/GaruGaru/Tao/tests"
 	"github.com/cactus/go-statsd-client/statsd"
+	"github.com/go-redis/redis"
+	"math/rand"
 	"testing"
 	"time"
-	"fmt"
-	"encoding/json"
-	"github.com/go-redis/redis"
-	"github.com/GaruGaru/Tao/tests"
-	"math/rand"
 )
 
 type TestEventProvider struct {

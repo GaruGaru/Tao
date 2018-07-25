@@ -1,10 +1,10 @@
 package scraper
 
 import (
-	"github.com/cactus/go-statsd-client/statsd"
-	"time"
-	log "github.com/sirupsen/logrus"
 	"fmt"
+	"github.com/cactus/go-statsd-client/statsd"
+	log "github.com/sirupsen/logrus"
+	"time"
 )
 
 type DojoScraper struct {

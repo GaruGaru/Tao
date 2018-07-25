@@ -1,14 +1,14 @@
 package providers
 
 import (
-	"time"
 	"bytes"
-	"fmt"
 	"encoding/json"
-	"sync"
-	"net/url"
+	"fmt"
 	"github.com/sirupsen/logrus"
 	log "github.com/sirupsen/logrus"
+	"net/url"
+	"sync"
+	"time"
 )
 
 type ZenDojo struct {
@@ -25,12 +25,12 @@ type ZenDojo struct {
 	Stage                int         `json:"stage"`
 	MailingList          int         `json:"mailing_list"`
 	AlternativeFrequency string      `json:"alternative_frequency"`
-	Country struct {
-		CountryName   string `json:"countryName"`
-		CountryNumber interface{}    `json:"countryNumber,omitempty"`
-		Continent     string `json:"continent"`
-		Alpha2        string `json:"alpha2"`
-		Alpha3        string `json:"alpha3"`
+	Country              struct {
+		CountryName   string      `json:"countryName"`
+		CountryNumber interface{} `json:"countryNumber,omitempty"`
+		Continent     string      `json:"continent"`
+		Alpha2        string      `json:"alpha2"`
+		Alpha3        string      `json:"alpha3"`
 	} `json:"country"`
 	County struct {
 	} `json:"county"`
@@ -42,7 +42,7 @@ type ZenDojo struct {
 		NameWithHierarchy string `json:"nameWithHierarchy"`
 	} `json:"place"`
 	Coordinates string `json:"coordinates"`
-	GeoPoint struct {
+	GeoPoint    struct {
 		Lat float64 `json:"lat"`
 		Lon float64 `json:"lon"`
 	} `json:"geo_point"`
@@ -87,8 +87,8 @@ type ZenDojo struct {
 }
 
 type ZenDojoEvent struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
+	ID      string `json:"id"`
+	Name    string `json:"name"`
 	Country struct {
 		CountryName string `json:"countryName"`
 		Alpha2      string `json:"alpha2"`
@@ -102,14 +102,14 @@ type ZenDojoEvent struct {
 	Type        string    `json:"type"`
 	Description string    `json:"description"`
 	DojoID      string    `json:"dojoId"`
-	Position struct {
+	Position    struct {
 		Lat float64 `json:"lat"`
 		Lng float64 `json:"lng"`
 	} `json:"position"`
 	Public        bool   `json:"public"`
 	Status        string `json:"status"`
 	RecurringType string `json:"recurringType"`
-	Dates []struct {
+	Dates         []struct {
 		StartTime time.Time `json:"startTime"`
 		EndTime   time.Time `json:"endTime"`
 	} `json:"dates"`
@@ -210,7 +210,7 @@ func (z ZenPlatformProvider) fetchEventsFromZenDojo(dojo ZenDojo, eventsChannel 
 
 	err = z.Client.Get(url.String(), &events)
 
-	if err != nil{
+	if err != nil {
 		log.Error(err.Error())
 		return
 	}

@@ -1,9 +1,9 @@
 package providers
 
 import (
-	"io/ioutil"
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
 )
 
 func readFile(file string) ([]DojoEvent, error) {
@@ -24,9 +24,9 @@ func readFile(file string) ([]DojoEvent, error) {
 	return events, nil
 }
 
-func NewFileEventProvider(file string)FileEventProvider {
+func NewFileEventProvider(file string) FileEventProvider {
 	events, err := readFile(file)
-	if err != nil{
+	if err != nil {
 		panic(err)
 	}
 	return FileEventProvider{events: events}

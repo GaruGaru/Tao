@@ -1,15 +1,15 @@
 package scraper
 
 import (
-	"testing"
-	"fmt"
-	"math/rand"
-	"github.com/GaruGaru/Tao/tests"
-	"github.com/go-redis/redis"
-	"github.com/GaruGaru/Tao/providers"
-	"io/ioutil"
 	"encoding/json"
+	"fmt"
+	"github.com/GaruGaru/Tao/providers"
+	"github.com/GaruGaru/Tao/tests"
 	"github.com/cactus/go-statsd-client/statsd"
+	"github.com/go-redis/redis"
+	"io/ioutil"
+	"math/rand"
+	"testing"
 	"time"
 )
 
@@ -54,7 +54,7 @@ func TestEventsScraper(t *testing.T) {
 			TestEventProvider{DojoEvents: testEvents},
 			TestEventProvider{DojoEvents: testEvents},
 			TestEventProvider{DojoEvents: testEvents},
-		}},},
+		}}},
 		Lock:    FileSystemLock{LockFile: fmt.Sprintf("test.lock.%d", rand.Int())},
 		Delayer: LocalScraperDelayer{Delay: 0, lastRun: time.Now()},
 		Statter: &statsd.NoopClient{},
@@ -96,7 +96,7 @@ func TestEventsScraperWithRedis(t *testing.T) {
 
 	dojoScraper := DojoScraper{
 		Storage: RedisEventsStorage{Redis: *redisClient, GeoKey: geoKey},
-		Scraper: DefaultEventScraper{Provider: TestEventProvider{DojoEvents: testEvents},},
+		Scraper: DefaultEventScraper{Provider: TestEventProvider{DojoEvents: testEvents}},
 		Lock:    RedisDojoScraperLock{Redis: *redisClient, LockKey: lockKey},
 		Delayer: RedisScraperDelayer{Redis: *redisClient, Delay: 60 * time.Second, TimeKey: delayerKey},
 		Statter: &statsd.NoopClient{},

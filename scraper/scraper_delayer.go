@@ -2,8 +2,8 @@ package scraper
 
 import (
 	"github.com/go-redis/redis"
-	"time"
 	"strconv"
+	"time"
 )
 
 type ScraperDelayer interface {

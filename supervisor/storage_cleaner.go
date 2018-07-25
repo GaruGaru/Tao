@@ -1,8 +1,8 @@
 package supervisor
 
 import (
-	"github.com/go-redis/redis"
 	"github.com/cactus/go-statsd-client/statsd"
+	"github.com/go-redis/redis"
 )
 
 type CleanerResult struct {
@@ -66,6 +66,6 @@ func (cleaner RedisStorageCleaner) Cleanup() (CleanerResult, error) {
 
 	cleaner.Statter.Inc("cleaner.run.ok", 1, 1.0)
 
-	return CleanerResult{Removed: removed,}, nil
+	return CleanerResult{Removed: removed}, nil
 
 }

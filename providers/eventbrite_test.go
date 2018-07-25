@@ -1,11 +1,11 @@
 package providers
 
 import (
+	"fmt"
 	"gopkg.in/h2non/gock.v1"
 	"io/ioutil"
 	"path"
 	"testing"
-	"fmt"
 )
 
 func readTestDataRaw(t *testing.T, file string) string {
@@ -84,6 +84,48 @@ func TestFetchArticlesWithPagination(t *testing.T) {
 
 	if len(events) != 150 {
 		t.Log(fmt.Sprintf("Fetched events count does not match  %d != 150", len(events)))
+		t.FailNow()
+	}
+
+}
+
+func TestFetchArticlesWithPaginationWithRateLimit(t *testing.T) {
+	defer gock.Off() // Flush pending mocks after test execution
+
+	gock.New("https://www.eventbriteapi.com").
+		Get("/v3/events/search/").
+		Persist().
+		Reply(200).
+		BodyString(readTestDataRaw(t, "eventbrite_response_p1.json"))
+
+	gock.New("https://www.eventbriteapi.com").
+		Get("/v3/events/search/").
+		MatchParam("page", "2").
+		Reply(200).
+		BodyString(readTestDataRaw(t, "eventbrite_response_p2.json"))
+
+	gock.New("https://www.eventbriteapi.com").
+		MatchParam("page", "3").
+		Reply(403).
+		BodyString("Rate-limited")
+
+	gock.New("https://www.eventbriteapi.com").
+		Get("/v3/venues/(.*)").
+		Persist().
+		Reply(200).
+		BodyString(readTestDataRaw(t, "eventbrite_venue_response.json"))
+
+	eventbrite := EventBriteProvider{ApiKey: "test"}
+
+	events, err := eventbrite.Events(10, 10, 1000, "distance")
+
+	if err != nil {
+		t.Log(err)
+		t.FailNow()
+	}
+
+	if len(events) != 100 {
+		t.Log(fmt.Sprintf("Fetched events count does not match  %d != 100", len(events)))
 		t.FailNow()
 	}
 

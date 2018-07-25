@@ -1,10 +1,10 @@
 package cmd
 
 import (
-	"github.com/spf13/cobra"
-	"os"
-	"github.com/spf13/viper"
 	log "github.com/sirupsen/logrus"
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
+	"os"
 )
 
 var Storage string
@@ -31,7 +31,7 @@ func init() {
 var rootCmd = &cobra.Command{
 	Use:   "tao",
 	Short: "Tao is an aggregator for coderdojo events",
-	Long: `Tao is a fast, scalable, container ready aggregator for coderdojo events`,
+	Long:  `Tao is a fast, scalable, container ready aggregator for coderdojo events`,
 	Run: func(cmd *cobra.Command, args []string) {
 		log.Info("Tao is a fast, scalable, container ready aggregator for coderdojo events")
 	},
@@ -43,4 +43,3 @@ func Execute() {
 		os.Exit(1)
 	}
 }
-

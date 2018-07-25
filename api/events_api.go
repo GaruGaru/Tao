@@ -1,12 +1,12 @@
 package api
 
 import (
+	"fmt"
 	"github.com/GaruGaru/Tao/providers"
 	"github.com/cactus/go-statsd-client/statsd"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"strconv"
-	"fmt"
 	"time"
 )
 

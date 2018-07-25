@@ -1,11 +1,11 @@
 package scraper
 
 import (
-	"testing"
-	"github.com/GaruGaru/Tao/tests"
-	"time"
 	"fmt"
+	"github.com/GaruGaru/Tao/tests"
 	"math/rand"
+	"testing"
+	"time"
 )
 
 func TestScraperDelayerRedis(t *testing.T) {

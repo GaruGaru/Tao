@@ -1,13 +1,13 @@
 package scraper
 
 import (
+	"encoding/json"
+	"fmt"
 	"github.com/GaruGaru/Tao/providers"
 	"github.com/go-redis/redis"
-	"fmt"
-	"encoding/json"
+	"github.com/sirupsen/logrus"
 	"io/ioutil"
 	"time"
-	"github.com/sirupsen/logrus"
 )
 
 type EventsStorage interface {
@@ -27,7 +27,7 @@ func NewInMemoryEventsStorage() InMemoryEventsStorage {
 func (m InMemoryEventsStorage) Store(events []providers.DojoEvent) error {
 	for _, e := range events {
 		jsonEvent, err := eventToJson(e)
-		if err != nil{
+		if err != nil {
 			return err
 		}
 		m.Storage[keyFromEvent(e)] = jsonEvent
@@ -41,7 +41,7 @@ type FileSystemEventsStorage struct {
 
 func (m FileSystemEventsStorage) Store(events []providers.DojoEvent) error {
 	content, err := json.Marshal(events)
-	if err != nil{
+	if err != nil {
 		return err
 	}
 	err = ioutil.WriteFile(m.StoreFile, content, 0644)
@@ -64,7 +64,7 @@ func (p RedisEventsStorage) Store(events []providers.DojoEvent) error {
 			return err
 		}
 
-		eventStart := time.Unix(event.StartTime,0)
+		eventStart := time.Unix(event.StartTime, 0)
 
 		expiration := eventStart.Sub(time.Now())
 
@@ -85,7 +85,7 @@ func (p RedisEventsStorage) Store(events []providers.DojoEvent) error {
 	}
 
 	saveResult := p.Redis.Save()
-	if saveResult.Err() != nil{
+	if saveResult.Err() != nil {
 		logrus.Warn("Redis auto save is running, skipped Save command")
 	}
 

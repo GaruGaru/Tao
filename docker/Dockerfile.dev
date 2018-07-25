@@ -23,6 +23,6 @@ RUN dep ensure
 
 RUN go build -o main *.go
 
-HEALTHCHECK --interval=5s --timeout=5s CMD curl --fail http://localhost/probe || exit 1
+#HEALTHCHECK --interval=5s --timeout=5s CMD curl --fail http://localhost/probe || exit 1
 
 CMD ["/gopath/src/github.com/GaruGaru/Tao/main"]

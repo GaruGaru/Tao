@@ -1,12 +1,12 @@
 package supervisor
 
 import (
-	"github.com/GaruGaru/Tao/tests"
-	"testing"
 	"fmt"
-	"math/rand"
-	"github.com/go-redis/redis"
+	"github.com/GaruGaru/Tao/tests"
 	"github.com/cactus/go-statsd-client/statsd"
+	"github.com/go-redis/redis"
+	"math/rand"
+	"testing"
 )
 
 func TestFileSystemLockObtainFail(t *testing.T) {
@@ -23,7 +23,7 @@ func TestFileSystemLockObtainFail(t *testing.T) {
 	cleaner := RedisStorageCleaner{
 		Redis:     *redisClient,
 		EventsKey: key,
-		Statter: &statsd.NoopClient{},
+		Statter:   &statsd.NoopClient{},
 	}
 
 	result, err := cleaner.Cleanup()
@@ -45,7 +45,7 @@ func TestFileSystemLockObtainFail(t *testing.T) {
 		t.FailNow()
 	}
 
-	if len(res) != 0{
+	if len(res) != 0 {
 		t.Log("Expected events zset to be empty")
 		t.FailNow()
 	}

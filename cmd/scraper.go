@@ -1,12 +1,12 @@
 package cmd
 
 import (
+	"github.com/GaruGaru/Tao/providers"
+	"github.com/GaruGaru/Tao/scraper"
 	"github.com/jasonlvhit/gocron"
+	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/GaruGaru/Tao/scraper"
-	"github.com/GaruGaru/Tao/providers"
-	log "github.com/sirupsen/logrus"
 	"os"
 	"os/signal"
 	"syscall"
@@ -37,7 +37,7 @@ func newEventsProvider() providers.EventProvider {
 		availableProviders = append(availableProviders, providers.EventBriteProvider{ApiKey: viper.GetString("eventbrite_token")})
 	}
 
-	return providers.ProvidersManager{Providers: availableProviders,}
+	return providers.ProvidersManager{Providers: availableProviders}
 }
 
 func handleOsSignals(scraper *scraper.DojoScraper) {

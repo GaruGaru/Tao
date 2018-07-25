@@ -1,12 +1,12 @@
 package providers
 
 import (
-	"github.com/go-redis/redis"
 	"encoding/json"
 	"fmt"
-	"sync"
-	"sort"
 	"github.com/cactus/go-statsd-client/statsd"
+	"github.com/go-redis/redis"
+	"sort"
+	"sync"
 )
 
 type RedisEventsProvider struct {
