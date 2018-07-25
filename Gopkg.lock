@@ -14,6 +14,18 @@
   version = "v3.1.1"
 
 [[projects]]
+  name = "github.com/contribsys/faktory"
+  packages = ["client"]
+  revision = "db281f9cffe078ad988f705f9e58c86998b7c4cd"
+  version = "v0.8.0-1"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/contribsys/faktory_worker_go"
+  packages = ["."]
+  revision = "de58a756280d12741a9b36e7acc26aa9e639b178"
+
+[[projects]]
   name = "github.com/fsnotify/fsnotify"
   packages = ["."]
   revision = "c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9"
@@ -202,6 +214,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "e7a07a60c2448ad75c0050088fa7c7a233d980b9c1721620fbdaaa0fc8a26737"
+  inputs-digest = "b407607c7992ef2680fce033c278574f7a41a81d14491b59e278933ce51cf8f8"
   solver-name = "gps-cdcl"
   solver-version = 1
