@@ -4,7 +4,11 @@
 [[projects]]
   branch = "master"
   name = "github.com/afex/hystrix-go"
-  packages = ["hystrix","hystrix/metric_collector","hystrix/rolling"]
+  packages = [
+    "hystrix",
+    "hystrix/metric_collector",
+    "hystrix/rolling"
+  ]
   revision = "f86abeeb9f72803eb19b0d7a25159e55b80e7254"
 
 [[projects]]
@@ -45,13 +49,24 @@
 
 [[projects]]
   name = "github.com/gin-gonic/gin"
-  packages = [".","binding","render"]
+  packages = [
+    ".",
+    "binding",
+    "render"
+  ]
   revision = "d459835d2b077e44f7c9b453505ee29881d5d12d"
   version = "v1.2"
 
 [[projects]]
   name = "github.com/go-redis/redis"
-  packages = [".","internal","internal/consistenthash","internal/hashtag","internal/pool","internal/proto"]
+  packages = [
+    ".",
+    "internal",
+    "internal/consistenthash",
+    "internal/hashtag",
+    "internal/pool",
+    "internal/proto"
+  ]
   revision = "8b4fa6d443e35ca8b1c37be877285252430b06a3"
   version = "v6.8.3"
 
@@ -76,7 +91,18 @@
 [[projects]]
   branch = "master"
   name = "github.com/hashicorp/hcl"
-  packages = [".","hcl/ast","hcl/parser","hcl/printer","hcl/scanner","hcl/strconv","hcl/token","json/parser","json/scanner","json/token"]
+  packages = [
+    ".",
+    "hcl/ast",
+    "hcl/parser",
+    "hcl/printer",
+    "hcl/scanner",
+    "hcl/strconv",
+    "hcl/token",
+    "json/parser",
+    "json/scanner",
+    "json/token"
+  ]
   revision = "ef8a98b0bbce4a65b5aa4c368430a80ddc533168"
 
 [[projects]]
@@ -129,7 +155,10 @@
 
 [[projects]]
   name = "github.com/spf13/afero"
-  packages = [".","mem"]
+  packages = [
+    ".",
+    "mem"
+  ]
   revision = "63644898a8da0bc22138abf860edaf5277b6102e"
   version = "v1.1.0"
 
@@ -184,12 +213,22 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
-  packages = ["unix","windows"]
+  packages = [
+    "unix",
+    "windows"
+  ]
   revision = "2c42eef0765b9837fbdab12011af7830f55f88f0"
 
 [[projects]]
   name = "golang.org/x/text"
-  packages = ["internal/gen","internal/triegen","internal/ucd","transform","unicode/cldr","unicode/norm"]
+  packages = [
+    "internal/gen",
+    "internal/triegen",
+    "internal/ucd",
+    "transform",
+    "unicode/cldr",
+    "unicode/norm"
+  ]
   revision = "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
   version = "v0.3.0"
 
@@ -214,6 +253,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "b407607c7992ef2680fce033c278574f7a41a81d14491b59e278933ce51cf8f8"
+  inputs-digest = "d526feee11e3a1d99e5018dc1e013561929a54aadcb3a8a4391b7592e88cdfad"
   solver-name = "gps-cdcl"
   solver-version = 1
